@@ -169,34 +169,11 @@ namespace QLCH_CameraADC
         {
             if(flag==1)
             {
-                for (int i = 0; i < dgvDSSPChon.Rows.Count - 1; i++)
-                {
-                    string masp1 = dgvDSSPChon.Rows[i].Cells["tensp"].Value.ToString();
-                    int sl1= int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
-                    for (int j = i + 1; j < dgvDSSPChon.Rows.Count-1; j++)
-                    { 
-                        string masp2= dgvDSSPChon.Rows[j].Cells["tensp"].Value.ToString();
-                        int sl2 = int.Parse(dgvDSSPChon.Rows[j].Cells["soluong"].Value.ToString());
-                        if (masp1==masp2)
-                        {
-                            dgvDSSPChon.Rows[i].Cells["soluong"].Value = sl1+sl2;
-                            dgvDSSPChon.Rows.RemoveAt(j);
-                        }    
-
-                    }
-                    
-                  
-                }
-                for (int i = 0; i < dgvDSSPChon.Rows.Count - 1; i++)
-                {
-                    int soluong = int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
-                    float dongia = float.Parse(dgvDSSPChon.Rows[i].Cells["dongia"].Value.ToString());
-                    float thanhtien = soluong * dongia;
-                    dgvDSSPChon.Rows[i].Cells["thanhtien"].Value = thanhtien;
-                }
+               
+              
 
 
-                TongTienSP();
+                
 
                 hdb.MaHDB = txtMaHD.Text;
                 hdb.MaKH = maKH;
@@ -215,7 +192,6 @@ namespace QLCH_CameraADC
                     string khuyenmai = dgvDSSPChon.Rows[i].Cells["khuyenmai"].Value.ToString();
                     float thanhtien = float.Parse(dgvDSSPChon.Rows[i].Cells["thanhtien"].Value.ToString());
                     DataTable DSSP = bus.LaySP("Select * From SanPham Where MaSP='" + masp + "'");
-
                     int slconlai = int.Parse(DSSP.Rows[0]["SL"].ToString()) - soluong;
                     cthd.MaHDB = txtMaHD.Text;
                     cthd.MaSP = masp;
@@ -242,11 +218,63 @@ namespace QLCH_CameraADC
             
         }
 
-      
+        private void dgvDSSPChon_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            double TongTien = 0;
+            if (dgvDSSPChon.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null)
+            {
+                return;
+            }
+            else
+            {
 
-    
+                string masp = dgvDSSPChon.Rows[e.RowIndex].Cells["tensp"].Value.ToString();
+                int sl = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["soluong"].Value.ToString());
 
-       
+                DataTable DSSP = bus.GetTimKiemSP("Select * from SanPham where MaSP='" + masp + "'");
+                
+                dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value = DSSP.Rows[0]["Gia"];
+                dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value = DSSP.Rows[0]["KhuyenMai"];
+                int gia = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value.ToString());
+                dgvDSSPChon.Rows[e.RowIndex].Cells["thanhtien"].Value = sl * gia;
+
+
+            }
+
+            //for (int i = 0; i < dgvDSSPChon.Rows.Count - 1; i++)
+            //{
+            //    string masp1 = dgvDSSPChon.Rows[i].Cells["tensp"].Value.ToString();
+            //    int sl1 = int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
+            //    for (int j = i + 1; j < dgvDSSPChon.Rows.Count - 1; j++)
+            //    {
+            //        string masp2 = dgvDSSPChon.Rows[j].Cells["tensp"].Value.ToString();
+            //        int sl2 = int.Parse(dgvDSSPChon.Rows[j].Cells["soluong"].Value.ToString());
+            //        if (masp1 == masp2)
+            //        {
+            //            dgvDSSPChon.Rows[i].Cells["soluong"].Value = sl1 + sl2;
+            //            dgvDSSPChon.Rows.RemoveAt(j);
+            //        }
+
+            //    }
+
+
+            //}
+
+            for (int i = 0; i < dgvDSSPChon.Rows.Count - 1; i++)
+            {
+                int sl = int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
+                int gia = int.Parse(dgvDSSPChon.Rows[i].Cells["dongia"].Value.ToString());
+                double thanhtien = sl * gia;
+                TongTien = TongTien + thanhtien;
+                txtTongTien.Text = TongTien.ToString();
+            }
+        }
+
+
+
+
+
+
 
 
 
