@@ -14,9 +14,18 @@ namespace QLCH_CameraADC
 {
     public partial class frmQLHoaDon : Form
     {
+        private string sMaNV;
+        private string sTenNV;
         public frmQLHoaDon()
         {
             InitializeComponent();
+        }
+
+        public frmQLHoaDon(string TenNV,string MaNV)
+        {
+            InitializeComponent();
+            this.sTenNV = TenNV;
+            this.sMaNV = MaNV;
         }
 
         HoaDonBan_BUS bus = new HoaDonBan_BUS();
@@ -129,6 +138,8 @@ namespace QLCH_CameraADC
 
         private void btnInHD_Click(object sender, EventArgs e)
         {
+            frmInHD_Ban inHD = new frmInHD_Ban(this.sMaNV, MaHD);
+            inHD.Show();
 
         }
 

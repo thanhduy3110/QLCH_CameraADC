@@ -15,9 +15,18 @@ namespace QLCH_CameraADC
 {
     public partial class frmQLHoaDonNhap : Form
     {
+        private string sMaNV;
+        private string sTenNV;
         public frmQLHoaDonNhap()
         {
             InitializeComponent();
+        }
+
+        public frmQLHoaDonNhap(string TenNV,string MaNV)
+        {
+            InitializeComponent();
+            this.sTenNV = TenNV;
+            this.sMaNV = MaNV;
         }
 
         HoaDonNhap_BUS bus = new HoaDonNhap_BUS();
@@ -108,6 +117,12 @@ namespace QLCH_CameraADC
         public void CTHD_TheoHD(string MaHDN)
         {
             dgvDSCTHD.DataSource = bus.HienThiCTHDNH("select CTHD_Nhap.MaSP as MaSP,CTHD_Nhap.MaNCC as MaNCC,TenSP,TenNCC,SoLuong,GiaNhap,ThanhTien,CTHD_Nhap.GhiChu,CTHD_Nhap.TrangThai from CTHD_Nhap,SanPham,NhaCungCap where CTHD_Nhap.MaSP=SanPham.MaSP and CTHD_Nhap.MaNCC=NhaCungCap.MaNCC and MaHDN='" + MaHDN + "'");
+        }
+
+        private void btnInHD_Click(object sender, EventArgs e)
+        {
+            frmInHD_Nhap inHD=new frmInHD_Nhap(this.sMaNV,MaHD);
+            inHD.Show();
         }
 
         private void btnSua_Click(object sender, EventArgs e)

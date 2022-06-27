@@ -8,7 +8,7 @@ namespace QLCH_CameraADC.DataAccess
     public partial class ADCDbConText : DbContext
     {
         public ADCDbConText()
-            : base("name=ADCDbConText")
+            : base("name=ADCDbConText1")
         {
         }
 

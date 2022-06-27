@@ -92,7 +92,7 @@ namespace QLCH_CameraADC
 
         private void btnQLHoaDon_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmQLHoaDon());
+            openChildForm(new frmQLHoaDon(this.sTenNV, this.sMaNV));
         }
 
         private void btnQL_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace QLCH_CameraADC
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmQLHoaDonNhap());
+            openChildForm(new frmQLHoaDonNhap(this.sTenNV, this.sMaNV));
         }
 
         private void btnQLHD_Click(object sender, EventArgs e)
