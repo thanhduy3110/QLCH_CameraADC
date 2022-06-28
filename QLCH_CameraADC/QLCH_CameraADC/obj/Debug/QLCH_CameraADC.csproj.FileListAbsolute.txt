@@ -222,3 +222,4 @@ C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\o
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.csproj.CopyComplete
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.exe
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.pdb
+C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmInHD_Nhap.resources
