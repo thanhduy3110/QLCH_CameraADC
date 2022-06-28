@@ -114,6 +114,11 @@ namespace QLCH_CameraADC
             openChildForm(new frmQLHoaDonNhap(this.sTenNV, this.sMaNV));
         }
 
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmThongKe());
+        }
+
         private void btnQLHD_Click(object sender, EventArgs e)
         {
             if (flag_QLHD == 1)
