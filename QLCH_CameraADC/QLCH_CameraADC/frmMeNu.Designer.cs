@@ -64,13 +64,13 @@
             this.panelBottom = new System.Windows.Forms.Panel();
             this.panelMid = new System.Windows.Forms.Panel();
             this.groupGioiThieu = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelHD.SuspendLayout();
             this.panelQL.SuspendLayout();
@@ -178,13 +178,14 @@
             this.btnThongKe.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnThongKe.OnPressedState.IconLeftImage = null;
             this.btnThongKe.OnPressedState.IconRightImage = null;
-            this.btnThongKe.Size = new System.Drawing.Size(293, 67);
+            this.btnThongKe.Size = new System.Drawing.Size(293, 49);
             this.btnThongKe.TabIndex = 0;
-            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKe.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnThongKe.TextMarginLeft = 0;
             this.btnThongKe.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnThongKe.UseDefaultRadiusAndThickness = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // panelHD
             // 
@@ -1383,6 +1384,54 @@
             this.groupGioiThieu.TabStop = false;
             this.groupGioiThieu.Text = "Giới Thiệu";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(55, 202);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(470, 25);
+            this.label3.TabIndex = 83;
+            this.label3.Text = "- CUNG CẤP VÀ SỬA CHỮA THIẾT BỊ MÁY VĂN PHÒNG";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(55, 166);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(199, 25);
+            this.label1.TabIndex = 83;
+            this.label1.Text = "- HỆ THỐNG AN NINH";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(55, 127);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(445, 25);
+            this.label5.TabIndex = 83;
+            this.label5.Text = "- CHUYÊN LẮP ĐẶT HỆ THỐNG CAMERA QUAN SÁT";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label6.Location = new System.Drawing.Point(55, 304);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(422, 25);
+            this.label6.TabIndex = 83;
+            this.label6.Text = "SĐT: 0978.70.77.99 - 0903.53.68.63 - 0933.666.247";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1418,54 +1467,6 @@
             this.label2.Size = new System.Drawing.Size(541, 32);
             this.label2.TabIndex = 76;
             this.label2.Text = "PHẦN MỀM QUẢN LÝ CỬA HÀNG CAMERA ADC";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(55, 166);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 25);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "- HỆ THỐNG AN NINH";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(55, 127);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(445, 25);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "- CHUYÊN LẮP ĐẶT HỆ THỐNG CAMERA QUAN SÁT";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(55, 202);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(470, 25);
-            this.label3.TabIndex = 83;
-            this.label3.Text = "- CUNG CẤP VÀ SỬA CHỮA THIẾT BỊ MÁY VĂN PHÒNG";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(55, 304);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(422, 25);
-            this.label6.TabIndex = 83;
-            this.label6.Text = "SĐT: 0978.70.77.99 - 0903.53.68.63 - 0933.666.247";
             // 
             // frmMeNu
             // 
