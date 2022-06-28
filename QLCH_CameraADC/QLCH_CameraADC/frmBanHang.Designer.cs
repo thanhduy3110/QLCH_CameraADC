@@ -300,7 +300,6 @@
             this.dgvDSSPChon.Size = new System.Drawing.Size(1751, 416);
             this.dgvDSSPChon.TabIndex = 0;
             this.dgvDSSPChon.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
-            this.dgvDSSPChon.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvDSSPChon_RowValidating);
             // 
             // tensp
             // 
@@ -1064,7 +1063,6 @@
             this.lblTenNV.AutoEllipsis = false;
             this.lblTenNV.AutoSize = false;
             this.lblTenNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblTenNV.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTenNV.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblTenNV.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenNV.Location = new System.Drawing.Point(1525, 12);

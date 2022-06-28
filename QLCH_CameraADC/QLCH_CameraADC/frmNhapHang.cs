@@ -113,28 +113,34 @@ namespace QLCH_CameraADC
         {
             if (flag == 1)
             {
-                //for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
-                //{
-                //    string masp1 = dgvDSCTHD.Rows[i].Cells["tensp"].Value.ToString();
-                //    int sl1 = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
-                //    for (int j = i + 1; j < dgvDSCTHD.Rows.Count - 1; j++)
-                //    {
-                //        string masp2 = dgvDSCTHD.Rows[j].Cells["tensp"].Value.ToString();
-                //        int sl2 = int.Parse(dgvDSCTHD.Rows[j].Cells["soluong"].Value.ToString());
-                //        if (masp1 == masp2)
-                //        {
-                //            dgvDSCTHD.Rows[i].Cells["soluong"].Value = sl1 + sl2;
-                //            dgvDSCTHD.Rows.RemoveAt(j);
-                //        }
+                for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
+                {
+                    string masp1 = dgvDSCTHD.Rows[i].Cells["tensp"].Value.ToString();
+                    int sl1 = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
+                    for (int j = i + 1; j < dgvDSCTHD.Rows.Count - 1; j++)
+                    {
+                        string masp2 = dgvDSCTHD.Rows[j].Cells["tensp"].Value.ToString();
+                        int sl2 = int.Parse(dgvDSCTHD.Rows[j].Cells["soluong"].Value.ToString());
+                        if (masp1 == masp2)
+                        {
+                            dgvDSCTHD.Rows[i].Cells["soluong"].Value = sl1 + sl2;
+                            dgvDSCTHD.Rows.RemoveAt(j);
+                        }
 
-                //    }
-
-
-                //}
-               
+                    }
 
 
-           
+                }
+                for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
+                {
+                    int soluong = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
+                    float dongia = float.Parse(dgvDSCTHD.Rows[i].Cells["gianhap"].Value.ToString());
+                    float thanhtien = soluong * dongia;
+                    dgvDSCTHD.Rows[i].Cells["thanhtien"].Value = thanhtien;
+                }
+
+
+                TongTienSP();
 
                 hdn.MaHDN = txtMaHD.Text;
                 hdn.MaNV = this.sMaNV;
@@ -173,35 +179,5 @@ namespace QLCH_CameraADC
             }
         }
 
-        private void dgvDSCTHD_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
-        {
-            double TongTien = 0;
-            if (dgvDSCTHD.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["tenncc"].Value?.ToString() == null)
-            {
-                return;
-            }
-            else
-            {
-                int soluong = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value.ToString());
-                float gianhap = float.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value.ToString());
-                dgvDSCTHD.Rows[e.RowIndex].Cells["thanhtien"].Value = soluong * gianhap;
-
-                if(dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value?.ToString() == null)
-                {
-                    dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value = "không có";
-                }    
-
-                for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
-                {
-                    int sl = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
-                    int gia = int.Parse(dgvDSCTHD.Rows[i].Cells["gianhap"].Value.ToString());
-                    double thanhtien = sl * gia;
-                    TongTien = TongTien + thanhtien;
-                    txtTongTien.Text = TongTien.ToString();
-                }
-               
-
-            }
-            }
     }
 }
