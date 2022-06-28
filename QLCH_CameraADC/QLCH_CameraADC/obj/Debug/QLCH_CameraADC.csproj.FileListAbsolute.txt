@@ -204,7 +204,6 @@ C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\o
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmDangNhap.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmInHD_Ban.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmKhachHang.resources
-C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmLoaiNV.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmLoaiSP.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmMeNu.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmNhaCungCap.resources
@@ -225,3 +224,5 @@ C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\o
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmInHD_Nhap.resources
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
 C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmThongKe.resources
+C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\ngodu\source\repos\QLADC\QLCH_CameraADC\QLCH_CameraADC\QLCH_CameraADC\obj\Debug\QLCH_CameraADC.frmPhanQuyen.resources

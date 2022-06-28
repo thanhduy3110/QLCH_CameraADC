@@ -17,5 +17,20 @@ namespace BUS
         {
             return loaiNV.GetData(Condition);
         }
+
+        public DataTable GetTong()
+        {
+            return loaiNV.GetTong();
+        }
+
+        public void AddChucVu(LoaiNV ex)
+        {
+            loaiNV.AddChucVu(ex);
+        }
+        public void EditCV(LoaiNV ex)
+        {
+            loaiNV.EditChuCVu(ex);
+        }
+
     }
 }

@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 namespace QLCH_CameraADC
 {
     public partial class frmMeNu : Form
     {
         public string sTenNV;
         public string sMaNV;
+
+        Login_BUS bus = new Login_BUS();
         public frmMeNu()
         {
             InitializeComponent();
@@ -53,6 +55,20 @@ namespace QLCH_CameraADC
             panelMid.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+
+
+        public bool PhanQuyen(int col)
+        {
+            bool KiemTra = false;
+            for (int i = 0; i < bus.GetLogin1(this.sMaNV).Rows.Count; i++)
+            {
+                if (bus.GetLogin1(this.sMaNV).Rows[i][col].ToString() == "True")
+                    return KiemTra = true;
+            }
+
+            return KiemTra;
         }
 
         private void btnNhanVien_Click(object sender, EventArgs e)
@@ -117,6 +133,27 @@ namespace QLCH_CameraADC
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             openChildForm(new frmThongKe());
+        }
+
+        private void frmMeNu_Load(object sender, EventArgs e)
+        {
+            if (PhanQuyen(15)) btnNhanVien.Enabled = true; else btnNhanVien.Visible = false;
+            if (PhanQuyen(16)) btnKhachHang.Enabled = true; else btnKhachHang.Visible = false;
+            if (PhanQuyen(17)) btnNhaCungCap.Enabled = true; else btnNhaCungCap.Visible = false;
+            if (PhanQuyen(18)) btnLoaiSP.Enabled = true; else btnLoaiSP.Visible = false;
+            if (PhanQuyen(19)) btnSanPham.Enabled = true; else btnSanPham.Visible = false;
+            if (PhanQuyen(20)) btnBanHang.Enabled = true; else btnBanHang.Visible = false;
+            if (PhanQuyen(21)) btnNhapHang.Enabled = true; else btnNhapHang.Visible = false;
+            if (PhanQuyen(22)) btnQLHoaDon.Enabled = true; else btnQLHoaDon.Visible = false;
+            if (PhanQuyen(23)) btnHoaDonNhap.Enabled = true; else btnHoaDonNhap.Visible = false;
+            if (PhanQuyen(24)) btnThongKe.Enabled = true; else btnThongKe.Visible = false;
+            if (PhanQuyen(25)) btnPhanQuyen.Enabled = true; else btnPhanQuyen.Visible = false;
+
+        }
+
+        private void btnPhanQuyen_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmPhanQuyen());
         }
 
         private void btnQLHD_Click(object sender, EventArgs e)

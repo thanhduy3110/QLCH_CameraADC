@@ -37,6 +37,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>..\..\..\..\Downloads\Compressed\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\..\..\Downloads\Compressed\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\..\Downloads\Compressed\BunifuCrack-main\BunifuCrack-main\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
@@ -141,12 +144,6 @@
     <Compile Include="frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLoaiNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLoaiNV.Designer.cs">
-      <DependentUpon>frmLoaiNV.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLoaiSP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +173,12 @@
     </Compile>
     <Compile Include="frmNhapHang.Designer.cs">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhanQuyen.Designer.cs">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="frmQLHoaDon.cs">
       <SubType>Form</SubType>
@@ -235,9 +238,6 @@
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLoaiNV.resx">
-      <DependentUpon>frmLoaiNV.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLoaiSP.resx">
       <DependentUpon>frmLoaiSP.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhapHang.resx">
       <DependentUpon>frmNhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhanQuyen.resx">
+      <DependentUpon>frmPhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQLHoaDon.resx">
       <DependentUpon>frmQLHoaDon.cs</DependentUpon>
