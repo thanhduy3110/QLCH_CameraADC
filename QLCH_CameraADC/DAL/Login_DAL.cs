@@ -16,5 +16,10 @@ namespace DAL
         {
             return KetNoi.GetDataTable("Select * From NhanVien Where MaNV='" + username + "' and MatKhau=N'" + password + "'");
         }
+
+        public DataTable GetLoGin1(string username)
+        {
+            return KetNoi.GetDataTable(@"Select * From NhanVien,LoaiNV Where  NhanVien.MaNV='" + username + "' and LoaiNV.MaLoaiNV=NhanVien.MaLoaiNV");
+        }
     }
 }

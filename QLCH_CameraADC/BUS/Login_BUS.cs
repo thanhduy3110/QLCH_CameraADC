@@ -16,5 +16,10 @@ namespace BUS
             return bus.DangNhap(username, password);
         }
 
+        public DataTable GetLogin1(string username)
+        {
+            return bus.GetLoGin1(username);
+        }
+
     }
 }

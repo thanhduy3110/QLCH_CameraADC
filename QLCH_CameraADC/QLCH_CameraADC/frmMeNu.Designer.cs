@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeNu));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -42,6 +40,9 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeNu));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThongKe = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelHD = new System.Windows.Forms.Panel();
@@ -71,6 +72,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnPhanQuyen = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.panelHD.SuspendLayout();
             this.panelQL.SuspendLayout();
@@ -83,6 +85,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(199)))), ((int)(((byte)(179)))));
+            this.panel1.Controls.Add(this.btnPhanQuyen);
             this.panel1.Controls.Add(this.btnThongKe);
             this.panel1.Controls.Add(this.panelHD);
             this.panel1.Controls.Add(this.btnQLHD);
@@ -115,11 +118,11 @@
             this.btnThongKe.ColorContrastOnClick = 45;
             this.btnThongKe.ColorContrastOnHover = 45;
             this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnThongKe.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnThongKe.CustomizableEdges = borderEdges2;
             this.btnThongKe.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThongKe.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThongKe.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -144,7 +147,7 @@
             this.btnThongKe.IdleIconLeftImage = null;
             this.btnThongKe.IdleIconRightImage = null;
             this.btnThongKe.IndicateFocus = true;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 950);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 713);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThongKe.OnDisabledState.BorderRadius = 1;
@@ -194,9 +197,9 @@
             this.panelHD.Controls.Add(this.btnNhapHang);
             this.panelHD.Controls.Add(this.btnBanHang);
             this.panelHD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHD.Location = new System.Drawing.Point(0, 650);
+            this.panelHD.Location = new System.Drawing.Point(0, 515);
             this.panelHD.Name = "panelHD";
-            this.panelHD.Size = new System.Drawing.Size(293, 300);
+            this.panelHD.Size = new System.Drawing.Size(293, 198);
             this.panelHD.TabIndex = 3;
             // 
             // btnHoaDonNhap
@@ -218,11 +221,11 @@
             this.btnHoaDonNhap.ColorContrastOnClick = 45;
             this.btnHoaDonNhap.ColorContrastOnHover = 45;
             this.btnHoaDonNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnHoaDonNhap.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnHoaDonNhap.CustomizableEdges = borderEdges3;
             this.btnHoaDonNhap.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHoaDonNhap.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHoaDonNhap.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -247,7 +250,7 @@
             this.btnHoaDonNhap.IdleIconLeftImage = null;
             this.btnHoaDonNhap.IdleIconRightImage = null;
             this.btnHoaDonNhap.IndicateFocus = true;
-            this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 228);
+            this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 147);
             this.btnHoaDonNhap.Name = "btnHoaDonNhap";
             this.btnHoaDonNhap.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHoaDonNhap.OnDisabledState.BorderRadius = 1;
@@ -281,7 +284,7 @@
             this.btnHoaDonNhap.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnHoaDonNhap.OnPressedState.IconLeftImage = null;
             this.btnHoaDonNhap.OnPressedState.IconRightImage = null;
-            this.btnHoaDonNhap.Size = new System.Drawing.Size(293, 67);
+            this.btnHoaDonNhap.Size = new System.Drawing.Size(293, 49);
             this.btnHoaDonNhap.TabIndex = 0;
             this.btnHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDonNhap.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -309,11 +312,11 @@
             this.btnQLHoaDon.ColorContrastOnClick = 45;
             this.btnQLHoaDon.ColorContrastOnHover = 45;
             this.btnQLHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnQLHoaDon.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnQLHoaDon.CustomizableEdges = borderEdges4;
             this.btnQLHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQLHoaDon.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHoaDon.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -338,7 +341,7 @@
             this.btnQLHoaDon.IdleIconLeftImage = null;
             this.btnQLHoaDon.IdleIconRightImage = null;
             this.btnQLHoaDon.IndicateFocus = true;
-            this.btnQLHoaDon.Location = new System.Drawing.Point(0, 152);
+            this.btnQLHoaDon.Location = new System.Drawing.Point(0, 98);
             this.btnQLHoaDon.Name = "btnQLHoaDon";
             this.btnQLHoaDon.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHoaDon.OnDisabledState.BorderRadius = 1;
@@ -372,7 +375,7 @@
             this.btnQLHoaDon.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnQLHoaDon.OnPressedState.IconLeftImage = null;
             this.btnQLHoaDon.OnPressedState.IconRightImage = null;
-            this.btnQLHoaDon.Size = new System.Drawing.Size(293, 76);
+            this.btnQLHoaDon.Size = new System.Drawing.Size(293, 49);
             this.btnQLHoaDon.TabIndex = 0;
             this.btnQLHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQLHoaDon.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -400,11 +403,11 @@
             this.btnNhapHang.ColorContrastOnClick = 45;
             this.btnNhapHang.ColorContrastOnHover = 45;
             this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnNhapHang.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnNhapHang.CustomizableEdges = borderEdges5;
             this.btnNhapHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhapHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhapHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -429,7 +432,7 @@
             this.btnNhapHang.IdleIconLeftImage = null;
             this.btnNhapHang.IdleIconRightImage = null;
             this.btnNhapHang.IndicateFocus = true;
-            this.btnNhapHang.Location = new System.Drawing.Point(0, 76);
+            this.btnNhapHang.Location = new System.Drawing.Point(0, 49);
             this.btnNhapHang.Name = "btnNhapHang";
             this.btnNhapHang.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhapHang.OnDisabledState.BorderRadius = 1;
@@ -463,7 +466,7 @@
             this.btnNhapHang.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNhapHang.OnPressedState.IconLeftImage = null;
             this.btnNhapHang.OnPressedState.IconRightImage = null;
-            this.btnNhapHang.Size = new System.Drawing.Size(293, 76);
+            this.btnNhapHang.Size = new System.Drawing.Size(293, 49);
             this.btnNhapHang.TabIndex = 0;
             this.btnNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhapHang.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -491,11 +494,11 @@
             this.btnBanHang.ColorContrastOnClick = 45;
             this.btnBanHang.ColorContrastOnHover = 45;
             this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnBanHang.CustomizableEdges = borderEdges5;
+            borderEdges6.BottomLeft = true;
+            borderEdges6.BottomRight = true;
+            borderEdges6.TopLeft = true;
+            borderEdges6.TopRight = true;
+            this.btnBanHang.CustomizableEdges = borderEdges6;
             this.btnBanHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBanHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBanHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -554,7 +557,7 @@
             this.btnBanHang.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnBanHang.OnPressedState.IconLeftImage = null;
             this.btnBanHang.OnPressedState.IconRightImage = null;
-            this.btnBanHang.Size = new System.Drawing.Size(293, 76);
+            this.btnBanHang.Size = new System.Drawing.Size(293, 49);
             this.btnBanHang.TabIndex = 0;
             this.btnBanHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBanHang.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -582,11 +585,11 @@
             this.btnQLHD.ColorContrastOnClick = 45;
             this.btnQLHD.ColorContrastOnHover = 45;
             this.btnQLHD.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnQLHD.CustomizableEdges = borderEdges6;
+            borderEdges7.BottomLeft = true;
+            borderEdges7.BottomRight = true;
+            borderEdges7.TopLeft = true;
+            borderEdges7.TopRight = true;
+            this.btnQLHD.CustomizableEdges = borderEdges7;
             this.btnQLHD.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQLHD.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHD.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -611,7 +614,7 @@
             this.btnQLHD.IdleIconLeftImage = null;
             this.btnQLHD.IdleIconRightImage = null;
             this.btnQLHD.IndicateFocus = true;
-            this.btnQLHD.Location = new System.Drawing.Point(0, 592);
+            this.btnQLHD.Location = new System.Drawing.Point(0, 457);
             this.btnQLHD.Name = "btnQLHD";
             this.btnQLHD.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHD.OnDisabledState.BorderRadius = 1;
@@ -664,7 +667,7 @@
             this.panelQL.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelQL.Location = new System.Drawing.Point(0, 208);
             this.panelQL.Name = "panelQL";
-            this.panelQL.Size = new System.Drawing.Size(293, 384);
+            this.panelQL.Size = new System.Drawing.Size(293, 249);
             this.panelQL.TabIndex = 2;
             // 
             // btnSanPham
@@ -686,11 +689,11 @@
             this.btnSanPham.ColorContrastOnClick = 45;
             this.btnSanPham.ColorContrastOnHover = 45;
             this.btnSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnSanPham.CustomizableEdges = borderEdges7;
+            borderEdges8.BottomLeft = true;
+            borderEdges8.BottomRight = true;
+            borderEdges8.TopLeft = true;
+            borderEdges8.TopRight = true;
+            this.btnSanPham.CustomizableEdges = borderEdges8;
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSanPham.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -715,7 +718,7 @@
             this.btnSanPham.IdleIconLeftImage = null;
             this.btnSanPham.IdleIconRightImage = null;
             this.btnSanPham.IndicateFocus = true;
-            this.btnSanPham.Location = new System.Drawing.Point(0, 304);
+            this.btnSanPham.Location = new System.Drawing.Point(0, 196);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSanPham.OnDisabledState.BorderRadius = 1;
@@ -749,7 +752,7 @@
             this.btnSanPham.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.OnPressedState.IconLeftImage = null;
             this.btnSanPham.OnPressedState.IconRightImage = null;
-            this.btnSanPham.Size = new System.Drawing.Size(293, 76);
+            this.btnSanPham.Size = new System.Drawing.Size(293, 49);
             this.btnSanPham.TabIndex = 0;
             this.btnSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSanPham.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -777,11 +780,11 @@
             this.btnLoaiSP.ColorContrastOnClick = 45;
             this.btnLoaiSP.ColorContrastOnHover = 45;
             this.btnLoaiSP.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnLoaiSP.CustomizableEdges = borderEdges8;
+            borderEdges9.BottomLeft = true;
+            borderEdges9.BottomRight = true;
+            borderEdges9.TopLeft = true;
+            borderEdges9.TopRight = true;
+            this.btnLoaiSP.CustomizableEdges = borderEdges9;
             this.btnLoaiSP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLoaiSP.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoaiSP.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -806,7 +809,7 @@
             this.btnLoaiSP.IdleIconLeftImage = null;
             this.btnLoaiSP.IdleIconRightImage = null;
             this.btnLoaiSP.IndicateFocus = true;
-            this.btnLoaiSP.Location = new System.Drawing.Point(0, 228);
+            this.btnLoaiSP.Location = new System.Drawing.Point(0, 147);
             this.btnLoaiSP.Name = "btnLoaiSP";
             this.btnLoaiSP.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoaiSP.OnDisabledState.BorderRadius = 1;
@@ -840,7 +843,7 @@
             this.btnLoaiSP.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLoaiSP.OnPressedState.IconLeftImage = null;
             this.btnLoaiSP.OnPressedState.IconRightImage = null;
-            this.btnLoaiSP.Size = new System.Drawing.Size(293, 76);
+            this.btnLoaiSP.Size = new System.Drawing.Size(293, 49);
             this.btnLoaiSP.TabIndex = 0;
             this.btnLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLoaiSP.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -868,11 +871,11 @@
             this.btnNhaCungCap.ColorContrastOnClick = 45;
             this.btnNhaCungCap.ColorContrastOnHover = 45;
             this.btnNhaCungCap.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnNhaCungCap.CustomizableEdges = borderEdges9;
+            borderEdges10.BottomLeft = true;
+            borderEdges10.BottomRight = true;
+            borderEdges10.TopLeft = true;
+            borderEdges10.TopRight = true;
+            this.btnNhaCungCap.CustomizableEdges = borderEdges10;
             this.btnNhaCungCap.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhaCungCap.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhaCungCap.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -897,7 +900,7 @@
             this.btnNhaCungCap.IdleIconLeftImage = null;
             this.btnNhaCungCap.IdleIconRightImage = null;
             this.btnNhaCungCap.IndicateFocus = true;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 152);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 98);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhaCungCap.OnDisabledState.BorderRadius = 1;
@@ -931,7 +934,7 @@
             this.btnNhaCungCap.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNhaCungCap.OnPressedState.IconLeftImage = null;
             this.btnNhaCungCap.OnPressedState.IconRightImage = null;
-            this.btnNhaCungCap.Size = new System.Drawing.Size(293, 76);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(293, 49);
             this.btnNhaCungCap.TabIndex = 0;
             this.btnNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhaCungCap.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -959,11 +962,11 @@
             this.btnKhachHang.ColorContrastOnClick = 45;
             this.btnKhachHang.ColorContrastOnHover = 45;
             this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnKhachHang.CustomizableEdges = borderEdges10;
+            borderEdges11.BottomLeft = true;
+            borderEdges11.BottomRight = true;
+            borderEdges11.TopLeft = true;
+            borderEdges11.TopRight = true;
+            this.btnKhachHang.CustomizableEdges = borderEdges11;
             this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKhachHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKhachHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -988,7 +991,7 @@
             this.btnKhachHang.IdleIconLeftImage = null;
             this.btnKhachHang.IdleIconRightImage = null;
             this.btnKhachHang.IndicateFocus = true;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 76);
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 49);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKhachHang.OnDisabledState.BorderRadius = 1;
@@ -1022,7 +1025,7 @@
             this.btnKhachHang.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.OnPressedState.IconLeftImage = null;
             this.btnKhachHang.OnPressedState.IconRightImage = null;
-            this.btnKhachHang.Size = new System.Drawing.Size(293, 76);
+            this.btnKhachHang.Size = new System.Drawing.Size(293, 49);
             this.btnKhachHang.TabIndex = 0;
             this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhachHang.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1050,11 +1053,11 @@
             this.btnNhanVien.ColorContrastOnClick = 45;
             this.btnNhanVien.ColorContrastOnHover = 45;
             this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnNhanVien.CustomizableEdges = borderEdges11;
+            borderEdges12.BottomLeft = true;
+            borderEdges12.BottomRight = true;
+            borderEdges12.TopLeft = true;
+            borderEdges12.TopRight = true;
+            this.btnNhanVien.CustomizableEdges = borderEdges12;
             this.btnNhanVien.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhanVien.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhanVien.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1113,7 +1116,7 @@
             this.btnNhanVien.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.OnPressedState.IconLeftImage = null;
             this.btnNhanVien.OnPressedState.IconRightImage = null;
-            this.btnNhanVien.Size = new System.Drawing.Size(293, 76);
+            this.btnNhanVien.Size = new System.Drawing.Size(293, 49);
             this.btnNhanVien.TabIndex = 0;
             this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhanVien.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1141,11 +1144,11 @@
             this.btnQL.ColorContrastOnClick = 45;
             this.btnQL.ColorContrastOnHover = 45;
             this.btnQL.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnQL.CustomizableEdges = borderEdges12;
+            borderEdges13.BottomLeft = true;
+            borderEdges13.BottomRight = true;
+            borderEdges13.TopLeft = true;
+            borderEdges13.TopRight = true;
+            this.btnQL.CustomizableEdges = borderEdges13;
             this.btnQL.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQL.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQL.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1243,11 +1246,11 @@
             this.btnThoat.ColorContrastOnClick = 45;
             this.btnThoat.ColorContrastOnHover = 45;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnThoat.CustomizableEdges = borderEdges13;
+            borderEdges14.BottomLeft = true;
+            borderEdges14.BottomRight = true;
+            borderEdges14.TopLeft = true;
+            borderEdges14.TopRight = true;
+            this.btnThoat.CustomizableEdges = borderEdges14;
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThoat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThoat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1468,6 +1471,97 @@
             this.label2.TabIndex = 76;
             this.label2.Text = "PHẦN MỀM QUẢN LÝ CỬA HÀNG CAMERA ADC";
             // 
+            // btnPhanQuyen
+            // 
+            this.btnPhanQuyen.AllowAnimations = true;
+            this.btnPhanQuyen.AllowMouseEffects = true;
+            this.btnPhanQuyen.AllowToggling = true;
+            this.btnPhanQuyen.AnimationSpeed = 200;
+            this.btnPhanQuyen.AutoGenerateColors = false;
+            this.btnPhanQuyen.AutoRoundBorders = false;
+            this.btnPhanQuyen.AutoSizeLeftIcon = true;
+            this.btnPhanQuyen.AutoSizeRightIcon = true;
+            this.btnPhanQuyen.BackColor = System.Drawing.Color.Transparent;
+            this.btnPhanQuyen.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyen.BackgroundImage")));
+            this.btnPhanQuyen.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.ButtonText = "Phân quyền";
+            this.btnPhanQuyen.ButtonTextMarginLeft = 0;
+            this.btnPhanQuyen.ColorContrastOnClick = 45;
+            this.btnPhanQuyen.ColorContrastOnHover = 45;
+            this.btnPhanQuyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnPhanQuyen.CustomizableEdges = borderEdges1;
+            this.btnPhanQuyen.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPhanQuyen.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnPhanQuyen.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnPhanQuyen.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhanQuyen.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnPhanQuyen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanQuyen.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhanQuyen.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhanQuyen.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnPhanQuyen.IconMarginLeft = 11;
+            this.btnPhanQuyen.IconPadding = 10;
+            this.btnPhanQuyen.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhanQuyen.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhanQuyen.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnPhanQuyen.IconSize = 25;
+            this.btnPhanQuyen.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.IdleBorderRadius = 1;
+            this.btnPhanQuyen.IdleBorderThickness = 1;
+            this.btnPhanQuyen.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.IdleIconLeftImage = null;
+            this.btnPhanQuyen.IdleIconRightImage = null;
+            this.btnPhanQuyen.IndicateFocus = true;
+            this.btnPhanQuyen.Location = new System.Drawing.Point(0, 762);
+            this.btnPhanQuyen.Name = "btnPhanQuyen";
+            this.btnPhanQuyen.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnPhanQuyen.OnDisabledState.BorderRadius = 1;
+            this.btnPhanQuyen.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnDisabledState.BorderThickness = 1;
+            this.btnPhanQuyen.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnPhanQuyen.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnPhanQuyen.OnDisabledState.IconLeftImage = null;
+            this.btnPhanQuyen.OnDisabledState.IconRightImage = null;
+            this.btnPhanQuyen.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.onHoverState.BorderRadius = 1;
+            this.btnPhanQuyen.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.onHoverState.BorderThickness = 1;
+            this.btnPhanQuyen.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPhanQuyen.onHoverState.IconLeftImage = null;
+            this.btnPhanQuyen.onHoverState.IconRightImage = null;
+            this.btnPhanQuyen.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.OnIdleState.BorderRadius = 1;
+            this.btnPhanQuyen.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnIdleState.BorderThickness = 1;
+            this.btnPhanQuyen.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.OnIdleState.IconLeftImage = null;
+            this.btnPhanQuyen.OnIdleState.IconRightImage = null;
+            this.btnPhanQuyen.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.btnPhanQuyen.OnPressedState.BorderRadius = 1;
+            this.btnPhanQuyen.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnPressedState.BorderThickness = 1;
+            this.btnPhanQuyen.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.btnPhanQuyen.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.OnPressedState.IconLeftImage = null;
+            this.btnPhanQuyen.OnPressedState.IconRightImage = null;
+            this.btnPhanQuyen.Size = new System.Drawing.Size(293, 49);
+            this.btnPhanQuyen.TabIndex = 0;
+            this.btnPhanQuyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhanQuyen.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPhanQuyen.TextMarginLeft = 0;
+            this.btnPhanQuyen.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnPhanQuyen.UseDefaultRadiusAndThickness = true;
+            this.btnPhanQuyen.Click += new System.EventHandler(this.btnPhanQuyen_Click);
+            // 
             // frmMeNu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1482,6 +1576,7 @@
             this.Name = "frmMeNu";
             this.Text = "FrmMeNu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMeNu_Load);
             this.panel1.ResumeLayout(false);
             this.panelHD.ResumeLayout(false);
             this.panelQL.ResumeLayout(false);
@@ -1525,6 +1620,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnPhanQuyen;
     }
 }
 
