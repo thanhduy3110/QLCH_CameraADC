@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThemKH_Moi));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
@@ -46,6 +47,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnThoat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnThemKH = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtTenKH = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtSDT = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -55,6 +58,7 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.rtxtGhiChu);
+            this.groupBox7.Controls.Add(this.btnThoat);
             this.groupBox7.Controls.Add(this.btnThemKH);
             this.groupBox7.Controls.Add(this.radioNu);
             this.groupBox7.Controls.Add(this.radioNam);
@@ -64,11 +68,11 @@
             this.groupBox7.Controls.Add(this.label22);
             this.groupBox7.Controls.Add(this.label8);
             this.groupBox7.Controls.Add(this.label9);
-            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(0, 0);
+            this.groupBox7.Location = new System.Drawing.Point(0, 51);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(1151, 326);
+            this.groupBox7.Size = new System.Drawing.Size(1172, 320);
             this.groupBox7.TabIndex = 9;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Thông tin khách hàng";
@@ -137,6 +141,108 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Tên khách hàng";
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1172, 51);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Tìm kiếm khách hàng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.AllowAnimations = true;
+            this.btnThoat.AllowMouseEffects = true;
+            this.btnThoat.AllowToggling = false;
+            this.btnThoat.AnimationSpeed = 200;
+            this.btnThoat.AutoGenerateColors = false;
+            this.btnThoat.AutoRoundBorders = false;
+            this.btnThoat.AutoSizeLeftIcon = true;
+            this.btnThoat.AutoSizeRightIcon = true;
+            this.btnThoat.BackColor = System.Drawing.Color.Transparent;
+            this.btnThoat.BackColor1 = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.BackgroundImage")));
+            this.btnThoat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnThoat.ButtonText = "";
+            this.btnThoat.ButtonTextMarginLeft = 0;
+            this.btnThoat.ColorContrastOnClick = 45;
+            this.btnThoat.ColorContrastOnHover = 45;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnThoat.CustomizableEdges = borderEdges1;
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnThoat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnThoat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnThoat.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnThoat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThoat.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnThoat.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnThoat.IconMarginLeft = 11;
+            this.btnThoat.IconPadding = 10;
+            this.btnThoat.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThoat.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnThoat.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnThoat.IconSize = 25;
+            this.btnThoat.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.IdleBorderRadius = 30;
+            this.btnThoat.IdleBorderThickness = 1;
+            this.btnThoat.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.closed1;
+            this.btnThoat.IdleIconRightImage = null;
+            this.btnThoat.IndicateFocus = false;
+            this.btnThoat.Location = new System.Drawing.Point(551, 190);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnThoat.OnDisabledState.BorderRadius = 30;
+            this.btnThoat.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnThoat.OnDisabledState.BorderThickness = 1;
+            this.btnThoat.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnThoat.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnThoat.OnDisabledState.IconLeftImage = null;
+            this.btnThoat.OnDisabledState.IconRightImage = null;
+            this.btnThoat.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnThoat.onHoverState.BorderRadius = 30;
+            this.btnThoat.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnThoat.onHoverState.BorderThickness = 1;
+            this.btnThoat.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnThoat.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.onHoverState.IconLeftImage = null;
+            this.btnThoat.onHoverState.IconRightImage = null;
+            this.btnThoat.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.OnIdleState.BorderRadius = 30;
+            this.btnThoat.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnThoat.OnIdleState.BorderThickness = 1;
+            this.btnThoat.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThoat.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.closed1;
+            this.btnThoat.OnIdleState.IconRightImage = null;
+            this.btnThoat.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnThoat.OnPressedState.BorderRadius = 30;
+            this.btnThoat.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnThoat.OnPressedState.BorderThickness = 1;
+            this.btnThoat.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnThoat.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.OnPressedState.IconLeftImage = null;
+            this.btnThoat.OnPressedState.IconRightImage = null;
+            this.btnThoat.Size = new System.Drawing.Size(137, 91);
+            this.btnThoat.TabIndex = 8;
+            this.btnThoat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnThoat.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnThoat.TextMarginLeft = 0;
+            this.btnThoat.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnThoat.UseDefaultRadiusAndThickness = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // btnThemKH
             // 
             this.btnThemKH.AllowAnimations = true;
@@ -148,19 +254,19 @@
             this.btnThemKH.AutoSizeLeftIcon = true;
             this.btnThemKH.AutoSizeRightIcon = true;
             this.btnThemKH.BackColor = System.Drawing.Color.Transparent;
-            this.btnThemKH.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnThemKH.BackColor1 = System.Drawing.Color.LightSkyBlue;
             this.btnThemKH.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThemKH.BackgroundImage")));
             this.btnThemKH.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnThemKH.ButtonText = "Thêm khách hàng";
+            this.btnThemKH.ButtonText = "";
             this.btnThemKH.ButtonTextMarginLeft = 0;
             this.btnThemKH.ColorContrastOnClick = 45;
             this.btnThemKH.ColorContrastOnHover = 45;
             this.btnThemKH.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnThemKH.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnThemKH.CustomizableEdges = borderEdges2;
             this.btnThemKH.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThemKH.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThemKH.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -168,7 +274,7 @@
             this.btnThemKH.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnThemKH.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemKH.ForeColor = System.Drawing.Color.White;
-            this.btnThemKH.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemKH.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThemKH.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnThemKH.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnThemKH.IconMarginLeft = 11;
@@ -177,14 +283,14 @@
             this.btnThemKH.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnThemKH.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnThemKH.IconSize = 25;
-            this.btnThemKH.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnThemKH.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnThemKH.IdleBorderRadius = 30;
             this.btnThemKH.IdleBorderThickness = 1;
-            this.btnThemKH.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnThemKH.IdleIconLeftImage = null;
+            this.btnThemKH.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThemKH.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.add_user1;
             this.btnThemKH.IdleIconRightImage = null;
             this.btnThemKH.IndicateFocus = false;
-            this.btnThemKH.Location = new System.Drawing.Point(471, 177);
+            this.btnThemKH.Location = new System.Drawing.Point(330, 190);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThemKH.OnDisabledState.BorderRadius = 30;
@@ -202,13 +308,13 @@
             this.btnThemKH.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnThemKH.onHoverState.IconLeftImage = null;
             this.btnThemKH.onHoverState.IconRightImage = null;
-            this.btnThemKH.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnThemKH.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnThemKH.OnIdleState.BorderRadius = 30;
             this.btnThemKH.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnThemKH.OnIdleState.BorderThickness = 1;
-            this.btnThemKH.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnThemKH.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnThemKH.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnThemKH.OnIdleState.IconLeftImage = null;
+            this.btnThemKH.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.add_user1;
             this.btnThemKH.OnIdleState.IconRightImage = null;
             this.btnThemKH.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnThemKH.OnPressedState.BorderRadius = 30;
@@ -218,7 +324,7 @@
             this.btnThemKH.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnThemKH.OnPressedState.IconLeftImage = null;
             this.btnThemKH.OnPressedState.IconRightImage = null;
-            this.btnThemKH.Size = new System.Drawing.Size(199, 81);
+            this.btnThemKH.Size = new System.Drawing.Size(137, 91);
             this.btnThemKH.TabIndex = 8;
             this.btnThemKH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThemKH.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -380,10 +486,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 326);
+            this.ClientSize = new System.Drawing.Size(1172, 371);
             this.ControlBox = false;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox7);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmThemKH_Moi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThemKH_Moi";
@@ -406,5 +513,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnThoat;
+        private System.Windows.Forms.Label label1;
     }
 }

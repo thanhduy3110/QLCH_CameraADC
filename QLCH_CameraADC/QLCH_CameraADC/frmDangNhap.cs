@@ -20,28 +20,31 @@ namespace QLCH_CameraADC
 
         Login_BUS bus = new Login_BUS();
         NhanVien nv = new NhanVien();
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string username = txtTenDN.Text;
             string password = txtMatKhau.Text;
 
             int count = bus.DangNhap(username, password).Rows.Count;
-            string TenNV= bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
+            string TenNV = bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
 
             if (count == 0)
             {
-                MessageBox.Show("Tên Đăng Nhập Hoặc mật khẩu không đúng"); 
-            } 
-            else if(count==1)
+                MessageBox.Show("Tên Đăng Nhập Hoặc mật khẩu không đúng");
+            }
+            else if (count == 1)
             {
-                frmMeNu frm = new frmMeNu(TenNV,username);
+                frmMeNu frm = new frmMeNu(TenNV, username);
                 frm.ShowDialog();
-            }    
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+      
+
     }
 }
