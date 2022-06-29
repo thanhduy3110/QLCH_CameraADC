@@ -320,6 +320,35 @@
     <None Include="Resources\logo-adc-group.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\list1.png" />
+    <None Include="Resources\staff1.png" />
+    <None Include="Resources\menu1.png" />
+    <None Include="Resources\supplier1.png" />
+    <None Include="Resources\customer1.png" />
+    <None Include="Resources\categories1.png" />
+    <None Include="Resources\supplier2.png" />
+    <None Include="Resources\procurement1.png" />
+    <None Include="Resources\bill1.png" />
+    <None Include="Resources\receipt1.png" />
+    <None Include="Resources\packaging1.png" />
+    <None Include="Resources\analysis1.png" />
+    <None Include="Resources\receipt2.png" />
+    <None Include="Resources\bill2.png" />
+    <None Include="Resources\key-person1.png" />
+    <None Include="Resources\power1.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\add-file1.png" />
+    <None Include="Resources\trash1.png" />
+    <None Include="Resources\bill3.png" />
+    <None Include="Resources\selection1.png" />
+    <None Include="Resources\pay1.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\add-user1.png" />
+    <None Include="Resources\closed1.png" />
+    <None Include="Resources\login1.png" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\logo-adc-group1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

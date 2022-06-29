@@ -27,6 +27,11 @@ namespace QLCH_CameraADC
         int GT;
         string makh,tenkh,sdt;
 
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void txtSDT_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

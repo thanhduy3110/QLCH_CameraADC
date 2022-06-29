@@ -119,7 +119,7 @@
             // 
             this.rtxtGhiChu.Location = new System.Drawing.Point(58, 518);
             this.rtxtGhiChu.Name = "rtxtGhiChu";
-            this.rtxtGhiChu.Size = new System.Drawing.Size(316, 96);
+            this.rtxtGhiChu.Size = new System.Drawing.Size(316, 112);
             this.rtxtGhiChu.TabIndex = 12;
             this.rtxtGhiChu.Text = "";
             // 
@@ -538,7 +538,7 @@
             this.panel1.Controls.Add(this.btnThem);
             this.panel1.Location = new System.Drawing.Point(12, 711);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1740, 65);
+            this.panel1.Size = new System.Drawing.Size(1740, 107);
             this.panel1.TabIndex = 7;
             // 
             // txtTimKiem
@@ -554,7 +554,7 @@
             this.txtTimKiem.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.txtTimKiem.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.txtTimKiem.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtTimKiem.BorderRadius = 30;
+            this.txtTimKiem.BorderRadius = 1;
             this.txtTimKiem.BorderThickness = 1;
             this.txtTimKiem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -568,7 +568,7 @@
             this.txtTimKiem.IconRight = null;
             this.txtTimKiem.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTimKiem.Lines = new string[0];
-            this.txtTimKiem.Location = new System.Drawing.Point(1058, 6);
+            this.txtTimKiem.Location = new System.Drawing.Point(1057, 28);
             this.txtTimKiem.MaxLength = 32767;
             this.txtTimKiem.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTimKiem.Modified = false;
@@ -626,10 +626,10 @@
             this.btnXoa.AutoSizeLeftIcon = true;
             this.btnXoa.AutoSizeRightIcon = true;
             this.btnXoa.BackColor = System.Drawing.Color.Transparent;
-            this.btnXoa.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnXoa.BackColor1 = System.Drawing.Color.LightSkyBlue;
             this.btnXoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXoa.BackgroundImage")));
             this.btnXoa.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnXoa.ButtonText = "Xóa";
+            this.btnXoa.ButtonText = "";
             this.btnXoa.ButtonTextMarginLeft = 0;
             this.btnXoa.ColorContrastOnClick = 45;
             this.btnXoa.ColorContrastOnHover = 45;
@@ -646,7 +646,7 @@
             this.btnXoa.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnXoa.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnXoa.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnXoa.IconMarginLeft = 11;
@@ -655,14 +655,14 @@
             this.btnXoa.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnXoa.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnXoa.IconSize = 25;
-            this.btnXoa.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnXoa.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnXoa.IdleBorderRadius = 30;
             this.btnXoa.IdleBorderThickness = 1;
-            this.btnXoa.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.IdleIconLeftImage = null;
+            this.btnXoa.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnXoa.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.trash1;
             this.btnXoa.IdleIconRightImage = null;
             this.btnXoa.IndicateFocus = false;
-            this.btnXoa.Location = new System.Drawing.Point(722, 6);
+            this.btnXoa.Location = new System.Drawing.Point(784, 18);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnXoa.OnDisabledState.BorderRadius = 30;
@@ -680,13 +680,13 @@
             this.btnXoa.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnXoa.onHoverState.IconLeftImage = null;
             this.btnXoa.onHoverState.IconRightImage = null;
-            this.btnXoa.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnXoa.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnXoa.OnIdleState.BorderRadius = 30;
             this.btnXoa.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnXoa.OnIdleState.BorderThickness = 1;
-            this.btnXoa.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnXoa.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnXoa.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.OnIdleState.IconLeftImage = null;
+            this.btnXoa.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.trash1;
             this.btnXoa.OnIdleState.IconRightImage = null;
             this.btnXoa.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnXoa.OnPressedState.BorderRadius = 30;
@@ -696,7 +696,7 @@
             this.btnXoa.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnXoa.OnPressedState.IconLeftImage = null;
             this.btnXoa.OnPressedState.IconRightImage = null;
-            this.btnXoa.Size = new System.Drawing.Size(175, 51);
+            this.btnXoa.Size = new System.Drawing.Size(107, 77);
             this.btnXoa.TabIndex = 1;
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnXoa.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -716,10 +716,10 @@
             this.btnSua.AutoSizeLeftIcon = true;
             this.btnSua.AutoSizeRightIcon = true;
             this.btnSua.BackColor = System.Drawing.Color.Transparent;
-            this.btnSua.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnSua.BackColor1 = System.Drawing.Color.LightSkyBlue;
             this.btnSua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSua.BackgroundImage")));
             this.btnSua.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSua.ButtonText = "Sửa";
+            this.btnSua.ButtonText = "";
             this.btnSua.ButtonTextMarginLeft = 0;
             this.btnSua.ColorContrastOnClick = 45;
             this.btnSua.ColorContrastOnHover = 45;
@@ -736,7 +736,7 @@
             this.btnSua.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSua.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnSua.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnSua.IconMarginLeft = 11;
@@ -745,14 +745,14 @@
             this.btnSua.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnSua.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnSua.IconSize = 25;
-            this.btnSua.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnSua.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnSua.IdleBorderRadius = 30;
             this.btnSua.IdleBorderThickness = 1;
-            this.btnSua.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnSua.IdleIconLeftImage = null;
+            this.btnSua.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSua.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.edit1;
             this.btnSua.IdleIconRightImage = null;
             this.btnSua.IndicateFocus = false;
-            this.btnSua.Location = new System.Drawing.Point(442, 6);
+            this.btnSua.Location = new System.Drawing.Point(458, 18);
             this.btnSua.Name = "btnSua";
             this.btnSua.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSua.OnDisabledState.BorderRadius = 30;
@@ -770,13 +770,13 @@
             this.btnSua.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnSua.onHoverState.IconLeftImage = null;
             this.btnSua.onHoverState.IconRightImage = null;
-            this.btnSua.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnSua.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnSua.OnIdleState.BorderRadius = 30;
             this.btnSua.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnSua.OnIdleState.BorderThickness = 1;
-            this.btnSua.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnSua.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnSua.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnSua.OnIdleState.IconLeftImage = null;
+            this.btnSua.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.edit1;
             this.btnSua.OnIdleState.IconRightImage = null;
             this.btnSua.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnSua.OnPressedState.BorderRadius = 30;
@@ -786,7 +786,7 @@
             this.btnSua.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSua.OnPressedState.IconLeftImage = null;
             this.btnSua.OnPressedState.IconRightImage = null;
-            this.btnSua.Size = new System.Drawing.Size(175, 51);
+            this.btnSua.Size = new System.Drawing.Size(107, 77);
             this.btnSua.TabIndex = 1;
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSua.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -806,10 +806,10 @@
             this.btnThem.AutoSizeLeftIcon = true;
             this.btnThem.AutoSizeRightIcon = true;
             this.btnThem.BackColor = System.Drawing.Color.Transparent;
-            this.btnThem.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnThem.BackColor1 = System.Drawing.Color.LightSkyBlue;
             this.btnThem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThem.BackgroundImage")));
             this.btnThem.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnThem.ButtonText = "Thêm";
+            this.btnThem.ButtonText = "";
             this.btnThem.ButtonTextMarginLeft = 0;
             this.btnThem.ColorContrastOnClick = 45;
             this.btnThem.ColorContrastOnHover = 45;
@@ -826,7 +826,7 @@
             this.btnThem.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThem.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThem.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnThem.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnThem.IconMarginLeft = 11;
@@ -835,14 +835,14 @@
             this.btnThem.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnThem.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnThem.IconSize = 25;
-            this.btnThem.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnThem.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnThem.IdleBorderRadius = 30;
             this.btnThem.IdleBorderThickness = 1;
-            this.btnThem.IdleFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnThem.IdleIconLeftImage = null;
+            this.btnThem.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnThem.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.add_file1;
             this.btnThem.IdleIconRightImage = null;
             this.btnThem.IndicateFocus = false;
-            this.btnThem.Location = new System.Drawing.Point(172, 6);
+            this.btnThem.Location = new System.Drawing.Point(162, 18);
             this.btnThem.Name = "btnThem";
             this.btnThem.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.OnDisabledState.BorderRadius = 30;
@@ -860,13 +860,13 @@
             this.btnThem.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnThem.onHoverState.IconLeftImage = null;
             this.btnThem.onHoverState.IconRightImage = null;
-            this.btnThem.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnThem.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
             this.btnThem.OnIdleState.BorderRadius = 30;
             this.btnThem.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnThem.OnIdleState.BorderThickness = 1;
-            this.btnThem.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnThem.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnThem.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnThem.OnIdleState.IconLeftImage = null;
+            this.btnThem.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.add_file1;
             this.btnThem.OnIdleState.IconRightImage = null;
             this.btnThem.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnThem.OnPressedState.BorderRadius = 30;
@@ -876,7 +876,7 @@
             this.btnThem.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnThem.OnPressedState.IconLeftImage = null;
             this.btnThem.OnPressedState.IconRightImage = null;
-            this.btnThem.Size = new System.Drawing.Size(175, 51);
+            this.btnThem.Size = new System.Drawing.Size(107, 77);
             this.btnThem.TabIndex = 1;
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThem.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeNu));
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -41,9 +43,8 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeNu));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPhanQuyen = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnThongKe = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelHD = new System.Windows.Forms.Panel();
             this.btnHoaDonNhap = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -72,7 +73,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnPhanQuyen = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.panelHD.SuspendLayout();
             this.panelQL.SuspendLayout();
@@ -99,6 +99,97 @@
             this.panel1.Size = new System.Drawing.Size(293, 1102);
             this.panel1.TabIndex = 0;
             // 
+            // btnPhanQuyen
+            // 
+            this.btnPhanQuyen.AllowAnimations = true;
+            this.btnPhanQuyen.AllowMouseEffects = true;
+            this.btnPhanQuyen.AllowToggling = true;
+            this.btnPhanQuyen.AnimationSpeed = 200;
+            this.btnPhanQuyen.AutoGenerateColors = false;
+            this.btnPhanQuyen.AutoRoundBorders = false;
+            this.btnPhanQuyen.AutoSizeLeftIcon = true;
+            this.btnPhanQuyen.AutoSizeRightIcon = true;
+            this.btnPhanQuyen.BackColor = System.Drawing.Color.Transparent;
+            this.btnPhanQuyen.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyen.BackgroundImage")));
+            this.btnPhanQuyen.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.ButtonText = "         Phân quyền";
+            this.btnPhanQuyen.ButtonTextMarginLeft = 0;
+            this.btnPhanQuyen.ColorContrastOnClick = 45;
+            this.btnPhanQuyen.ColorContrastOnHover = 45;
+            this.btnPhanQuyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnPhanQuyen.CustomizableEdges = borderEdges1;
+            this.btnPhanQuyen.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPhanQuyen.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnPhanQuyen.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnPhanQuyen.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPhanQuyen.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnPhanQuyen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanQuyen.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhanQuyen.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhanQuyen.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnPhanQuyen.IconMarginLeft = 11;
+            this.btnPhanQuyen.IconPadding = 10;
+            this.btnPhanQuyen.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPhanQuyen.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPhanQuyen.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnPhanQuyen.IconSize = 25;
+            this.btnPhanQuyen.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.IdleBorderRadius = 1;
+            this.btnPhanQuyen.IdleBorderThickness = 1;
+            this.btnPhanQuyen.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.key_person1;
+            this.btnPhanQuyen.IdleIconRightImage = null;
+            this.btnPhanQuyen.IndicateFocus = true;
+            this.btnPhanQuyen.Location = new System.Drawing.Point(0, 776);
+            this.btnPhanQuyen.Name = "btnPhanQuyen";
+            this.btnPhanQuyen.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnPhanQuyen.OnDisabledState.BorderRadius = 1;
+            this.btnPhanQuyen.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnDisabledState.BorderThickness = 1;
+            this.btnPhanQuyen.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnPhanQuyen.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnPhanQuyen.OnDisabledState.IconLeftImage = null;
+            this.btnPhanQuyen.OnDisabledState.IconRightImage = null;
+            this.btnPhanQuyen.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.onHoverState.BorderRadius = 1;
+            this.btnPhanQuyen.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.onHoverState.BorderThickness = 1;
+            this.btnPhanQuyen.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnPhanQuyen.onHoverState.IconLeftImage = null;
+            this.btnPhanQuyen.onHoverState.IconRightImage = null;
+            this.btnPhanQuyen.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.OnIdleState.BorderRadius = 1;
+            this.btnPhanQuyen.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnIdleState.BorderThickness = 1;
+            this.btnPhanQuyen.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
+            this.btnPhanQuyen.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.key_person1;
+            this.btnPhanQuyen.OnIdleState.IconRightImage = null;
+            this.btnPhanQuyen.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.btnPhanQuyen.OnPressedState.BorderRadius = 1;
+            this.btnPhanQuyen.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnPhanQuyen.OnPressedState.BorderThickness = 1;
+            this.btnPhanQuyen.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
+            this.btnPhanQuyen.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnPhanQuyen.OnPressedState.IconLeftImage = null;
+            this.btnPhanQuyen.OnPressedState.IconRightImage = null;
+            this.btnPhanQuyen.Size = new System.Drawing.Size(293, 49);
+            this.btnPhanQuyen.TabIndex = 0;
+            this.btnPhanQuyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhanQuyen.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPhanQuyen.TextMarginLeft = 0;
+            this.btnPhanQuyen.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnPhanQuyen.UseDefaultRadiusAndThickness = true;
+            this.btnPhanQuyen.Click += new System.EventHandler(this.btnPhanQuyen_Click);
+            // 
             // btnThongKe
             // 
             this.btnThongKe.AllowAnimations = true;
@@ -113,7 +204,7 @@
             this.btnThongKe.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnThongKe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThongKe.BackgroundImage")));
             this.btnThongKe.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnThongKe.ButtonText = "Thống kê";
+            this.btnThongKe.ButtonText = "         Thống kê";
             this.btnThongKe.ButtonTextMarginLeft = 0;
             this.btnThongKe.ColorContrastOnClick = 45;
             this.btnThongKe.ColorContrastOnHover = 45;
@@ -144,10 +235,10 @@
             this.btnThongKe.IdleBorderRadius = 1;
             this.btnThongKe.IdleBorderThickness = 1;
             this.btnThongKe.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnThongKe.IdleIconLeftImage = null;
+            this.btnThongKe.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.analysis1;
             this.btnThongKe.IdleIconRightImage = null;
             this.btnThongKe.IndicateFocus = true;
-            this.btnThongKe.Location = new System.Drawing.Point(0, 713);
+            this.btnThongKe.Location = new System.Drawing.Point(0, 727);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThongKe.OnDisabledState.BorderRadius = 1;
@@ -171,7 +262,7 @@
             this.btnThongKe.OnIdleState.BorderThickness = 1;
             this.btnThongKe.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnThongKe.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnThongKe.OnIdleState.IconLeftImage = null;
+            this.btnThongKe.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.analysis1;
             this.btnThongKe.OnIdleState.IconRightImage = null;
             this.btnThongKe.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnThongKe.OnPressedState.BorderRadius = 1;
@@ -197,7 +288,7 @@
             this.panelHD.Controls.Add(this.btnNhapHang);
             this.panelHD.Controls.Add(this.btnBanHang);
             this.panelHD.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHD.Location = new System.Drawing.Point(0, 515);
+            this.panelHD.Location = new System.Drawing.Point(0, 529);
             this.panelHD.Name = "panelHD";
             this.panelHD.Size = new System.Drawing.Size(293, 198);
             this.panelHD.TabIndex = 3;
@@ -216,7 +307,7 @@
             this.btnHoaDonNhap.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnHoaDonNhap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHoaDonNhap.BackgroundImage")));
             this.btnHoaDonNhap.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHoaDonNhap.ButtonText = "Hóa đơn nhập";
+            this.btnHoaDonNhap.ButtonText = "         Hóa đơn nhập";
             this.btnHoaDonNhap.ButtonTextMarginLeft = 0;
             this.btnHoaDonNhap.ColorContrastOnClick = 45;
             this.btnHoaDonNhap.ColorContrastOnHover = 45;
@@ -247,7 +338,7 @@
             this.btnHoaDonNhap.IdleBorderRadius = 1;
             this.btnHoaDonNhap.IdleBorderThickness = 1;
             this.btnHoaDonNhap.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnHoaDonNhap.IdleIconLeftImage = null;
+            this.btnHoaDonNhap.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.receipt2;
             this.btnHoaDonNhap.IdleIconRightImage = null;
             this.btnHoaDonNhap.IndicateFocus = true;
             this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 147);
@@ -274,7 +365,7 @@
             this.btnHoaDonNhap.OnIdleState.BorderThickness = 1;
             this.btnHoaDonNhap.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnHoaDonNhap.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDonNhap.OnIdleState.IconLeftImage = null;
+            this.btnHoaDonNhap.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.receipt2;
             this.btnHoaDonNhap.OnIdleState.IconRightImage = null;
             this.btnHoaDonNhap.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnHoaDonNhap.OnPressedState.BorderRadius = 1;
@@ -307,7 +398,7 @@
             this.btnQLHoaDon.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQLHoaDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQLHoaDon.BackgroundImage")));
             this.btnQLHoaDon.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnQLHoaDon.ButtonText = "Hóa đơn Bán";
+            this.btnQLHoaDon.ButtonText = "         Hóa đơn Bán";
             this.btnQLHoaDon.ButtonTextMarginLeft = 0;
             this.btnQLHoaDon.ColorContrastOnClick = 45;
             this.btnQLHoaDon.ColorContrastOnHover = 45;
@@ -338,7 +429,7 @@
             this.btnQLHoaDon.IdleBorderRadius = 1;
             this.btnQLHoaDon.IdleBorderThickness = 1;
             this.btnQLHoaDon.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnQLHoaDon.IdleIconLeftImage = null;
+            this.btnQLHoaDon.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.bill2;
             this.btnQLHoaDon.IdleIconRightImage = null;
             this.btnQLHoaDon.IndicateFocus = true;
             this.btnQLHoaDon.Location = new System.Drawing.Point(0, 98);
@@ -365,7 +456,7 @@
             this.btnQLHoaDon.OnIdleState.BorderThickness = 1;
             this.btnQLHoaDon.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQLHoaDon.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnQLHoaDon.OnIdleState.IconLeftImage = null;
+            this.btnQLHoaDon.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.bill2;
             this.btnQLHoaDon.OnIdleState.IconRightImage = null;
             this.btnQLHoaDon.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnQLHoaDon.OnPressedState.BorderRadius = 1;
@@ -398,7 +489,7 @@
             this.btnNhapHang.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhapHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhapHang.BackgroundImage")));
             this.btnNhapHang.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnNhapHang.ButtonText = "Nhập hàng";
+            this.btnNhapHang.ButtonText = "         Nhập hàng";
             this.btnNhapHang.ButtonTextMarginLeft = 0;
             this.btnNhapHang.ColorContrastOnClick = 45;
             this.btnNhapHang.ColorContrastOnHover = 45;
@@ -429,7 +520,7 @@
             this.btnNhapHang.IdleBorderRadius = 1;
             this.btnNhapHang.IdleBorderThickness = 1;
             this.btnNhapHang.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnNhapHang.IdleIconLeftImage = null;
+            this.btnNhapHang.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.receipt1;
             this.btnNhapHang.IdleIconRightImage = null;
             this.btnNhapHang.IndicateFocus = true;
             this.btnNhapHang.Location = new System.Drawing.Point(0, 49);
@@ -456,7 +547,7 @@
             this.btnNhapHang.OnIdleState.BorderThickness = 1;
             this.btnNhapHang.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhapHang.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnNhapHang.OnIdleState.IconLeftImage = null;
+            this.btnNhapHang.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.receipt1;
             this.btnNhapHang.OnIdleState.IconRightImage = null;
             this.btnNhapHang.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnNhapHang.OnPressedState.BorderRadius = 1;
@@ -489,7 +580,7 @@
             this.btnBanHang.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnBanHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBanHang.BackgroundImage")));
             this.btnBanHang.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnBanHang.ButtonText = "Bán hàng";
+            this.btnBanHang.ButtonText = "         Bán hàng";
             this.btnBanHang.ButtonTextMarginLeft = 0;
             this.btnBanHang.ColorContrastOnClick = 45;
             this.btnBanHang.ColorContrastOnHover = 45;
@@ -520,7 +611,7 @@
             this.btnBanHang.IdleBorderRadius = 1;
             this.btnBanHang.IdleBorderThickness = 1;
             this.btnBanHang.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnBanHang.IdleIconLeftImage = null;
+            this.btnBanHang.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.bill1;
             this.btnBanHang.IdleIconRightImage = null;
             this.btnBanHang.IndicateFocus = true;
             this.btnBanHang.Location = new System.Drawing.Point(0, 0);
@@ -547,7 +638,7 @@
             this.btnBanHang.OnIdleState.BorderThickness = 1;
             this.btnBanHang.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnBanHang.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnBanHang.OnIdleState.IconLeftImage = null;
+            this.btnBanHang.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.bill1;
             this.btnBanHang.OnIdleState.IconRightImage = null;
             this.btnBanHang.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnBanHang.OnPressedState.BorderRadius = 1;
@@ -580,7 +671,7 @@
             this.btnQLHD.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQLHD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQLHD.BackgroundImage")));
             this.btnQLHD.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnQLHD.ButtonText = "Quản lý hóa đơn";
+            this.btnQLHD.ButtonText = "         Quản lý hóa đơn";
             this.btnQLHD.ButtonTextMarginLeft = 0;
             this.btnQLHD.ColorContrastOnClick = 45;
             this.btnQLHD.ColorContrastOnHover = 45;
@@ -611,10 +702,10 @@
             this.btnQLHD.IdleBorderRadius = 1;
             this.btnQLHD.IdleBorderThickness = 1;
             this.btnQLHD.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnQLHD.IdleIconLeftImage = null;
+            this.btnQLHD.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.procurement1;
             this.btnQLHD.IdleIconRightImage = null;
             this.btnQLHD.IndicateFocus = true;
-            this.btnQLHD.Location = new System.Drawing.Point(0, 457);
+            this.btnQLHD.Location = new System.Drawing.Point(0, 471);
             this.btnQLHD.Name = "btnQLHD";
             this.btnQLHD.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHD.OnDisabledState.BorderRadius = 1;
@@ -638,7 +729,7 @@
             this.btnQLHD.OnIdleState.BorderThickness = 1;
             this.btnQLHD.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQLHD.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnQLHD.OnIdleState.IconLeftImage = null;
+            this.btnQLHD.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.procurement1;
             this.btnQLHD.OnIdleState.IconRightImage = null;
             this.btnQLHD.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnQLHD.OnPressedState.BorderRadius = 1;
@@ -665,9 +756,9 @@
             this.panelQL.Controls.Add(this.btnKhachHang);
             this.panelQL.Controls.Add(this.btnNhanVien);
             this.panelQL.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelQL.Location = new System.Drawing.Point(0, 208);
+            this.panelQL.Location = new System.Drawing.Point(0, 202);
             this.panelQL.Name = "panelQL";
-            this.panelQL.Size = new System.Drawing.Size(293, 249);
+            this.panelQL.Size = new System.Drawing.Size(293, 269);
             this.panelQL.TabIndex = 2;
             // 
             // btnSanPham
@@ -684,7 +775,7 @@
             this.btnSanPham.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnSanPham.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSanPham.BackgroundImage")));
             this.btnSanPham.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSanPham.ButtonText = "Sản phẩm";
+            this.btnSanPham.ButtonText = "        Sản phẩm";
             this.btnSanPham.ButtonTextMarginLeft = 0;
             this.btnSanPham.ColorContrastOnClick = 45;
             this.btnSanPham.ColorContrastOnHover = 45;
@@ -715,10 +806,10 @@
             this.btnSanPham.IdleBorderRadius = 1;
             this.btnSanPham.IdleBorderThickness = 1;
             this.btnSanPham.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnSanPham.IdleIconLeftImage = null;
+            this.btnSanPham.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.packaging1;
             this.btnSanPham.IdleIconRightImage = null;
             this.btnSanPham.IndicateFocus = true;
-            this.btnSanPham.Location = new System.Drawing.Point(0, 196);
+            this.btnSanPham.Location = new System.Drawing.Point(0, 216);
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSanPham.OnDisabledState.BorderRadius = 1;
@@ -742,7 +833,7 @@
             this.btnSanPham.OnIdleState.BorderThickness = 1;
             this.btnSanPham.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnSanPham.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnSanPham.OnIdleState.IconLeftImage = null;
+            this.btnSanPham.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.packaging1;
             this.btnSanPham.OnIdleState.IconRightImage = null;
             this.btnSanPham.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnSanPham.OnPressedState.BorderRadius = 1;
@@ -752,7 +843,7 @@
             this.btnSanPham.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.OnPressedState.IconLeftImage = null;
             this.btnSanPham.OnPressedState.IconRightImage = null;
-            this.btnSanPham.Size = new System.Drawing.Size(293, 49);
+            this.btnSanPham.Size = new System.Drawing.Size(293, 54);
             this.btnSanPham.TabIndex = 0;
             this.btnSanPham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSanPham.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -775,7 +866,7 @@
             this.btnLoaiSP.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnLoaiSP.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLoaiSP.BackgroundImage")));
             this.btnLoaiSP.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnLoaiSP.ButtonText = "Loại sản phẩm";
+            this.btnLoaiSP.ButtonText = "         Loại sản phẩm";
             this.btnLoaiSP.ButtonTextMarginLeft = 0;
             this.btnLoaiSP.ColorContrastOnClick = 45;
             this.btnLoaiSP.ColorContrastOnHover = 45;
@@ -806,10 +897,10 @@
             this.btnLoaiSP.IdleBorderRadius = 1;
             this.btnLoaiSP.IdleBorderThickness = 1;
             this.btnLoaiSP.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnLoaiSP.IdleIconLeftImage = null;
+            this.btnLoaiSP.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.categories1;
             this.btnLoaiSP.IdleIconRightImage = null;
             this.btnLoaiSP.IndicateFocus = true;
-            this.btnLoaiSP.Location = new System.Drawing.Point(0, 147);
+            this.btnLoaiSP.Location = new System.Drawing.Point(0, 162);
             this.btnLoaiSP.Name = "btnLoaiSP";
             this.btnLoaiSP.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoaiSP.OnDisabledState.BorderRadius = 1;
@@ -833,7 +924,7 @@
             this.btnLoaiSP.OnIdleState.BorderThickness = 1;
             this.btnLoaiSP.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnLoaiSP.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnLoaiSP.OnIdleState.IconLeftImage = null;
+            this.btnLoaiSP.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.categories1;
             this.btnLoaiSP.OnIdleState.IconRightImage = null;
             this.btnLoaiSP.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnLoaiSP.OnPressedState.BorderRadius = 1;
@@ -843,7 +934,7 @@
             this.btnLoaiSP.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLoaiSP.OnPressedState.IconLeftImage = null;
             this.btnLoaiSP.OnPressedState.IconRightImage = null;
-            this.btnLoaiSP.Size = new System.Drawing.Size(293, 49);
+            this.btnLoaiSP.Size = new System.Drawing.Size(293, 54);
             this.btnLoaiSP.TabIndex = 0;
             this.btnLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLoaiSP.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -866,7 +957,7 @@
             this.btnNhaCungCap.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhaCungCap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhaCungCap.BackgroundImage")));
             this.btnNhaCungCap.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnNhaCungCap.ButtonText = "Nhà cung cấp";
+            this.btnNhaCungCap.ButtonText = "         Nhà cung cấp";
             this.btnNhaCungCap.ButtonTextMarginLeft = 0;
             this.btnNhaCungCap.ColorContrastOnClick = 45;
             this.btnNhaCungCap.ColorContrastOnHover = 45;
@@ -897,10 +988,10 @@
             this.btnNhaCungCap.IdleBorderRadius = 1;
             this.btnNhaCungCap.IdleBorderThickness = 1;
             this.btnNhaCungCap.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnNhaCungCap.IdleIconLeftImage = null;
+            this.btnNhaCungCap.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.supplier2;
             this.btnNhaCungCap.IdleIconRightImage = null;
             this.btnNhaCungCap.IndicateFocus = true;
-            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 98);
+            this.btnNhaCungCap.Location = new System.Drawing.Point(0, 108);
             this.btnNhaCungCap.Name = "btnNhaCungCap";
             this.btnNhaCungCap.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhaCungCap.OnDisabledState.BorderRadius = 1;
@@ -924,7 +1015,7 @@
             this.btnNhaCungCap.OnIdleState.BorderThickness = 1;
             this.btnNhaCungCap.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhaCungCap.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnNhaCungCap.OnIdleState.IconLeftImage = null;
+            this.btnNhaCungCap.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.supplier2;
             this.btnNhaCungCap.OnIdleState.IconRightImage = null;
             this.btnNhaCungCap.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnNhaCungCap.OnPressedState.BorderRadius = 1;
@@ -934,7 +1025,7 @@
             this.btnNhaCungCap.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNhaCungCap.OnPressedState.IconLeftImage = null;
             this.btnNhaCungCap.OnPressedState.IconRightImage = null;
-            this.btnNhaCungCap.Size = new System.Drawing.Size(293, 49);
+            this.btnNhaCungCap.Size = new System.Drawing.Size(293, 54);
             this.btnNhaCungCap.TabIndex = 0;
             this.btnNhaCungCap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhaCungCap.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -957,7 +1048,7 @@
             this.btnKhachHang.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnKhachHang.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnKhachHang.BackgroundImage")));
             this.btnKhachHang.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnKhachHang.ButtonText = "Khách hàng";
+            this.btnKhachHang.ButtonText = "         Khách hàng";
             this.btnKhachHang.ButtonTextMarginLeft = 0;
             this.btnKhachHang.ColorContrastOnClick = 45;
             this.btnKhachHang.ColorContrastOnHover = 45;
@@ -988,10 +1079,10 @@
             this.btnKhachHang.IdleBorderRadius = 1;
             this.btnKhachHang.IdleBorderThickness = 1;
             this.btnKhachHang.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnKhachHang.IdleIconLeftImage = null;
+            this.btnKhachHang.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.customer1;
             this.btnKhachHang.IdleIconRightImage = null;
             this.btnKhachHang.IndicateFocus = true;
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 49);
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 54);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKhachHang.OnDisabledState.BorderRadius = 1;
@@ -1015,7 +1106,7 @@
             this.btnKhachHang.OnIdleState.BorderThickness = 1;
             this.btnKhachHang.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnKhachHang.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnKhachHang.OnIdleState.IconLeftImage = null;
+            this.btnKhachHang.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.customer1;
             this.btnKhachHang.OnIdleState.IconRightImage = null;
             this.btnKhachHang.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnKhachHang.OnPressedState.BorderRadius = 1;
@@ -1025,7 +1116,7 @@
             this.btnKhachHang.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.OnPressedState.IconLeftImage = null;
             this.btnKhachHang.OnPressedState.IconRightImage = null;
-            this.btnKhachHang.Size = new System.Drawing.Size(293, 49);
+            this.btnKhachHang.Size = new System.Drawing.Size(293, 54);
             this.btnKhachHang.TabIndex = 0;
             this.btnKhachHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhachHang.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1048,7 +1139,7 @@
             this.btnNhanVien.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhanVien.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNhanVien.BackgroundImage")));
             this.btnNhanVien.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnNhanVien.ButtonText = "Nhân viên";
+            this.btnNhanVien.ButtonText = "         Nhân viên";
             this.btnNhanVien.ButtonTextMarginLeft = 0;
             this.btnNhanVien.ColorContrastOnClick = 45;
             this.btnNhanVien.ColorContrastOnHover = 45;
@@ -1079,7 +1170,7 @@
             this.btnNhanVien.IdleBorderRadius = 1;
             this.btnNhanVien.IdleBorderThickness = 1;
             this.btnNhanVien.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnNhanVien.IdleIconLeftImage = null;
+            this.btnNhanVien.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.staff1;
             this.btnNhanVien.IdleIconRightImage = null;
             this.btnNhanVien.IndicateFocus = true;
             this.btnNhanVien.Location = new System.Drawing.Point(0, 0);
@@ -1106,7 +1197,7 @@
             this.btnNhanVien.OnIdleState.BorderThickness = 1;
             this.btnNhanVien.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnNhanVien.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnNhanVien.OnIdleState.IconLeftImage = null;
+            this.btnNhanVien.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.staff1;
             this.btnNhanVien.OnIdleState.IconRightImage = null;
             this.btnNhanVien.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnNhanVien.OnPressedState.BorderRadius = 1;
@@ -1116,7 +1207,7 @@
             this.btnNhanVien.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.OnPressedState.IconLeftImage = null;
             this.btnNhanVien.OnPressedState.IconRightImage = null;
-            this.btnNhanVien.Size = new System.Drawing.Size(293, 49);
+            this.btnNhanVien.Size = new System.Drawing.Size(293, 54);
             this.btnNhanVien.TabIndex = 0;
             this.btnNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNhanVien.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1138,8 +1229,9 @@
             this.btnQL.BackColor = System.Drawing.Color.Transparent;
             this.btnQL.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQL.BackgroundImage")));
+            this.btnQL.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnQL.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnQL.ButtonText = "Quản lý";
+            this.btnQL.ButtonText = "         Danh mục";
             this.btnQL.ButtonTextMarginLeft = 0;
             this.btnQL.ColorContrastOnClick = 45;
             this.btnQL.ColorContrastOnHover = 45;
@@ -1170,8 +1262,9 @@
             this.btnQL.IdleBorderRadius = 1;
             this.btnQL.IdleBorderThickness = 1;
             this.btnQL.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnQL.IdleIconLeftImage = null;
+            this.btnQL.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.menu1;
             this.btnQL.IdleIconRightImage = null;
+            this.btnQL.ImeMode = System.Windows.Forms.ImeMode.On;
             this.btnQL.IndicateFocus = true;
             this.btnQL.Location = new System.Drawing.Point(0, 151);
             this.btnQL.Name = "btnQL";
@@ -1197,7 +1290,7 @@
             this.btnQL.OnIdleState.BorderThickness = 1;
             this.btnQL.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnQL.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnQL.OnIdleState.IconLeftImage = null;
+            this.btnQL.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.menu1;
             this.btnQL.OnIdleState.IconRightImage = null;
             this.btnQL.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnQL.OnPressedState.BorderRadius = 1;
@@ -1207,7 +1300,7 @@
             this.btnQL.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnQL.OnPressedState.IconLeftImage = null;
             this.btnQL.OnPressedState.IconRightImage = null;
-            this.btnQL.Size = new System.Drawing.Size(293, 57);
+            this.btnQL.Size = new System.Drawing.Size(293, 51);
             this.btnQL.TabIndex = 0;
             this.btnQL.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnQL.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1241,7 +1334,7 @@
             this.btnThoat.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnThoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.BackgroundImage")));
             this.btnThoat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnThoat.ButtonText = "Thoát";
+            this.btnThoat.ButtonText = "";
             this.btnThoat.ButtonTextMarginLeft = 0;
             this.btnThoat.ColorContrastOnClick = 45;
             this.btnThoat.ColorContrastOnHover = 45;
@@ -1259,7 +1352,7 @@
             this.btnThoat.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThoat.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
             this.btnThoat.IconMarginLeft = 11;
@@ -1272,7 +1365,7 @@
             this.btnThoat.IdleBorderRadius = 1;
             this.btnThoat.IdleBorderThickness = 1;
             this.btnThoat.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnThoat.IdleIconLeftImage = null;
+            this.btnThoat.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.power1;
             this.btnThoat.IdleIconRightImage = null;
             this.btnThoat.IndicateFocus = true;
             this.btnThoat.Location = new System.Drawing.Point(0, 1044);
@@ -1299,7 +1392,7 @@
             this.btnThoat.OnIdleState.BorderThickness = 1;
             this.btnThoat.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
             this.btnThoat.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.OnIdleState.IconLeftImage = null;
+            this.btnThoat.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.power1;
             this.btnThoat.OnIdleState.IconRightImage = null;
             this.btnThoat.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
             this.btnThoat.OnPressedState.BorderRadius = 1;
@@ -1470,97 +1563,6 @@
             this.label2.Size = new System.Drawing.Size(541, 32);
             this.label2.TabIndex = 76;
             this.label2.Text = "PHẦN MỀM QUẢN LÝ CỬA HÀNG CAMERA ADC";
-            // 
-            // btnPhanQuyen
-            // 
-            this.btnPhanQuyen.AllowAnimations = true;
-            this.btnPhanQuyen.AllowMouseEffects = true;
-            this.btnPhanQuyen.AllowToggling = true;
-            this.btnPhanQuyen.AnimationSpeed = 200;
-            this.btnPhanQuyen.AutoGenerateColors = false;
-            this.btnPhanQuyen.AutoRoundBorders = false;
-            this.btnPhanQuyen.AutoSizeLeftIcon = true;
-            this.btnPhanQuyen.AutoSizeRightIcon = true;
-            this.btnPhanQuyen.BackColor = System.Drawing.Color.Transparent;
-            this.btnPhanQuyen.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyen.BackgroundImage")));
-            this.btnPhanQuyen.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPhanQuyen.ButtonText = "Phân quyền";
-            this.btnPhanQuyen.ButtonTextMarginLeft = 0;
-            this.btnPhanQuyen.ColorContrastOnClick = 45;
-            this.btnPhanQuyen.ColorContrastOnHover = 45;
-            this.btnPhanQuyen.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnPhanQuyen.CustomizableEdges = borderEdges1;
-            this.btnPhanQuyen.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnPhanQuyen.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnPhanQuyen.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnPhanQuyen.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhanQuyen.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnPhanQuyen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhanQuyen.ForeColor = System.Drawing.Color.White;
-            this.btnPhanQuyen.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhanQuyen.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhanQuyen.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnPhanQuyen.IconMarginLeft = 11;
-            this.btnPhanQuyen.IconPadding = 10;
-            this.btnPhanQuyen.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPhanQuyen.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPhanQuyen.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnPhanQuyen.IconSize = 25;
-            this.btnPhanQuyen.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.IdleBorderRadius = 1;
-            this.btnPhanQuyen.IdleBorderThickness = 1;
-            this.btnPhanQuyen.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.IdleIconLeftImage = null;
-            this.btnPhanQuyen.IdleIconRightImage = null;
-            this.btnPhanQuyen.IndicateFocus = true;
-            this.btnPhanQuyen.Location = new System.Drawing.Point(0, 762);
-            this.btnPhanQuyen.Name = "btnPhanQuyen";
-            this.btnPhanQuyen.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnPhanQuyen.OnDisabledState.BorderRadius = 1;
-            this.btnPhanQuyen.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPhanQuyen.OnDisabledState.BorderThickness = 1;
-            this.btnPhanQuyen.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnPhanQuyen.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnPhanQuyen.OnDisabledState.IconLeftImage = null;
-            this.btnPhanQuyen.OnDisabledState.IconRightImage = null;
-            this.btnPhanQuyen.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.onHoverState.BorderRadius = 1;
-            this.btnPhanQuyen.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPhanQuyen.onHoverState.BorderThickness = 1;
-            this.btnPhanQuyen.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.onHoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnPhanQuyen.onHoverState.IconLeftImage = null;
-            this.btnPhanQuyen.onHoverState.IconRightImage = null;
-            this.btnPhanQuyen.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.OnIdleState.BorderRadius = 1;
-            this.btnPhanQuyen.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPhanQuyen.OnIdleState.BorderThickness = 1;
-            this.btnPhanQuyen.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(163)))), ((int)(((byte)(140)))));
-            this.btnPhanQuyen.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnPhanQuyen.OnIdleState.IconLeftImage = null;
-            this.btnPhanQuyen.OnIdleState.IconRightImage = null;
-            this.btnPhanQuyen.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
-            this.btnPhanQuyen.OnPressedState.BorderRadius = 1;
-            this.btnPhanQuyen.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnPhanQuyen.OnPressedState.BorderThickness = 1;
-            this.btnPhanQuyen.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(235)))), ((int)(((byte)(200)))));
-            this.btnPhanQuyen.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnPhanQuyen.OnPressedState.IconLeftImage = null;
-            this.btnPhanQuyen.OnPressedState.IconRightImage = null;
-            this.btnPhanQuyen.Size = new System.Drawing.Size(293, 49);
-            this.btnPhanQuyen.TabIndex = 0;
-            this.btnPhanQuyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhanQuyen.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnPhanQuyen.TextMarginLeft = 0;
-            this.btnPhanQuyen.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnPhanQuyen.UseDefaultRadiusAndThickness = true;
-            this.btnPhanQuyen.Click += new System.EventHandler(this.btnPhanQuyen_Click);
             // 
             // frmMeNu
             // 
