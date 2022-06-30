@@ -61,6 +61,8 @@ namespace QLCH_CameraADC
         {
             try
             {
+                HienThiNV();
+                
                 DataGridViewRow row = dgvDSHD.Rows[e.RowIndex];
                 MaNV = row.Cells["manv1"].Value.ToString();
                 MaHD = row.Cells["mahdn"].Value.ToString();
@@ -84,6 +86,8 @@ namespace QLCH_CameraADC
         {
             try
             {
+                HienThiSP();
+                HienThiNCC();
                 DataGridViewRow row = dgvDSCTHD.Rows[e.RowIndex];
                 MaSP = row.Cells["maspp"].Value.ToString();
                 cboTenSP.Text = row.Cells["tensp"].Value.ToString();
@@ -109,9 +113,11 @@ namespace QLCH_CameraADC
         private void frmQLHoaDonNhap_Load(object sender, EventArgs e)
         {
             dgvDSHD.DataSource = bus.HienThiHDN("");
-            HienThiSP();
-            HienThiNV();
-            HienThiNCC();
+            txtMaHD.ReadOnly = true;
+            txtThanhTien.ReadOnly=true;
+            txtTongTien.ReadOnly = true;
+
+
         }
 
         public void CTHD_TheoHD(string MaHDN)

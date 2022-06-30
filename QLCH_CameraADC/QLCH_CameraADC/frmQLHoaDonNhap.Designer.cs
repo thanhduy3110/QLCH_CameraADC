@@ -150,6 +150,7 @@
             // 
             // cboTenNV
             // 
+            this.cboTenNV.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboTenNV.FormattingEnabled = true;
             this.cboTenNV.Location = new System.Drawing.Point(408, 83);
             this.cboTenNV.Name = "cboTenNV";
@@ -373,6 +374,7 @@
             // 
             // cboTenNCC
             // 
+            this.cboTenNCC.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboTenNCC.FormattingEnabled = true;
             this.cboTenNCC.Location = new System.Drawing.Point(68, 193);
             this.cboTenNCC.Name = "cboTenNCC";
@@ -381,6 +383,7 @@
             // 
             // cboTenSP
             // 
+            this.cboTenSP.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboTenSP.FormattingEnabled = true;
             this.cboTenSP.Location = new System.Drawing.Point(68, 83);
             this.cboTenSP.Name = "cboTenSP";

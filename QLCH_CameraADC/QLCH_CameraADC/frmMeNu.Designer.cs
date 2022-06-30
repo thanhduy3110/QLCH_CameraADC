@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMeNu));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges71 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges72 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges73 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges74 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges75 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges76 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges77 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges78 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges79 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges80 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges81 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges82 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges83 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges84 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnPhanQuyen = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnThongKe = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -118,11 +118,11 @@
             this.btnPhanQuyen.ColorContrastOnClick = 45;
             this.btnPhanQuyen.ColorContrastOnHover = 45;
             this.btnPhanQuyen.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnPhanQuyen.CustomizableEdges = borderEdges1;
+            borderEdges71.BottomLeft = true;
+            borderEdges71.BottomRight = true;
+            borderEdges71.TopLeft = true;
+            borderEdges71.TopRight = true;
+            this.btnPhanQuyen.CustomizableEdges = borderEdges71;
             this.btnPhanQuyen.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnPhanQuyen.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnPhanQuyen.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -209,11 +209,11 @@
             this.btnThongKe.ColorContrastOnClick = 45;
             this.btnThongKe.ColorContrastOnHover = 45;
             this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnThongKe.CustomizableEdges = borderEdges2;
+            borderEdges72.BottomLeft = true;
+            borderEdges72.BottomRight = true;
+            borderEdges72.TopLeft = true;
+            borderEdges72.TopRight = true;
+            this.btnThongKe.CustomizableEdges = borderEdges72;
             this.btnThongKe.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThongKe.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThongKe.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -312,11 +312,11 @@
             this.btnHoaDonNhap.ColorContrastOnClick = 45;
             this.btnHoaDonNhap.ColorContrastOnHover = 45;
             this.btnHoaDonNhap.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnHoaDonNhap.CustomizableEdges = borderEdges3;
+            borderEdges73.BottomLeft = true;
+            borderEdges73.BottomRight = true;
+            borderEdges73.TopLeft = true;
+            borderEdges73.TopRight = true;
+            this.btnHoaDonNhap.CustomizableEdges = borderEdges73;
             this.btnHoaDonNhap.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHoaDonNhap.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHoaDonNhap.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -403,11 +403,11 @@
             this.btnQLHoaDon.ColorContrastOnClick = 45;
             this.btnQLHoaDon.ColorContrastOnHover = 45;
             this.btnQLHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnQLHoaDon.CustomizableEdges = borderEdges4;
+            borderEdges74.BottomLeft = true;
+            borderEdges74.BottomRight = true;
+            borderEdges74.TopLeft = true;
+            borderEdges74.TopRight = true;
+            this.btnQLHoaDon.CustomizableEdges = borderEdges74;
             this.btnQLHoaDon.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQLHoaDon.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHoaDon.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -494,11 +494,11 @@
             this.btnNhapHang.ColorContrastOnClick = 45;
             this.btnNhapHang.ColorContrastOnHover = 45;
             this.btnNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges5.BottomLeft = true;
-            borderEdges5.BottomRight = true;
-            borderEdges5.TopLeft = true;
-            borderEdges5.TopRight = true;
-            this.btnNhapHang.CustomizableEdges = borderEdges5;
+            borderEdges75.BottomLeft = true;
+            borderEdges75.BottomRight = true;
+            borderEdges75.TopLeft = true;
+            borderEdges75.TopRight = true;
+            this.btnNhapHang.CustomizableEdges = borderEdges75;
             this.btnNhapHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhapHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhapHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -585,11 +585,11 @@
             this.btnBanHang.ColorContrastOnClick = 45;
             this.btnBanHang.ColorContrastOnHover = 45;
             this.btnBanHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges6.BottomLeft = true;
-            borderEdges6.BottomRight = true;
-            borderEdges6.TopLeft = true;
-            borderEdges6.TopRight = true;
-            this.btnBanHang.CustomizableEdges = borderEdges6;
+            borderEdges76.BottomLeft = true;
+            borderEdges76.BottomRight = true;
+            borderEdges76.TopLeft = true;
+            borderEdges76.TopRight = true;
+            this.btnBanHang.CustomizableEdges = borderEdges76;
             this.btnBanHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnBanHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnBanHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -676,11 +676,11 @@
             this.btnQLHD.ColorContrastOnClick = 45;
             this.btnQLHD.ColorContrastOnHover = 45;
             this.btnQLHD.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges7.BottomLeft = true;
-            borderEdges7.BottomRight = true;
-            borderEdges7.TopLeft = true;
-            borderEdges7.TopRight = true;
-            this.btnQLHD.CustomizableEdges = borderEdges7;
+            borderEdges77.BottomLeft = true;
+            borderEdges77.BottomRight = true;
+            borderEdges77.TopLeft = true;
+            borderEdges77.TopRight = true;
+            this.btnQLHD.CustomizableEdges = borderEdges77;
             this.btnQLHD.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQLHD.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQLHD.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -780,11 +780,11 @@
             this.btnSanPham.ColorContrastOnClick = 45;
             this.btnSanPham.ColorContrastOnHover = 45;
             this.btnSanPham.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges8.BottomLeft = true;
-            borderEdges8.BottomRight = true;
-            borderEdges8.TopLeft = true;
-            borderEdges8.TopRight = true;
-            this.btnSanPham.CustomizableEdges = borderEdges8;
+            borderEdges78.BottomLeft = true;
+            borderEdges78.BottomRight = true;
+            borderEdges78.TopLeft = true;
+            borderEdges78.TopRight = true;
+            this.btnSanPham.CustomizableEdges = borderEdges78;
             this.btnSanPham.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSanPham.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSanPham.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -871,11 +871,11 @@
             this.btnLoaiSP.ColorContrastOnClick = 45;
             this.btnLoaiSP.ColorContrastOnHover = 45;
             this.btnLoaiSP.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges9.BottomLeft = true;
-            borderEdges9.BottomRight = true;
-            borderEdges9.TopLeft = true;
-            borderEdges9.TopRight = true;
-            this.btnLoaiSP.CustomizableEdges = borderEdges9;
+            borderEdges79.BottomLeft = true;
+            borderEdges79.BottomRight = true;
+            borderEdges79.TopLeft = true;
+            borderEdges79.TopRight = true;
+            this.btnLoaiSP.CustomizableEdges = borderEdges79;
             this.btnLoaiSP.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLoaiSP.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoaiSP.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -962,11 +962,11 @@
             this.btnNhaCungCap.ColorContrastOnClick = 45;
             this.btnNhaCungCap.ColorContrastOnHover = 45;
             this.btnNhaCungCap.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges10.BottomLeft = true;
-            borderEdges10.BottomRight = true;
-            borderEdges10.TopLeft = true;
-            borderEdges10.TopRight = true;
-            this.btnNhaCungCap.CustomizableEdges = borderEdges10;
+            borderEdges80.BottomLeft = true;
+            borderEdges80.BottomRight = true;
+            borderEdges80.TopLeft = true;
+            borderEdges80.TopRight = true;
+            this.btnNhaCungCap.CustomizableEdges = borderEdges80;
             this.btnNhaCungCap.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhaCungCap.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhaCungCap.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1053,11 +1053,11 @@
             this.btnKhachHang.ColorContrastOnClick = 45;
             this.btnKhachHang.ColorContrastOnHover = 45;
             this.btnKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.btnKhachHang.CustomizableEdges = borderEdges11;
+            borderEdges81.BottomLeft = true;
+            borderEdges81.BottomRight = true;
+            borderEdges81.TopLeft = true;
+            borderEdges81.TopRight = true;
+            this.btnKhachHang.CustomizableEdges = borderEdges81;
             this.btnKhachHang.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnKhachHang.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnKhachHang.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1144,11 +1144,11 @@
             this.btnNhanVien.ColorContrastOnClick = 45;
             this.btnNhanVien.ColorContrastOnHover = 45;
             this.btnNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.btnNhanVien.CustomizableEdges = borderEdges12;
+            borderEdges82.BottomLeft = true;
+            borderEdges82.BottomRight = true;
+            borderEdges82.TopLeft = true;
+            borderEdges82.TopRight = true;
+            this.btnNhanVien.CustomizableEdges = borderEdges82;
             this.btnNhanVien.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNhanVien.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNhanVien.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1236,11 +1236,11 @@
             this.btnQL.ColorContrastOnClick = 45;
             this.btnQL.ColorContrastOnHover = 45;
             this.btnQL.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.btnQL.CustomizableEdges = borderEdges13;
+            borderEdges83.BottomLeft = true;
+            borderEdges83.BottomRight = true;
+            borderEdges83.TopLeft = true;
+            borderEdges83.TopRight = true;
+            this.btnQL.CustomizableEdges = borderEdges83;
             this.btnQL.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnQL.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnQL.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1311,8 +1311,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::QLCH_CameraADC.Properties.Resources.logo_adc_group;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::QLCH_CameraADC.Properties.Resources.HinhADC;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -1339,11 +1340,11 @@
             this.btnThoat.ColorContrastOnClick = 45;
             this.btnThoat.ColorContrastOnHover = 45;
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.btnThoat.CustomizableEdges = borderEdges14;
+            borderEdges84.BottomLeft = true;
+            borderEdges84.BottomRight = true;
+            borderEdges84.TopLeft = true;
+            borderEdges84.TopRight = true;
+            this.btnThoat.CustomizableEdges = borderEdges84;
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThoat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThoat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1417,7 +1418,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(293, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1033, 79);
+            this.panelTop.Size = new System.Drawing.Size(1472, 79);
             this.panelTop.TabIndex = 1;
             // 
             // bunifuLabel1
@@ -1434,7 +1435,7 @@
             this.bunifuLabel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(1033, 79);
+            this.bunifuLabel1.Size = new System.Drawing.Size(1472, 79);
             this.bunifuLabel1.TabIndex = 0;
             this.bunifuLabel1.Text = "QUẢN LÝ CỬA HÀNG CAMERA ADC";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1446,23 +1447,24 @@
             this.panelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panelBottom.Location = new System.Drawing.Point(293, 1057);
             this.panelBottom.Name = "panelBottom";
-            this.panelBottom.Size = new System.Drawing.Size(1033, 45);
+            this.panelBottom.Size = new System.Drawing.Size(1472, 45);
             this.panelBottom.TabIndex = 2;
             // 
             // panelMid
             // 
+            this.panelMid.BackColor = System.Drawing.Color.White;
             this.panelMid.Controls.Add(this.groupGioiThieu);
             this.panelMid.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelMid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMid.ForeColor = System.Drawing.Color.Black;
             this.panelMid.Location = new System.Drawing.Point(293, 79);
             this.panelMid.Name = "panelMid";
-            this.panelMid.Size = new System.Drawing.Size(1033, 978);
+            this.panelMid.Size = new System.Drawing.Size(1472, 978);
             this.panelMid.TabIndex = 3;
             // 
             // groupGioiThieu
             // 
-            this.groupGioiThieu.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupGioiThieu.BackColor = System.Drawing.Color.White;
             this.groupGioiThieu.Controls.Add(this.label3);
             this.groupGioiThieu.Controls.Add(this.label1);
             this.groupGioiThieu.Controls.Add(this.label5);
@@ -1470,12 +1472,13 @@
             this.groupGioiThieu.Controls.Add(this.label4);
             this.groupGioiThieu.Controls.Add(this.label10);
             this.groupGioiThieu.Controls.Add(this.label2);
-            this.groupGioiThieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupGioiThieu.Location = new System.Drawing.Point(239, 129);
+            this.groupGioiThieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupGioiThieu.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupGioiThieu.Location = new System.Drawing.Point(0, 0);
             this.groupGioiThieu.Margin = new System.Windows.Forms.Padding(4);
             this.groupGioiThieu.Name = "groupGioiThieu";
             this.groupGioiThieu.Padding = new System.Windows.Forms.Padding(4);
-            this.groupGioiThieu.Size = new System.Drawing.Size(658, 343);
+            this.groupGioiThieu.Size = new System.Drawing.Size(1472, 978);
             this.groupGioiThieu.TabIndex = 13;
             this.groupGioiThieu.TabStop = false;
             this.groupGioiThieu.Text = "Giới Thiệu";
@@ -1483,84 +1486,84 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(55, 202);
+            this.label3.Location = new System.Drawing.Point(512, 345);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(470, 25);
+            this.label3.Size = new System.Drawing.Size(697, 38);
             this.label3.TabIndex = 83;
             this.label3.Text = "- CUNG CẤP VÀ SỬA CHỮA THIẾT BỊ MÁY VĂN PHÒNG";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(55, 166);
+            this.label1.Location = new System.Drawing.Point(512, 309);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 25);
+            this.label1.Size = new System.Drawing.Size(298, 38);
             this.label1.TabIndex = 83;
             this.label1.Text = "- HỆ THỐNG AN NINH";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(55, 127);
+            this.label5.Location = new System.Drawing.Point(512, 270);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(445, 25);
+            this.label5.Size = new System.Drawing.Size(661, 38);
             this.label5.TabIndex = 83;
             this.label5.Text = "- CHUYÊN LẮP ĐẶT HỆ THỐNG CAMERA QUAN SÁT";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(55, 304);
+            this.label6.Location = new System.Drawing.Point(512, 527);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(422, 25);
+            this.label6.Size = new System.Drawing.Size(633, 38);
             this.label6.TabIndex = 83;
             this.label6.Text = "SĐT: 0978.70.77.99 - 0903.53.68.63 - 0933.666.247";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(55, 267);
+            this.label4.Location = new System.Drawing.Point(512, 490);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(565, 25);
+            this.label4.Size = new System.Drawing.Size(837, 38);
             this.label4.TabIndex = 83;
             this.label4.Text = "Địa chỉ: 263-265 Lê Văn Lương, Phường Tân Quy, Quận 7, TP. HCM";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label10.Location = new System.Drawing.Point(140, 76);
+            this.label10.Location = new System.Drawing.Point(622, 175);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(380, 25);
+            this.label10.Size = new System.Drawing.Size(592, 41);
             this.label10.TabIndex = 82;
             this.label10.Text = "Công Ty Tnhh Công Nghệ Tin Học Anh Đào";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.label2.Location = new System.Drawing.Point(64, 31);
+            this.label2.Location = new System.Drawing.Point(511, 111);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(541, 32);
+            this.label2.Size = new System.Drawing.Size(788, 46);
             this.label2.TabIndex = 76;
             this.label2.Text = "PHẦN MỀM QUẢN LÝ CỬA HÀNG CAMERA ADC";
             // 
@@ -1568,7 +1571,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1326, 1102);
+            this.ClientSize = new System.Drawing.Size(1765, 1102);
             this.ControlBox = false;
             this.Controls.Add(this.panelMid);
             this.Controls.Add(this.panelBottom);

@@ -1390,6 +1390,7 @@
             this.dgvDSLoaiNhanVien.TabIndex = 0;
             this.dgvDSLoaiNhanVien.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvDSLoaiNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLoaiNhanVien_CellClick);
+            this.dgvDSLoaiNhanVien.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvDSLoaiNhanVien_RowPostPaint);
             // 
             // Column1
             // 

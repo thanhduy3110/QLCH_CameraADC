@@ -99,7 +99,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
         <Top>0.36667in</Top>
-        <Left>1.04667in</Left>
+        <Left>0.26334in</Left>
         <Height>0.5in</Height>
         <Width>1.25833in</Width>
         <Style>
@@ -204,8 +204,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
-        <Top>1.225in</Top>
-        <Left>1.04667in</Left>
+        <Top>1.075in</Top>
+        <Left>0.26334in</Left>
         <Height>0.5in</Height>
         <Width>1in</Width>
         <ZIndex>1</ZIndex>
@@ -632,117 +632,10 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetCTHD</DataSetName>
         <Top>1.925in</Top>
-        <Left>1.04667in</Left>
+        <Left>0.26334in</Left>
         <Height>0.5in</Height>
-        <Width>8.94166in</Width>
+        <Width>8.94167in</Width>
         <ZIndex>2</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-        </Style>
-      </Tablix>
-      <Tablix Name="Tablix11">
-        <TablixBody>
-          <TablixColumns>
-            <TablixColumn>
-              <Width>1.18333in</Width>
-            </TablixColumn>
-          </TablixColumns>
-          <TablixRows>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="Textbox74">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>Mã hóa đơn</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>Textbox74</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-            <TablixRow>
-              <Height>0.25in</Height>
-              <TablixCells>
-                <TablixCell>
-                  <CellContents>
-                    <Textbox Name="MaHDB">
-                      <CanGrow>true</CanGrow>
-                      <KeepTogether>true</KeepTogether>
-                      <Paragraphs>
-                        <Paragraph>
-                          <TextRuns>
-                            <TextRun>
-                              <Value>=Fields!MaHDB.Value</Value>
-                              <Style />
-                            </TextRun>
-                          </TextRuns>
-                          <Style />
-                        </Paragraph>
-                      </Paragraphs>
-                      <rd:DefaultName>MaHDB</rd:DefaultName>
-                      <Style>
-                        <Border>
-                          <Color>LightGrey</Color>
-                          <Style>Solid</Style>
-                        </Border>
-                        <PaddingLeft>2pt</PaddingLeft>
-                        <PaddingRight>2pt</PaddingRight>
-                        <PaddingTop>2pt</PaddingTop>
-                        <PaddingBottom>2pt</PaddingBottom>
-                      </Style>
-                    </Textbox>
-                  </CellContents>
-                </TablixCell>
-              </TablixCells>
-            </TablixRow>
-          </TablixRows>
-        </TablixBody>
-        <TablixColumnHierarchy>
-          <TablixMembers>
-            <TablixMember />
-          </TablixMembers>
-        </TablixColumnHierarchy>
-        <TablixRowHierarchy>
-          <TablixMembers>
-            <TablixMember>
-              <KeepWithGroup>After</KeepWithGroup>
-            </TablixMember>
-            <TablixMember>
-              <Group Name="Details" />
-            </TablixMember>
-          </TablixMembers>
-        </TablixRowHierarchy>
-        <DataSetName>DataSetHD</DataSetName>
-        <Top>0.41667in</Top>
-        <Left>8.805in</Left>
-        <Height>0.5in</Height>
-        <Width>1.18333in</Width>
-        <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -845,11 +738,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
-        <Top>2.73889in</Top>
-        <Left>1.04667in</Left>
+        <Top>2.55in</Top>
+        <Left>0.26334in</Left>
         <Height>0.5in</Height>
         <Width>1.66667in</Width>
-        <ZIndex>4</ZIndex>
+        <ZIndex>3</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -952,11 +845,11 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
-        <Top>1.225in</Top>
-        <Left>8.805in</Left>
+        <Top>3.22222in</Top>
+        <Left>0.26334in</Left>
         <Height>0.5in</Height>
         <Width>1.18333in</Width>
-        <ZIndex>5</ZIndex>
+        <ZIndex>4</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1060,10 +953,10 @@
         </TablixRowHierarchy>
         <DataSetName>DataSetHD</DataSetName>
         <Top>2.55in</Top>
-        <Left>8.805in</Left>
+        <Left>8.02168in</Left>
         <Height>0.5in</Height>
         <Width>1.18333in</Width>
-        <ZIndex>6</ZIndex>
+        <ZIndex>5</ZIndex>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1071,7 +964,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>3.35833in</Height>
+    <Height>4.06666in</Height>
     <Style />
   </Body>
   <Width>10.93in</Width>
@@ -1114,8 +1007,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox3</rd:DefaultName>
-          <Top>0.35833in</Top>
-          <Left>5.04667in</Left>
+          <Top>0.45833in</Top>
+          <Left>3.87167in</Left>
           <Height>0.30833in</Height>
           <Width>3.51667in</Width>
           <ZIndex>1</ZIndex>

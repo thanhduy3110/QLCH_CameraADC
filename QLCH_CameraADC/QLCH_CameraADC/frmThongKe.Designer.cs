@@ -48,7 +48,6 @@
             this.radioKHMuaNhieuThang = new System.Windows.Forms.RadioButton();
             this.radioSPTonKho = new System.Windows.Forms.RadioButton();
             this.radioButKhanChiNam = new System.Windows.Forms.RadioButton();
-            this.radioButThuChi = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.radioBanNhieuMonth = new System.Windows.Forms.RadioButton();
             this.radioMuaNhieuYear = new System.Windows.Forms.RadioButton();
@@ -56,6 +55,7 @@
             this.radioMuaNhieuMonth = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvThongKe = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -63,7 +63,6 @@
             this.cboDoanhThu = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxChi = new System.Windows.Forms.ComboBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -113,7 +112,6 @@
             this.panel1.Controls.Add(this.radioKHMuaNhieuThang);
             this.panel1.Controls.Add(this.radioSPTonKho);
             this.panel1.Controls.Add(this.radioButKhanChiNam);
-            this.panel1.Controls.Add(this.radioButThuChi);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.radioBanNhieuMonth);
             this.panel1.Controls.Add(this.radioMuaNhieuYear);
@@ -299,7 +297,7 @@
             // 
             this.radioSPTonKho.AutoSize = true;
             this.radioSPTonKho.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioSPTonKho.Location = new System.Drawing.Point(661, 240);
+            this.radioSPTonKho.Location = new System.Drawing.Point(657, 190);
             this.radioSPTonKho.Margin = new System.Windows.Forms.Padding(4);
             this.radioSPTonKho.Name = "radioSPTonKho";
             this.radioSPTonKho.Size = new System.Drawing.Size(193, 32);
@@ -312,27 +310,14 @@
             // 
             this.radioButKhanChiNam.AutoSize = true;
             this.radioButKhanChiNam.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButKhanChiNam.Location = new System.Drawing.Point(661, 186);
+            this.radioButKhanChiNam.Location = new System.Drawing.Point(657, 136);
             this.radioButKhanChiNam.Margin = new System.Windows.Forms.Padding(4);
             this.radioButKhanChiNam.Name = "radioButKhanChiNam";
-            this.radioButKhanChiNam.Size = new System.Drawing.Size(233, 32);
+            this.radioButKhanChiNam.Size = new System.Drawing.Size(158, 32);
             this.radioButKhanChiNam.TabIndex = 24;
             this.radioButKhanChiNam.TabStop = true;
-            this.radioButKhanChiNam.Text = "Xem thu chi trong năm\r\n";
+            this.radioButKhanChiNam.Text = "Xem lợi nhuận";
             this.radioButKhanChiNam.UseVisualStyleBackColor = true;
-            // 
-            // radioButThuChi
-            // 
-            this.radioButThuChi.AutoSize = true;
-            this.radioButThuChi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButThuChi.Location = new System.Drawing.Point(657, 129);
-            this.radioButThuChi.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButThuChi.Name = "radioButThuChi";
-            this.radioButThuChi.Size = new System.Drawing.Size(237, 32);
-            this.radioButThuChi.TabIndex = 25;
-            this.radioButThuChi.TabStop = true;
-            this.radioButThuChi.Text = "Xem thu chi theo tháng";
-            this.radioButThuChi.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -414,6 +399,7 @@
             this.dgvThongKe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvThongKe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThongKe.BackgroundColor = System.Drawing.Color.White;
+            this.dgvThongKe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvThongKe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongKe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -469,6 +455,13 @@
             this.dgvThongKe.TabIndex = 0;
             this.dgvThongKe.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvThongKe.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvThongKe_RowPostPaint);
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 35.31699F;
+            this.Column1.HeaderText = "STT";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
             // panel3
             // 
@@ -555,13 +548,6 @@
             this.comboBoxChi.Size = new System.Drawing.Size(232, 34);
             this.comboBoxChi.TabIndex = 49;
             // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 35.31699F;
-            this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -605,7 +591,6 @@
         private System.Windows.Forms.RadioButton radioKHMuaNhieuThang;
         private System.Windows.Forms.RadioButton radioSPTonKho;
         private System.Windows.Forms.RadioButton radioButKhanChiNam;
-        private System.Windows.Forms.RadioButton radioButThuChi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioBanNhieuMonth;
         private System.Windows.Forms.RadioButton radioMuaNhieuYear;
