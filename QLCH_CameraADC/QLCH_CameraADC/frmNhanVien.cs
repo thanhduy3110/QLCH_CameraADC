@@ -45,6 +45,16 @@ namespace QLCH_CameraADC
             pichHinh.Controls.Clear();
         }
 
+        public  void HienThiTextbox(Boolean t)
+        {
+            txtHoTen.ReadOnly = t;
+            txtSDT.ReadOnly = t;
+            txtCMND.ReadOnly = t;
+            txtEmail.ReadOnly = t;
+            txtMatKhau.ReadOnly = t;
+            rtxtDiaChi.ReadOnly = t;
+        }
+
         public void HienThiLoaiNV()
         {
             cboLoaiNV.DataSource = lnv.GetData("");
@@ -67,9 +77,11 @@ namespace QLCH_CameraADC
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
+            HienThiLoaiNV();
             if (flag == 0)
             {
                 clear();
+                HienThiTextbox(false);
                 int dem = bus.GetTong("").Rows.Count;
                 if (dem == 0)
                 {
@@ -122,6 +134,7 @@ namespace QLCH_CameraADC
                 nv.TrangThai = 1;
                 bus.AddData(nv);
                 MessageBox.Show("Lưu thành công");
+                HienThiTextbox(true);
                 LoadData();
                 flag = 0;
             }
@@ -144,6 +157,7 @@ namespace QLCH_CameraADC
 
         private void dgvDSNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            HienThiLoaiNV();
             try
             {
                 DataGridViewRow row = dgvDSNhanVien.Rows[e.RowIndex];
@@ -205,7 +219,7 @@ namespace QLCH_CameraADC
         {
             if (flag == 0)
             {
-
+                HienThiTextbox(false);
                 flag = 1;
             }
             else if (flag == 1)
@@ -251,6 +265,7 @@ namespace QLCH_CameraADC
                 nv.TrangThai = 1;
                 bus.EditData(nv);
                 MessageBox.Show("Sửa thành công");
+                HienThiTextbox(true);
                 LoadData();
                 flag = 0;
             }
@@ -259,7 +274,9 @@ namespace QLCH_CameraADC
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             LoadData();
-            HienThiLoaiNV();
+            txtMaNV.ReadOnly = true;
+            HienThiTextbox(true);
+           
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

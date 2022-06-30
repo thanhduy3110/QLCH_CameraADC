@@ -161,6 +161,7 @@
             // cboMaLoaiSP
             // 
             this.cboMaLoaiSP.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboMaLoaiSP.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboMaLoaiSP.FormattingEnabled = true;
             this.cboMaLoaiSP.IntegralHeight = false;
             this.cboMaLoaiSP.Location = new System.Drawing.Point(807, 77);

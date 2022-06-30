@@ -74,6 +74,7 @@ namespace QLCH_CameraADC
         private void frmPhanQuyen_Load(object sender, EventArgs e)
         {
             HienThiDSLoaiNV();
+            txtMaLoaiNV.ReadOnly = true;
         }
 
         private void dgvDSLoaiNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -128,6 +129,11 @@ namespace QLCH_CameraADC
                 HienThiDSLoaiNV();
                 flag = 0;
             }    
+        }
+
+        private void dgvDSLoaiNhanVien_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+            dgvDSLoaiNhanVien.Rows[e.RowIndex].Cells[0].Value = (e.RowIndex + 1).ToString();
         }
     }
 }

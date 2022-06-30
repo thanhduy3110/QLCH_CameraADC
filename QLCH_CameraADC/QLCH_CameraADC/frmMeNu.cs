@@ -14,31 +14,30 @@ namespace QLCH_CameraADC
     {
         public string sTenNV;
         public string sMaNV;
-
+        int flag_QL=1, flag_QLHD=1;
         Login_BUS bus = new Login_BUS();
-        public frmMeNu()
-        {
-            InitializeComponent();
-            flag_QL = 1;
-            flag_QLHD = 1;
-            panelQL.Visible = false;
-            panelHD.Visible = false;
-        }
+        //public frmMeNu()
+        //{
+        //    InitializeComponent();
+        //    flag_QL = 1;
+        //    flag_QLHD = 1;
+        //    panelQL.Visible = false;
+        //    panelHD.Visible = false;
+        //}
 
         public frmMeNu(string TenNV,string MaNV)
         {
             InitializeComponent();
             this.sTenNV = TenNV;
             this.sMaNV= MaNV;
-            flag_QL = 1;
-            flag_QLHD = 1;
+           
             panelQL.Visible = false;
             panelHD.Visible = false;
             
         }
 
         public Form activeForm = null;
-        int flag_QL,flag_QLHD;
+       
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -115,12 +114,12 @@ namespace QLCH_CameraADC
         {
             if(flag_QL==1)
             {
-                panelQL.Visible = false;
+                panelQL.Visible = true;
                 flag_QL = 0;
             }  
             else if(flag_QL==0)
             {
-                panelQL.Visible = true;
+                panelQL.Visible = false;
                 flag_QL = 1;
             }    
         }
@@ -160,12 +159,12 @@ namespace QLCH_CameraADC
         {
             if (flag_QLHD == 1)
             {
-                panelHD.Visible = false;
+                panelHD.Visible = true;
                 flag_QLHD = 0;
             }
             else if (flag_QLHD == 0)
             {
-                panelHD.Visible = true;
+                panelHD.Visible = false;
                 flag_QLHD = 1;
             }
         }

@@ -30,6 +30,12 @@ namespace QLCH_CameraADC
             txtSDT.Clear();
         }
 
+        public void Hienthitextbox(Boolean t)
+        {
+            txtSDT.ReadOnly = t;
+            txtTenKH.ReadOnly = t;
+            rtxtGhiChu.ReadOnly = t;
+        }
         public void xulychucnang(Boolean b1)
         {
             btnThem.Enabled = b1;
@@ -61,6 +67,8 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 clear();
+                Hienthitextbox(false);
+                xulychucnangthem(true);
                 int dem = bus.GetTong("").Rows.Count;
                 if (dem == 0)
                 {
@@ -98,6 +106,8 @@ namespace QLCH_CameraADC
                 kh.TrangThai = 1;
                 bus.AddData(kh);
                 MessageBox.Show("Thêm thành công");
+                Hienthitextbox(true);
+                xulychucnang(false);
                 LoadData();
                 flag = 0;
             }
@@ -107,12 +117,17 @@ namespace QLCH_CameraADC
         {
             LoadData();
             radioNam.Checked = true;
+            txtMaKH.ReadOnly = true;
+            Hienthitextbox(true);
+            xulychucnang(false);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (flag == 0)
             {
+                Hienthitextbox(false);
+                xulychucnangsua(true);
                 flag = 1;
             }
             else if (flag == 1)
@@ -133,6 +148,8 @@ namespace QLCH_CameraADC
                 kh.TrangThai = 1;
                 bus.EditData(kh);
                 MessageBox.Show("Sửa thành công");
+                Hienthitextbox(true);
+                xulychucnang(false);
                 LoadData();
                 flag = 0;
             }
@@ -142,6 +159,7 @@ namespace QLCH_CameraADC
         {
             try
             {
+                xulychucnang(true);
                 DataGridViewRow row = dgvDSKhachHang.Rows[e.RowIndex];
                 txtMaKH.Text = row.Cells["makh"].Value.ToString();
                 txtTenKH.Text = row.Cells["hoten"].Value.ToString();

@@ -32,6 +32,11 @@ namespace QLCH_CameraADC
             this.Close();
         }
 
+        private void frmThemKH_Moi_Load(object sender, EventArgs e)
+        {
+            txtTenKH.ReadOnly = true;
+        }
+
         private void txtSDT_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

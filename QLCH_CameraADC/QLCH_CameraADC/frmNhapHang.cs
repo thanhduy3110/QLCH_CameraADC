@@ -87,7 +87,7 @@ namespace QLCH_CameraADC
                 dem = dem + 1;
                 txtMaHD.Text = "HD0" + dem;
             }
-
+            btnLuu.Enabled = true;
             flag = 1;
         }
 
@@ -107,6 +107,10 @@ namespace QLCH_CameraADC
             HienThiNCC();
 
             lblTenNV.Text = this.sTenNV;
+            txtMaHD.ReadOnly = true;
+            txtTongTien.ReadOnly = true;
+            btnLuu.Enabled = false;
+            btnInHD.Enabled = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -169,7 +173,9 @@ namespace QLCH_CameraADC
                     bus.AddCTHD(cthdn);
 
                 }
+                btnInHD.Enabled = true;
                 flag = 0;
+
             }
         }
 
@@ -203,5 +209,11 @@ namespace QLCH_CameraADC
 
             }
             }
+
+        private void btnInHD_Click(object sender, EventArgs e)
+        {
+            frmInHD_Nhap inHD = new frmInHD_Nhap(this.sMaNV, txtMaHD.Text);
+            inHD.Show();
+        }
     }
 }

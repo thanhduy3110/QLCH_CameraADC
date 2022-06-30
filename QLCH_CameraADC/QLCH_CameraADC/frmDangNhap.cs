@@ -27,7 +27,7 @@ namespace QLCH_CameraADC
             string password = txtMatKhau.Text;
 
             int count = bus.DangNhap(username, password).Rows.Count;
-            string TenNV = bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
+            
 
             if (count == 0)
             {
@@ -35,6 +35,7 @@ namespace QLCH_CameraADC
             }
             else if (count == 1)
             {
+                string TenNV = bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
                 frmMeNu frm = new frmMeNu(TenNV, username);
                 frm.ShowDialog();
             }

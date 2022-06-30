@@ -41,17 +41,17 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rtxtGhiChu = new System.Windows.Forms.RichTextBox();
+            this.btnThoat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnThemKH = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.radioNu = new System.Windows.Forms.RadioButton();
             this.radioNam = new System.Windows.Forms.RadioButton();
+            this.txtTenKH = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtSDT = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnThoat = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.btnThemKH = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txtTenKH = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.txtSDT = new Bunifu.UI.WinForms.BunifuTextBox();
             this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,76 +82,8 @@
             this.rtxtGhiChu.Location = new System.Drawing.Point(804, 84);
             this.rtxtGhiChu.Name = "rtxtGhiChu";
             this.rtxtGhiChu.Size = new System.Drawing.Size(335, 183);
-            this.rtxtGhiChu.TabIndex = 9;
+            this.rtxtGhiChu.TabIndex = 2;
             this.rtxtGhiChu.Text = "";
-            // 
-            // radioNu
-            // 
-            this.radioNu.AutoSize = true;
-            this.radioNu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioNu.Location = new System.Drawing.Point(161, 208);
-            this.radioNu.Name = "radioNu";
-            this.radioNu.Size = new System.Drawing.Size(60, 32);
-            this.radioNu.TabIndex = 6;
-            this.radioNu.TabStop = true;
-            this.radioNu.Text = "Nữ";
-            this.radioNu.UseVisualStyleBackColor = true;
-            // 
-            // radioNam
-            // 
-            this.radioNam.AutoSize = true;
-            this.radioNam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioNam.Location = new System.Drawing.Point(27, 211);
-            this.radioNam.Name = "radioNam";
-            this.radioNam.Size = new System.Drawing.Size(72, 29);
-            this.radioNam.TabIndex = 7;
-            this.radioNam.TabStop = true;
-            this.radioNam.Text = "Nam";
-            this.radioNam.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(22, 158);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 38);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Giới tính";
-            // 
-            // label22
-            // 
-            this.label22.Location = new System.Drawing.Point(799, 42);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(146, 38);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Ghi chú";
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(416, 42);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 38);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Số điện thoại";
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(22, 42);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 38);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Tên khách hàng";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1172, 51);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Tìm kiếm khách hàng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnThoat
             // 
@@ -333,6 +265,30 @@
             this.btnThemKH.UseDefaultRadiusAndThickness = true;
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
             // 
+            // radioNu
+            // 
+            this.radioNu.AutoSize = true;
+            this.radioNu.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNu.Location = new System.Drawing.Point(161, 208);
+            this.radioNu.Name = "radioNu";
+            this.radioNu.Size = new System.Drawing.Size(60, 32);
+            this.radioNu.TabIndex = 6;
+            this.radioNu.TabStop = true;
+            this.radioNu.Text = "Nữ";
+            this.radioNu.UseVisualStyleBackColor = true;
+            // 
+            // radioNam
+            // 
+            this.radioNam.AutoSize = true;
+            this.radioNam.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioNam.Location = new System.Drawing.Point(27, 211);
+            this.radioNam.Name = "radioNam";
+            this.radioNam.Size = new System.Drawing.Size(72, 29);
+            this.radioNam.TabIndex = 7;
+            this.radioNam.TabStop = true;
+            this.radioNam.Text = "Nam";
+            this.radioNam.UseVisualStyleBackColor = true;
+            // 
             // txtTenKH
             // 
             this.txtTenKH.AcceptsReturn = false;
@@ -472,7 +428,7 @@
             this.txtSDT.ShortcutsEnabled = true;
             this.txtSDT.Size = new System.Drawing.Size(332, 44);
             this.txtSDT.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtSDT.TabIndex = 1;
+            this.txtSDT.TabIndex = 0;
             this.txtSDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSDT.TextMarginBottom = 0;
             this.txtSDT.TextMarginLeft = 3;
@@ -481,6 +437,50 @@
             this.txtSDT.UseSystemPasswordChar = false;
             this.txtSDT.WordWrap = true;
             this.txtSDT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSDT_KeyDown);
+            // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(22, 158);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 38);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Giới tính";
+            // 
+            // label22
+            // 
+            this.label22.Location = new System.Drawing.Point(799, 42);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(146, 38);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Ghi chú";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(416, 42);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(146, 38);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Số điện thoại";
+            // 
+            // label9
+            // 
+            this.label9.Location = new System.Drawing.Point(22, 42);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(162, 38);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Tên khách hàng";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1172, 51);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Tìm kiếm khách hàng";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmThemKH_Moi
             // 
@@ -494,6 +494,7 @@
             this.Name = "frmThemKH_Moi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThemKH_Moi";
+            this.Load += new System.EventHandler(this.frmThemKH_Moi_Load);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.ResumeLayout(false);

@@ -284,6 +284,7 @@
             this.btnInHD.TextMarginLeft = 0;
             this.btnInHD.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnInHD.UseDefaultRadiusAndThickness = true;
+            this.btnInHD.Click += new System.EventHandler(this.btnInHD_Click);
             // 
             // btnLuu
             // 

@@ -27,6 +27,8 @@ namespace QLCH_CameraADC
             this.sMaNV = MaNV;
 
         }
+
+
         public string sTenNV;
         public string sMaNV;
         string maKH;
@@ -49,6 +51,8 @@ namespace QLCH_CameraADC
         {
             
         }
+
+       
 
         public void OpenTimKiem()
         {
@@ -116,6 +120,8 @@ namespace QLCH_CameraADC
             OpenTimKiem();
             HienThiSP();
             lblTenNV.Text = this.sTenNV;
+            btnThanhToan.Enabled = false;
+            btnInHDBan.Enabled = false;
         }
 
         int flag = 0;
@@ -142,7 +148,7 @@ namespace QLCH_CameraADC
                     dem = dem + 1;
                     txtMaHD.Text = "HD0" + dem;
                 }
-
+                btnThanhToan.Enabled = true;
                 flag = 1;
             }
           
@@ -207,6 +213,7 @@ namespace QLCH_CameraADC
 
                 }
                 flag = 0;
+                btnInHDBan.Enabled = true;
             }
 
 
@@ -215,7 +222,8 @@ namespace QLCH_CameraADC
 
         private void btnInHDBan_Click(object sender, EventArgs e)
         {
-            
+            frmInHD_Ban inHD = new frmInHD_Ban(this.sMaNV, txtMaHD.Text);
+            inHD.Show();
         }
 
         private void dgvDSSPChon_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
