@@ -98,6 +98,14 @@ namespace QLCH_CameraADC
                 {
                     GT = 0;
                 }
+                for (int i = 0; i < dgvDSKhachHang.Rows.Count - 0; i++)
+                {
+                    if (txtSDT.Text == dgvDSKhachHang.Rows[i].Cells["DienThoai"].Value.ToString())
+                    {
+                        MessageBox.Show("Số điện thoại đã tồn tại");
+                        return;
+                    }
+                }
                 kh.MaKH = txtMaKH.Text;
                 kh.HoTen = txtTenKH.Text;
                 kh.SDT = txtSDT.Text;
