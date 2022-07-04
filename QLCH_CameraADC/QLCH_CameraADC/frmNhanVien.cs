@@ -179,7 +179,44 @@ namespace QLCH_CameraADC
                     nv.HinhAnh = Path.GetFileName(pichHinh.ImageLocation);
                     LuuAnh();
                 }
-
+                //Bẫy lỗi
+                if (txtHoTen.Text == "")
+                {
+                    MessageBox.Show("? Tên nhân viên không thể để trống");
+                    return;
+                }
+                if (txtCMND.Text == "")
+                {
+                    MessageBox.Show("? CMND nhân viên không thể để trống");
+                    return;
+                }
+                if (txtSDT.Text == "")
+                {
+                    MessageBox.Show("? Số điện thoại nhân viên không thể để trống");
+                    return;
+                }
+                if (txtMatKhau.Text == "")
+                {
+                    MessageBox.Show("? Mật Khẩu nhân viên không thể để trống");
+                    return;
+                }
+                for (int i = 0; i < dgvDSNhanVien.Rows.Count - 0; i++)
+                {
+                    if (txtSDT.Text == dgvDSNhanVien.Rows[i].Cells["DienThoai"].Value.ToString())
+                    {
+                        MessageBox.Show("Số điện thoại đã tồn tại");
+                        return;
+                    }
+                }
+                for (int i = 0; i < dgvDSNhanVien.Rows.Count - 0; i++)
+                {
+                    if (txtCMND.Text == dgvDSNhanVien.Rows[i].Cells["CMND"].Value.ToString())
+                    {
+                        MessageBox.Show("CMND đã tồn tại");
+                        return;
+                    }
+                }
+                //Két thúc bẫy lỗi
                 nv.TrangThai = 1;
                 bus.AddData(nv);
                 MessageBox.Show("Lưu thành công");
@@ -315,7 +352,27 @@ namespace QLCH_CameraADC
                     nv.HinhAnh = Path.GetFileName(pichHinh.ImageLocation);
                     LuuAnh();
                 }
-
+                //Bẫy lỗi
+                if (txtHoTen.Text == "")
+                {
+                    MessageBox.Show("? Tên nhân viên không thể để trống");
+                    return;
+                }
+                if (txtCMND.Text == "")
+                {
+                    MessageBox.Show("? CMND nhân viên không thể để trống");
+                    return;
+                }
+                if (txtSDT.Text == "")
+                {
+                    MessageBox.Show("? Số điện thoại nhân viên không thể để trống");
+                    return;
+                }
+                if (txtMatKhau.Text == "")
+                {
+                    MessageBox.Show("? Mật Khẩu nhân viên không thể để trống");
+                    return;
+                }
                 nv.TrangThai = 1;
                 bus.EditData(nv);
                 MessageBox.Show("Sửa thành công");
