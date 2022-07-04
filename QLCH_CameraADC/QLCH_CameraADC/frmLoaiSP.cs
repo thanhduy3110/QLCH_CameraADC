@@ -42,14 +42,16 @@ namespace QLCH_CameraADC
 
         public void xulychucnang(Boolean b1)
         {
-            btnThem.Enabled = b1;
+            btnThem.Enabled = !b1;
             btnSua.Enabled = b1;
             btnXoa.Enabled = b1;
+            btnHuy.Enabled = b1;
         }
 
         public void xulychucnangthem(Boolean b1)
         {
             btnThem.Enabled = b1;
+            btnHuy.Enabled = b1;
             btnSua.Enabled = !b1;
             btnXoa.Enabled = !b1;
         }
@@ -58,6 +60,7 @@ namespace QLCH_CameraADC
         {
             btnThem.Enabled = !b1;
             btnSua.Enabled = b1;
+            btnHuy.Enabled = b1;
             btnXoa.Enabled = !b1;
         }
         private void btnThem_Click(object sender, EventArgs e)
@@ -126,7 +129,9 @@ namespace QLCH_CameraADC
         {
             try
             {
-                xulychucnang(true);
+                btnThem.Enabled = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
                 DataGridViewRow row = dgvDSLoaiSP.Rows[e.RowIndex];
                 txtMaLoaiSP.Text = row.Cells["maloaisp"].Value.ToString();
                 txtTenLoaiSP.Text = row.Cells["tenloaisp"].Value.ToString();
@@ -158,6 +163,13 @@ namespace QLCH_CameraADC
                 xulychucnang(false);
             }
             LoadData();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            xulychucnang(false);
+            clear();
+            xulytextbox(false);
         }
     }
 }

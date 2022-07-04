@@ -350,6 +350,7 @@
     <None Include="Resources\cancel1.png" />
     <None Include="Resources\logo-adc-group1.png" />
     <None Include="Resources\HinhADC.jpg" />
+    <None Include="Resources\cancell.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
