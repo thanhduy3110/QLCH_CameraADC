@@ -20,11 +20,22 @@ namespace QLCH_CameraADC
 
         Login_BUS bus = new Login_BUS();
         NhanVien nv = new NhanVien();
-
+        private String GetMD5(string txt)
+        {
+            String str = "";
+            Byte[] buffer = System.Text.Encoding.UTF8.GetBytes(txt);
+            System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
+            buffer = md5.ComputeHash(buffer);
+            foreach (Byte b in buffer)
+            {
+                str += b.ToString("X2");
+            }
+            return str;
+        }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string username = txtTenDN.Text;
-            string password = txtMatKhau.Text;
+            string password = GetMD5(txtMatKhau.Text);
 
             int count = bus.DangNhap(username, password).Rows.Count;
             
