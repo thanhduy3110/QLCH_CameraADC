@@ -73,26 +73,31 @@ namespace QLCH_CameraADC
 
         private void btnNhanVien_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmNhanVien());
         }
 
         private void btnKhachHang_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmKhachHang());
         }
 
         private void btnNhaCungCap_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmNhaCungCap());
         }
 
         private void btnLoaiSP_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmLoaiSP());
         }
 
         private void btnSanPham_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmSanPham());
         }
 
@@ -125,11 +130,13 @@ namespace QLCH_CameraADC
 
         private void btnNhapHang_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmNhapHang(this.sTenNV, this.sMaNV));
         }
 
         private void btnQLHoaDon_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmQLHoaDon(this.sTenNV, this.sMaNV));
         }
 
@@ -149,11 +156,13 @@ namespace QLCH_CameraADC
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmQLHoaDonNhap(this.sTenNV, this.sMaNV));
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmThongKe());
         }
 
@@ -175,6 +184,7 @@ namespace QLCH_CameraADC
 
         private void btnPhanQuyen_Click(object sender, EventArgs e)
         {
+            panelMid.Visible = true;
             openChildForm(new frmPhanQuyen());
         }
 
