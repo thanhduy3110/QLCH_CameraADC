@@ -14,6 +14,7 @@ namespace QLCH_CameraADC
     {
         public string sTenNV;
         public string sMaNV;
+        public string sTenKH, sSDT, sMaKH;
         int flag_QL=1, flag_QLHD=1;
         Login_BUS bus = new Login_BUS();
         //public frmMeNu()
@@ -95,9 +96,31 @@ namespace QLCH_CameraADC
             openChildForm(new frmSanPham());
         }
 
+        public void OpenTimKiem()
+        {
+            frmThemKH_Moi frmcon = new frmThemKH_Moi();
+            frmcon.truyenData = new frmThemKH_Moi.TruyenCHoCTHD_Nhap(LoadDataTruyen);
+            frmcon.ShowDialog();
+        }
+
+
+        public void LoadDataTruyen(string makh, string tenkh, string sdt)
+        {
+            this.sTenKH = tenkh;
+            this.sSDT = sdt;
+            this.sMaKH = makh;
+            panelMid.Visible = true;
+            openChildForm(new frmBanHang(this.sTenNV, this.sMaNV, this.sTenKH, this.sMaKH, this.sSDT));
+        }
+
+
+
         private void btnBanHang_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmBanHang(this.sTenNV,this.sMaNV));
+            panelMid.Visible = false;
+            OpenTimKiem();
+           
+
         }
 
         private void btnNhapHang_Click(object sender, EventArgs e)

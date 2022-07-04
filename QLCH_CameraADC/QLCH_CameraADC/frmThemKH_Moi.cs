@@ -54,7 +54,6 @@ namespace QLCH_CameraADC
                         sdt = DSKH.Rows[0]["SDT"].ToString();
 
                         truyenData(makh, tenkh, sdt);
-
                         this.Close();
                     } 
                 }

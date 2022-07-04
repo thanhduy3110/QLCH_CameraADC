@@ -20,11 +20,14 @@ namespace QLCH_CameraADC
            
         }
 
-        public frmBanHang(string TenNV,string MaNV)
+        public frmBanHang(string TenNV,string MaNV,string TenKH,string MaKH,string SDT)
         {
             InitializeComponent();
             this.sTenNV = TenNV;
             this.sMaNV = MaNV;
+            txtTenKH.Text = TenKH;
+            txtSDT.Text = SDT;
+            maKH = MaKH;
 
         }
 
@@ -54,20 +57,21 @@ namespace QLCH_CameraADC
 
        
 
-        public void OpenTimKiem()
-        {
-            frmThemKH_Moi frmcon = new frmThemKH_Moi();
-            frmcon.truyenData = new frmThemKH_Moi.TruyenCHoCTHD_Nhap(LoadDataTruyen);
-            frmcon.ShowDialog();
-        }
+        //public void OpenTimKiem()
+        //{
+        //    frmThemKH_Moi frmcon = new frmThemKH_Moi();
+        //    frmcon.truyenData = new frmThemKH_Moi.TruyenCHoCTHD_Nhap(LoadDataTruyen);
+        //    frmcon.ShowDialog();
+        //}
 
       
-        public void LoadDataTruyen(string makh, string tenkh, string sdt)
-        {
-            txtTenKH.Text = tenkh;
-            txtSDT.Text = sdt;
-            maKH = makh;
-        }
+        //public void LoadDataTruyen(string makh, string tenkh, string sdt)
+        //{
+        //    txtTenKH.Text = tenkh;
+        //    txtSDT.Text = sdt;
+        //    maKH = makh;
+          
+        //}
 
       
 
@@ -117,7 +121,7 @@ namespace QLCH_CameraADC
 
         private void frmBanHang_Load(object sender, EventArgs e)
         {
-            OpenTimKiem();
+           
             HienThiSP();
             lblTenNV.Text = this.sTenNV;
             btnThanhToan.Enabled = false;

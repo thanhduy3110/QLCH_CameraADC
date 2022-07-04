@@ -17,7 +17,7 @@ namespace DAL
         {
             if (KetNoiDatabase.ConnectDB == null)
                 // KetNoiDatabase.ConnectDB = new SqlConnection(@"Data Source=DESKTOP-L3VUEAK;Initial Catalog=PM_BanLinhKienPC;Integrated Security=True");
-                KetNoiDatabase.ConnectDB = new SqlConnection(@"Data Source=ADMIN-PC\SQLEXPRESS; Initial Catalog =QLCH_CameraADC;Integrated Security = True");
+                KetNoiDatabase.ConnectDB = new SqlConnection(@"Data Source=THANHDUY\SQLEXPRESS; Initial Catalog =QLCH_CameraADC;Integrated Security = True");
 
             if (KetNoiDatabase.ConnectDB.State != ConnectionState.Open)
                 KetNoiDatabase.ConnectDB.Open();
