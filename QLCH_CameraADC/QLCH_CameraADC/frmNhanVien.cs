@@ -25,7 +25,7 @@ namespace QLCH_CameraADC
         NhanVien_BUS bus = new NhanVien_BUS();
         NhanVien nv = new NhanVien();
         LoaiNV_BUS lnv = new LoaiNV_BUS();
-        int flag;
+        int flag=0;
         int GT;
 
         public void LoadData()
@@ -53,6 +53,41 @@ namespace QLCH_CameraADC
             txtEmail.ReadOnly = t;
             txtMatKhau.ReadOnly = t;
             rtxtDiaChi.ReadOnly = t;
+        }
+
+        public void xulychucnang(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnHuy.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+        }
+        public void xulychucnang1(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = !b1;
+            btnChonAnh.Enabled = !b1;
+        }
+
+        public void xulychucnangthem(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnSua.Enabled = !b1;
+            btnXoa.Enabled = !b1;
+        }
+
+        public void xulychucnangsua(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnSua.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnXoa.Enabled = !b1;
         }
 
         public void HienThiLoaiNV()
@@ -97,6 +132,7 @@ namespace QLCH_CameraADC
                     dem = dem + 1;
                     txtMaNV.Text = "NV" + dem;
                 }
+                xulychucnangthem(true);
                 flag = 1;
             }
             else if (flag == 1)
@@ -137,6 +173,7 @@ namespace QLCH_CameraADC
                 HienThiTextbox(true);
                 LoadData();
                 flag = 0;
+                xulychucnang1(true);
             }
         }
 
@@ -158,6 +195,9 @@ namespace QLCH_CameraADC
         private void dgvDSNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             HienThiLoaiNV();
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
             try
             {
                 DataGridViewRow row = dgvDSNhanVien.Rows[e.RowIndex];
@@ -220,6 +260,7 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 HienThiTextbox(false);
+                xulychucnangsua(true);
                 flag = 1;
             }
             else if (flag == 1)
@@ -267,6 +308,7 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Sửa thành công");
                 HienThiTextbox(true);
                 LoadData();
+                xulychucnang1(true);
                 flag = 0;
             }
         }
@@ -274,7 +316,8 @@ namespace QLCH_CameraADC
         private void frmNhanVien_Load(object sender, EventArgs e)
         {
             LoadData();
-            txtMaNV.ReadOnly = true;
+            txtMaNV.Enabled = false;
+            xulychucnang(false);
             HienThiTextbox(true);
            
         }
@@ -314,5 +357,13 @@ namespace QLCH_CameraADC
             LoadData();
 
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            flag = 0;
+            clear();
+            HienThiTextbox(true);
+            xulychucnang(false);
         }
+    }
 }

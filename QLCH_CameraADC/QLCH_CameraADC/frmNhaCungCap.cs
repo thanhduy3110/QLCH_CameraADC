@@ -38,12 +38,55 @@ namespace QLCH_CameraADC
             rtxtGhiChu.Clear();
         }
 
+        public void HienthiTextbox(Boolean b1)
+        {
+            txtTenNCC.ReadOnly=b1;
+            txtEmail.ReadOnly=b1;
+            txtSDT.ReadOnly=b1;
+            rtxtDiaChi.ReadOnly = b1;
+            rtxtGhiChu.ReadOnly = b1;
+        }
+
+        public void xulychucnang(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnHuy.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+        }
+        public void xulychucnang1(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = !b1;
+            
+        }
+
+        public void xulychucnangthem(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            
+            btnHuy.Enabled = b1;
+            btnSua.Enabled = !b1;
+            btnXoa.Enabled = !b1;
+        }
+
+        public void xulychucnangsua(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnSua.Enabled = b1;
+            
+            btnHuy.Enabled = b1;
+            btnXoa.Enabled = !b1;
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (flag == 0)
             {
                 clear();
-               
+                HienthiTextbox(false);
+                xulychucnangthem(true);
                 int dem = bus.PhatSinhMa("").Rows.Count;
                 if (dem == 0)
                 {
@@ -74,7 +117,8 @@ namespace QLCH_CameraADC
                 bus.AddData(ncc);
                 MessageBox.Show("Thêm thành công");
                 LoadData();
-
+                HienthiTextbox(true);
+                xulychucnang1(false);
                 flag = 0;
 
             }
@@ -83,6 +127,8 @@ namespace QLCH_CameraADC
         private void frmNhaCungCap_Load(object sender, EventArgs e)
         {
             LoadData();
+            xulychucnang(false);
+            HienthiTextbox(true);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -104,7 +150,8 @@ namespace QLCH_CameraADC
 
             if (flag == 0)
             {
-              
+                HienthiTextbox(false);
+                xulychucnangsua(true);
                 flag = 1;
             }
             else if (flag == 1)
@@ -119,7 +166,8 @@ namespace QLCH_CameraADC
                 bus.EditData(ncc);
                 MessageBox.Show("Sửa thành công");
                 LoadData();
-            
+                HienthiTextbox(true);
+                xulychucnang1(false);
                 flag = 0;
             }
         }
@@ -140,6 +188,12 @@ namespace QLCH_CameraADC
             {
 
             }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            clear();
+            xulychucnang(false);
         }
     }
 }

@@ -43,6 +43,52 @@ namespace QLCH_CameraADC
             pichHinh.Controls.Clear();
         }
 
+        public void HienThiTextbox(Boolean t)
+        {
+            txtTenSP.ReadOnly = t;
+            txtTenNSX.ReadOnly = t; 
+            txtDVT.ReadOnly = t;
+            txtGia.ReadOnly = t;
+            txtKhuyenMai.ReadOnly = t;
+            txtSoLuong.ReadOnly = t;
+            rtxtMoTa.ReadOnly = t;
+        }
+
+        public void xulychucnang(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnHuy.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+        }
+        public void xulychucnang1(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = !b1;
+            btnChonAnh.Enabled = !b1;
+        }
+
+        public void xulychucnangthem(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnSua.Enabled = !b1;
+            btnXoa.Enabled = !b1;
+        }
+
+        public void xulychucnangsua(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnSua.Enabled = b1;
+            btnChonAnh.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnXoa.Enabled = !b1;
+        }
+
         public void HienThiLoaiSP()
         {
             cboMaLoaiSP.DataSource = lsp.GetData("");
@@ -83,6 +129,8 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 clear();
+                xulychucnangthem(true);
+                HienThiTextbox(false);
                 int dem = bus.GetTong("").Rows.Count;
                 if (dem == 0)
                 {
@@ -127,6 +175,8 @@ namespace QLCH_CameraADC
                 bus.AddData(sp);
                 MessageBox.Show("Thêm thành công");
                 LoadData();
+                xulychucnang1(false);
+                HienThiTextbox(true);
                 flag = 0;
             }
         }
@@ -134,11 +184,16 @@ namespace QLCH_CameraADC
         private void frmSanPham_Load(object sender, EventArgs e)
         {
             LoadData();
-            HienThiLoaiSP();
+            xulychucnang(false);
+           
+            HienThiTextbox(true);
         }
 
         private void dgvDSSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            HienThiLoaiSP();
+            btnThem.Enabled = true;
+            btnSua.Enabled = true;
             try
             {
                 DataGridViewRow row = dgvDSSanPham.Rows[e.RowIndex];
@@ -190,7 +245,8 @@ namespace QLCH_CameraADC
         {
             if (flag == 0)
             {
-
+                xulychucnangsua(true);
+                HienThiTextbox(false);
                 flag = 1;
             }
             else if (flag == 1)
@@ -225,6 +281,8 @@ namespace QLCH_CameraADC
                 sp.TrangThai = 1;
                 bus.EditData(sp);
                 LoadData();
+                xulychucnang1(false);
+                HienThiTextbox(true);
                 flag = 0;
             }
         }
@@ -241,6 +299,12 @@ namespace QLCH_CameraADC
 
             }
             LoadData();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            clear();
+            xulychucnang1(false);
         }
     }
 }
