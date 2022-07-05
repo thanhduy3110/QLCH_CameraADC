@@ -58,13 +58,13 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboLoaiNV = new System.Windows.Forms.ComboBox();
@@ -92,6 +92,7 @@
             this.pichHinh = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTimKiem = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnThem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -109,7 +110,6 @@
             this.matkhau = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hinhanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pichHinh)).BeginInit();
             this.panel1.SuspendLayout();
@@ -166,22 +166,22 @@
             // cboLoaiNV
             // 
             this.cboLoaiNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoaiNV.FormattingEnabled = true;
             this.cboLoaiNV.IntegralHeight = false;
             this.cboLoaiNV.Location = new System.Drawing.Point(807, 77);
             this.cboLoaiNV.Name = "cboLoaiNV";
-            this.cboLoaiNV.Size = new System.Drawing.Size(242, 33);
+            this.cboLoaiNV.Size = new System.Drawing.Size(242, 39);
             this.cboLoaiNV.TabIndex = 7;
             // 
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinh.Location = new System.Drawing.Point(472, 334);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(242, 31);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(242, 39);
             this.dtpNgaySinh.TabIndex = 6;
             // 
             // radioNu
@@ -944,6 +944,96 @@
             this.txtTimKiem.UseSystemPasswordChar = false;
             this.txtTimKiem.WordWrap = true;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.AllowAnimations = true;
+            this.btnHuy.AllowMouseEffects = true;
+            this.btnHuy.AllowToggling = false;
+            this.btnHuy.AnimationSpeed = 200;
+            this.btnHuy.AutoGenerateColors = false;
+            this.btnHuy.AutoRoundBorders = false;
+            this.btnHuy.AutoSizeLeftIcon = true;
+            this.btnHuy.AutoSizeRightIcon = true;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.BackColor1 = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.BackgroundImage")));
+            this.btnHuy.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.ButtonText = "";
+            this.btnHuy.ButtonTextMarginLeft = 0;
+            this.btnHuy.ColorContrastOnClick = 45;
+            this.btnHuy.ColorContrastOnHover = 45;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnHuy.CustomizableEdges = borderEdges2;
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHuy.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHuy.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnHuy.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHuy.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuy.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnHuy.IconMarginLeft = 11;
+            this.btnHuy.IconPadding = 10;
+            this.btnHuy.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuy.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuy.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnHuy.IconSize = 25;
+            this.btnHuy.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.IdleBorderRadius = 30;
+            this.btnHuy.IdleBorderThickness = 1;
+            this.btnHuy.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
+            this.btnHuy.IdleIconRightImage = null;
+            this.btnHuy.IndicateFocus = false;
+            this.btnHuy.Location = new System.Drawing.Point(875, 9);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnHuy.OnDisabledState.BorderRadius = 30;
+            this.btnHuy.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnDisabledState.BorderThickness = 1;
+            this.btnHuy.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHuy.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnHuy.OnDisabledState.IconLeftImage = null;
+            this.btnHuy.OnDisabledState.IconRightImage = null;
+            this.btnHuy.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnHuy.onHoverState.BorderRadius = 30;
+            this.btnHuy.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.onHoverState.BorderThickness = 1;
+            this.btnHuy.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnHuy.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.onHoverState.IconLeftImage = null;
+            this.btnHuy.onHoverState.IconRightImage = null;
+            this.btnHuy.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.OnIdleState.BorderRadius = 30;
+            this.btnHuy.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnIdleState.BorderThickness = 1;
+            this.btnHuy.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
+            this.btnHuy.OnIdleState.IconRightImage = null;
+            this.btnHuy.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnHuy.OnPressedState.BorderRadius = 30;
+            this.btnHuy.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnPressedState.BorderThickness = 1;
+            this.btnHuy.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnHuy.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnPressedState.IconLeftImage = null;
+            this.btnHuy.OnPressedState.IconRightImage = null;
+            this.btnHuy.Size = new System.Drawing.Size(107, 77);
+            this.btnHuy.TabIndex = 1;
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHuy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHuy.TextMarginLeft = 0;
+            this.btnHuy.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnHuy.UseDefaultRadiusAndThickness = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // btnXoa
             // 
             this.btnXoa.AllowAnimations = true;
@@ -1401,96 +1491,6 @@
             this.trangthai.Name = "trangthai";
             this.trangthai.ReadOnly = true;
             this.trangthai.Visible = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.AllowAnimations = true;
-            this.btnHuy.AllowMouseEffects = true;
-            this.btnHuy.AllowToggling = false;
-            this.btnHuy.AnimationSpeed = 200;
-            this.btnHuy.AutoGenerateColors = false;
-            this.btnHuy.AutoRoundBorders = false;
-            this.btnHuy.AutoSizeLeftIcon = true;
-            this.btnHuy.AutoSizeRightIcon = true;
-            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
-            this.btnHuy.BackColor1 = System.Drawing.Color.LightSkyBlue;
-            this.btnHuy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.BackgroundImage")));
-            this.btnHuy.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHuy.ButtonText = "";
-            this.btnHuy.ButtonTextMarginLeft = 0;
-            this.btnHuy.ColorContrastOnClick = 45;
-            this.btnHuy.ColorContrastOnHover = 45;
-            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnHuy.CustomizableEdges = borderEdges2;
-            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHuy.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnHuy.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnHuy.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnHuy.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnHuy.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnHuy.IconMarginLeft = 11;
-            this.btnHuy.IconPadding = 10;
-            this.btnHuy.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHuy.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnHuy.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnHuy.IconSize = 25;
-            this.btnHuy.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
-            this.btnHuy.IdleBorderRadius = 30;
-            this.btnHuy.IdleBorderThickness = 1;
-            this.btnHuy.IdleFillColor = System.Drawing.Color.LightSkyBlue;
-            this.btnHuy.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
-            this.btnHuy.IdleIconRightImage = null;
-            this.btnHuy.IndicateFocus = false;
-            this.btnHuy.Location = new System.Drawing.Point(875, 9);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnHuy.OnDisabledState.BorderRadius = 30;
-            this.btnHuy.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHuy.OnDisabledState.BorderThickness = 1;
-            this.btnHuy.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnHuy.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnHuy.OnDisabledState.IconLeftImage = null;
-            this.btnHuy.OnDisabledState.IconRightImage = null;
-            this.btnHuy.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnHuy.onHoverState.BorderRadius = 30;
-            this.btnHuy.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHuy.onHoverState.BorderThickness = 1;
-            this.btnHuy.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnHuy.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.onHoverState.IconLeftImage = null;
-            this.btnHuy.onHoverState.IconRightImage = null;
-            this.btnHuy.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.btnHuy.OnIdleState.BorderRadius = 30;
-            this.btnHuy.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHuy.OnIdleState.BorderThickness = 1;
-            this.btnHuy.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.btnHuy.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
-            this.btnHuy.OnIdleState.IconRightImage = null;
-            this.btnHuy.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnHuy.OnPressedState.BorderRadius = 30;
-            this.btnHuy.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnHuy.OnPressedState.BorderThickness = 1;
-            this.btnHuy.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnHuy.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.OnPressedState.IconLeftImage = null;
-            this.btnHuy.OnPressedState.IconRightImage = null;
-            this.btnHuy.Size = new System.Drawing.Size(107, 77);
-            this.btnHuy.TabIndex = 1;
-            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnHuy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnHuy.TextMarginLeft = 0;
-            this.btnHuy.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnHuy.UseDefaultRadiusAndThickness = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // frmNhanVien
             // 
