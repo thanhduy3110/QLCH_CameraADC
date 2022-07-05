@@ -20,73 +20,98 @@ namespace QLCH_CameraADC
         }
         ThongKe_BUS bus = new ThongKe_BUS();
 
-        public void KhoanChiThangNay(string condition, string condition1)
+        //public void KhoanChiThangNay(string condition, string condition1)
+        //{
+        //    comboBoxChi.DataSource = bus.KhoanChiTheoThang("" + condition);
+        //    comboBoxChi.DisplayMember = "TT";
+
+        //    cboDoanhThu.DataSource = bus.DoanhThuTheoThang("" + condition, condition1);
+        //    cboDoanhThu.DisplayMember = "TT";
+        //    try
+        //    {
+        //        decimal LoiNhuan;
+        //        LoiNhuan = decimal.Parse(cboDoanhThu.Text) - decimal.Parse(comboBoxChi.Text);
+        //        comboloinhuan.Text = LoiNhuan.ToString();
+        //        comboloinhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboloinhuan.Text));
+        //    }
+        //    catch
+        //    {
+
+        //    }
+        //}
+
+        //public void KhoanChiTheoNam(string condition)
+        //{
+        //    cboDoanhThu.DataSource = bus.DoanThuTheoNam("" + condition);
+        //    cboDoanhThu.DisplayMember = "TT";
+
+        //    comboBoxChi.DataSource = bus.ThuChiTheoNam("" + condition);
+        //    comboBoxChi.DisplayMember = "TT";
+
+        //    try
+        //    {
+        //        decimal LoiNhuan;
+        //        LoiNhuan = decimal.Parse(cboDoanhThu.Text) - decimal.Parse(comboBoxChi.Text);
+        //        comboloinhuan.Text = LoiNhuan.ToString();
+        //        comboloinhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboloinhuan.Text));
+        //    }
+        //    catch
+        //    {
+
+        //    }
+        //}
+        //public void SPBanChayTheoThang(string condition, string condition2)
+        //{
+        //    dgvThongKe.DataSource = bus.SPBanChayTheoThang("" + condition, condition2);
+        //}
+
+        //public void Top3SanPhamBanTrongNam(string condition)
+        //{
+        //    dgvThongKe.DataSource = bus.Top3SanPhamBanTrongNam("" + condition);
+        //}
+        //public void Top3SPMuaNhieuTrongThang(string condition, string condition1)
+        //{
+        //    dgvThongKe.DataSource = bus.Top3MuaMonth("" + condition, condition1);
+        //}
+
+        //public void Top3SPMuaNhieuTrongNam(string condition)
+        //{
+        //    dgvThongKe.DataSource = bus.Top3SPMuaYear("" + condition);
+        //}
+
+        //public void Khachhangmuanhieutrongthang(string condition, string condition1)
+        //{
+        //    dgvThongKe.DataSource = bus.KhachhangMuaNhieu("" + condition, condition1);
+        //}
+
+        //public void KHMuaNhieuTrongNam(string condition)
+        //{
+        //    dgvThongKe.DataSource = bus.KhachHangMuaNhieuTrongNam("" + condition);
+        //}
+
+        public void KhoanChiTheoThang(string condition, string condition1)
         {
-            comboBoxChi.DataSource = bus.KhoanChiTheoThang("" + condition);
-            comboBoxChi.DisplayMember = "TT";
-
-            cboDoanhThu.DataSource = bus.DoanhThuTheoThang("" + condition, condition1);
-            cboDoanhThu.DisplayMember = "TT";
-            try
-            {
-                decimal LoiNhuan;
-                LoiNhuan = decimal.Parse(cboDoanhThu.Text) - decimal.Parse(comboBoxChi.Text);
-                comboloinhuan.Text = LoiNhuan.ToString();
-                comboloinhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboloinhuan.Text));
-            }
-            catch
-            {
-
-            }
+            dgvThongKe.DataSource=bus.KhoanChiTheoThang(condition,condition1);
         }
 
-        public void KhoanChiTheoNam(string condition)
+        public void DoanhThuTheoThang(string condition, string condition1)
         {
-            cboDoanhThu.DataSource = bus.DoanThuTheoNam("" + condition);
-            cboDoanhThu.DisplayMember = "TT";
-
-            comboBoxChi.DataSource = bus.ThuChiTheoNam("" + condition);
-            comboBoxChi.DisplayMember = "TT";
-
-            try
-            {
-                decimal LoiNhuan;
-                LoiNhuan = decimal.Parse(cboDoanhThu.Text) - decimal.Parse(comboBoxChi.Text);
-                comboloinhuan.Text = LoiNhuan.ToString();
-                comboloinhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboloinhuan.Text));
-            }
-            catch
-            {
-
-            }
-        }
-        public void SPBanChayTheoThang(string condition, string condition2)
-        {
-            dgvThongKe.DataSource = bus.SPBanChayTheoThang("" + condition, condition2);
+            dgvThongKe.DataSource = bus.DoanhThuTheoThang(condition, condition1);
         }
 
-        public void Top3SanPhamBanTrongNam(string condition)
+        public void DSNVBanTrongThang(string condition, string condition1)
         {
-            dgvThongKe.DataSource = bus.Top3SanPhamBanTrongNam("" + condition);
-        }
-        public void Top3SPMuaNhieuTrongThang(string condition, string condition1)
-        {
-            dgvThongKe.DataSource = bus.Top3MuaMonth("" + condition, condition1);
+            dgvThongKe.DataSource = bus.DSNVBanTrongThang(condition, condition1);
         }
 
-        public void Top3SPMuaNhieuTrongNam(string condition)
+        public void DSSPBanTrongThang(string condition, string condition1)
         {
-            dgvThongKe.DataSource = bus.Top3SPMuaYear("" + condition);
+            dgvThongKe.DataSource = bus.DSSPBanTrongThang(condition, condition1);
         }
 
-        public void Khachhangmuanhieutrongthang(string condition, string condition1)
+        public void DSSPNhapTrongThang(string condition, string condition1)
         {
-            dgvThongKe.DataSource = bus.KhachhangMuaNhieu("" + condition, condition1);
-        }
-
-        public void KHMuaNhieuTrongNam(string condition)
-        {
-            dgvThongKe.DataSource = bus.KhachHangMuaNhieuTrongNam("" + condition);
+            dgvThongKe.DataSource = bus.DSSPNhapTrongThang(condition, condition1);
         }
         public void SanPhamTonKho()
         {
@@ -94,41 +119,39 @@ namespace QLCH_CameraADC
         }
         private void btnXem_Click(object sender, EventArgs e)
         {
-            if (radioBanNhieuMonth.Checked == true)
+            if(radioKhoanChi.Checked==true)
             {
-                string condition1 = cboThang.Text;
-                string condition2 = cboNam.Text;
-                SPBanChayTheoThang(condition1, condition2);
+                string condition=cboThang.Text;
+                string condition1 = cboNam.Text;
+                KhoanChiTheoThang(condition, condition1);
             }
 
-            if (radioBanNhieuYear.Checked == true)
-            {
-                string condition2 = cboNam.Text;
-                Top3SanPhamBanTrongNam(condition2);
-            }
-
-            if (radioBanNhieuYear.Checked == true)
-            {
-                string condition = cboNam.Text;
-                Top3SPMuaNhieuTrongNam(condition);
-            }
-            if (radioMuaNhieuMonth.Checked == true)
+            if (radioDoanhThu.Checked == true)
             {
                 string condition = cboThang.Text;
                 string condition1 = cboNam.Text;
-                Top3SPMuaNhieuTrongThang(condition, condition1);
+                DoanhThuTheoThang(condition, condition1);
             }
 
-            if (radioKHMuaNhieuThang.Checked == true)
+            if (radioDSNVBan.Checked == true)
             {
                 string condition = cboThang.Text;
                 string condition1 = cboNam.Text;
-                Khachhangmuanhieutrongthang(condition, condition1);
+                DSNVBanTrongThang(condition, condition1);
             }
-            if (radioKHMuaNhieuNam.Checked == true)
+
+            if (radioDSSPBan.Checked == true)
             {
-                string condition = cboNam.Text;
-                KHMuaNhieuTrongNam(condition);
+                string condition = cboThang.Text;
+                string condition1 = cboNam.Text;
+                DSSPBanTrongThang(condition, condition1);
+            }
+
+            if (radioDSSPNhap.Checked == true)
+            {
+                string condition = cboThang.Text;
+                string condition1 = cboNam.Text;
+                DSNVBanTrongThang(condition, condition1);
             }
 
             if (radioSPTonKho.Checked == true)
