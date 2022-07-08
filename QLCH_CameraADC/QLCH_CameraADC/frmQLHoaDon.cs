@@ -37,6 +37,13 @@ namespace QLCH_CameraADC
         private void frmQLHoaDon_Load(object sender, EventArgs e)
         {
             LoadData();
+            btnSua.Enabled = false;
+            txtTongTien.Enabled=false;
+            dtpNgayLap.Enabled=false;
+            txtThanhTien.Enabled = false;
+            txtSL.Enabled=false;    
+            txtDonGia.Enabled=false;
+            txtKhuyenMai.Enabled = false;
            
         }
         public void LoadData()
@@ -99,11 +106,28 @@ namespace QLCH_CameraADC
             }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
+      
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnInHD_Click(object sender, EventArgs e)
+        {
+            frmInHD_Ban inHD = new frmInHD_Ban(this.sMaNV, MaHD);
+            inHD.Show();
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
             if (flag == 0)
             {
+                dtpNgayLap.Enabled = true;
+                txtSL.Enabled = true;
+                txtDonGia.Enabled = true;
+                txtKhuyenMai.Enabled = true;
                 flag = 1;
             }
             else if (flag == 1)
@@ -132,23 +156,12 @@ namespace QLCH_CameraADC
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnInHD_Click(object sender, EventArgs e)
-        {
-            frmInHD_Ban inHD = new frmInHD_Ban(this.sMaNV, MaHD);
-            inHD.Show();
-
-        }
-
         private void dgvDSCTHD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
                 HienThiSP();
+                btnSua.Enabled = true;
                 DataGridViewRow row = dgvDSCTHD.Rows[e.RowIndex];
                 MaSP = row.Cells["maspp"].Value.ToString();
                 cboTenSP.Text = row.Cells["tensp"].Value.ToString();

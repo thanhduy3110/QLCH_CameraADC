@@ -40,6 +40,7 @@ namespace QLCH_CameraADC
 
         public void HienthiTextbox(Boolean b1)
         {
+
             txtTenNCC.ReadOnly=b1;
             txtEmail.ReadOnly=b1;
             txtSDT.ReadOnly=b1;
@@ -92,7 +93,7 @@ namespace QLCH_CameraADC
                 {
                     txtMaNCC.Text = "NCC001";
                 }
-                else if (dem < 10)
+                else if (dem < 9)
                 {
                     dem = dem + 1;
                     txtMaNCC.Text = "NCC00" + dem;
@@ -107,6 +108,14 @@ namespace QLCH_CameraADC
             else if (flag == 1)
             {
 
+                for (int i = 0; i < dgvDSNCC.Rows.Count - 0; i++)
+                {
+                    if (txtSDT.Text == dgvDSNCC.Rows[i].Cells["sdt"].Value.ToString())
+                    {
+                        MessageBox.Show("Số điện thoại đã tồn tại");
+                        return;
+                    }
+                }
                 ncc.MaNCC = txtMaNCC.Text;
                 ncc.TenNCC = txtTenNCC.Text;
                 ncc.Email = txtEmail.Text;
@@ -118,7 +127,7 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Thêm thành công");
                 LoadData();
                 HienthiTextbox(true);
-                xulychucnang1(false);
+                xulychucnang1(true);
                 flag = 0;
 
             }
@@ -126,6 +135,7 @@ namespace QLCH_CameraADC
 
         private void frmNhaCungCap_Load(object sender, EventArgs e)
         {
+            txtMaNCC.ReadOnly = true;
             LoadData();
             xulychucnang(false);
             HienthiTextbox(true);
@@ -167,7 +177,7 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Sửa thành công");
                 LoadData();
                 HienthiTextbox(true);
-                xulychucnang1(false);
+                xulychucnang1(true);
                 flag = 0;
             }
         }
@@ -176,6 +186,9 @@ namespace QLCH_CameraADC
         {
             try
             {
+                btnThem.Enabled = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
                 DataGridViewRow row = dgvDSNCC.Rows[e.RowIndex];
                 txtMaNCC.Text = row.Cells["mancc"].Value.ToString();
                 txtTenNCC.Text = row.Cells["tenncc"].Value.ToString();

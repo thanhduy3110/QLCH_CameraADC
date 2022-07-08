@@ -30,7 +30,7 @@ namespace DAL
 
         public DataTable GetNV(string Condition)
         {
-            return KetNoi.GetDataTable("Select MaNV,HoTen from NhanVien Order By TenNV ASC" + Condition);
+            return KetNoi.GetDataTable("Select MaNV,HoTen from NhanVien Order By HoTen ASC" + Condition);
         }
 
         public DataTable GetKH(string Condition)

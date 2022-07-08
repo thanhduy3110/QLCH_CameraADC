@@ -107,8 +107,8 @@ namespace QLCH_CameraADC
             HienThiNCC();
 
             lblTenNV.Text = this.sTenNV;
-            txtMaHD.ReadOnly = true;
-            txtTongTien.ReadOnly = true;
+            txtMaHD.Enabled = false;
+            txtTongTien.Enabled= false;
             btnLuu.Enabled = false;
             btnInHD.Enabled = false;
         }
@@ -189,7 +189,7 @@ namespace QLCH_CameraADC
             else
             {
                 int soluong = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value.ToString());
-                float gianhap = float.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value.ToString());
+                int gianhap = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value.ToString());
                 dgvDSCTHD.Rows[e.RowIndex].Cells["thanhtien"].Value = soluong * gianhap;
 
                 if(dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value?.ToString() == null)

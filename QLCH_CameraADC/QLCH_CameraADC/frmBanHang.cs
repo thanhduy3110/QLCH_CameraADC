@@ -126,6 +126,7 @@ namespace QLCH_CameraADC
             lblTenNV.Text = this.sTenNV;
             btnThanhToan.Enabled = false;
             btnInHDBan.Enabled = false;
+            txtMaHD.Enabled=false;
         }
 
         int flag = 0;
@@ -152,7 +153,7 @@ namespace QLCH_CameraADC
                     dem = dem + 1;
                     txtMaHD.Text = "HD0" + dem;
                 }
-                btnThanhToan.Enabled = true;
+               
                 flag = 1;
             }
           
@@ -165,6 +166,10 @@ namespace QLCH_CameraADC
             {
                 decimal TienThua = 0;
                 TienThua = decimal.Parse(txtTienKhachDua.Text) - decimal.Parse(txtTongTien.Text);
+                if(TienThua>=0)
+                {
+                    btnThanhToan.Enabled = true;
+                }    
                 txtTienThoiLai.Text = TienThua.ToString();
                 txtTienThoiLai.Text = string.Format("{0:#,##0}", float.Parse(txtTienThoiLai.Text));
 

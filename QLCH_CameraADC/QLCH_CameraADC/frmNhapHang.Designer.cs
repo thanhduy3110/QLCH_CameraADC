@@ -45,12 +45,6 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvDSCTHD = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.tensp = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.tenncc = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnInHD = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLuu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnTaoPhieu = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -63,6 +57,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTenNV = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tensp = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.tenncc = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gianhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ghichu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSCTHD)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -150,52 +150,6 @@
             this.dgvDSCTHD.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvDSCTHD.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvDSCTHD_RowValidating);
             // 
-            // tensp
-            // 
-            this.tensp.DataPropertyName = "tensp";
-            this.tensp.HeaderText = "Tên sản phẩm";
-            this.tensp.MinimumWidth = 6;
-            this.tensp.Name = "tensp";
-            this.tensp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.tensp.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // tenncc
-            // 
-            this.tenncc.DataPropertyName = "tenncc";
-            this.tenncc.HeaderText = "Nhà cung cấp";
-            this.tenncc.MinimumWidth = 6;
-            this.tenncc.Name = "tenncc";
-            this.tenncc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.tenncc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // soluong
-            // 
-            this.soluong.DataPropertyName = "soluong";
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 6;
-            this.soluong.Name = "soluong";
-            // 
-            // gianhap
-            // 
-            this.gianhap.DataPropertyName = "gianhap";
-            this.gianhap.HeaderText = "Giá nhập";
-            this.gianhap.MinimumWidth = 6;
-            this.gianhap.Name = "gianhap";
-            // 
-            // thanhtien
-            // 
-            this.thanhtien.DataPropertyName = "thanhtien";
-            this.thanhtien.HeaderText = "Thành tiên";
-            this.thanhtien.MinimumWidth = 6;
-            this.thanhtien.Name = "thanhtien";
-            // 
-            // ghichu
-            // 
-            this.ghichu.DataPropertyName = "ghichu";
-            this.ghichu.HeaderText = "Ghi chú";
-            this.ghichu.MinimumWidth = 6;
-            this.ghichu.Name = "ghichu";
-            // 
             // btnInHD
             // 
             this.btnInHD.AllowAnimations = true;
@@ -243,7 +197,7 @@
             this.btnInHD.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.bill3;
             this.btnInHD.IdleIconRightImage = null;
             this.btnInHD.IndicateFocus = false;
-            this.btnInHD.Location = new System.Drawing.Point(1156, 233);
+            this.btnInHD.Location = new System.Drawing.Point(920, 61);
             this.btnInHD.Name = "btnInHD";
             this.btnInHD.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnInHD.OnDisabledState.BorderRadius = 30;
@@ -333,7 +287,7 @@
             this.btnLuu.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.save;
             this.btnLuu.IdleIconRightImage = null;
             this.btnLuu.IndicateFocus = false;
-            this.btnLuu.Location = new System.Drawing.Point(727, 233);
+            this.btnLuu.Location = new System.Drawing.Point(491, 61);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLuu.OnDisabledState.BorderRadius = 30;
@@ -423,7 +377,7 @@
             this.btnTaoPhieu.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.add2;
             this.btnTaoPhieu.IdleIconRightImage = null;
             this.btnTaoPhieu.IndicateFocus = false;
-            this.btnTaoPhieu.Location = new System.Drawing.Point(301, 233);
+            this.btnTaoPhieu.Location = new System.Drawing.Point(65, 61);
             this.btnTaoPhieu.Name = "btnTaoPhieu";
             this.btnTaoPhieu.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnTaoPhieu.OnDisabledState.BorderRadius = 30;
@@ -502,7 +456,7 @@
             // 
             this.dtpNgayLap.CustomFormat = "dd/MM/yyyy";
             this.dtpNgayLap.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpNgayLap.Location = new System.Drawing.Point(428, 76);
+            this.dtpNgayLap.Location = new System.Drawing.Point(431, 253);
             this.dtpNgayLap.Name = "dtpNgayLap";
             this.dtpNgayLap.Size = new System.Drawing.Size(274, 34);
             this.dtpNgayLap.TabIndex = 6;
@@ -534,7 +488,7 @@
             this.txtTongTien.IconRight = null;
             this.txtTongTien.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTongTien.Lines = new string[0];
-            this.txtTongTien.Location = new System.Drawing.Point(889, 76);
+            this.txtTongTien.Location = new System.Drawing.Point(892, 253);
             this.txtTongTien.MaxLength = 32767;
             this.txtTongTien.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTongTien.Modified = false;
@@ -608,7 +562,7 @@
             this.txtMaHD.IconRight = null;
             this.txtMaHD.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMaHD.Lines = new string[0];
-            this.txtMaHD.Location = new System.Drawing.Point(27, 76);
+            this.txtMaHD.Location = new System.Drawing.Point(30, 253);
             this.txtMaHD.MaxLength = 32767;
             this.txtMaHD.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtMaHD.Modified = false;
@@ -658,7 +612,7 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(423, 39);
+            this.label11.Location = new System.Drawing.Point(426, 216);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(150, 34);
             this.label11.TabIndex = 4;
@@ -667,7 +621,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(884, 39);
+            this.label10.Location = new System.Drawing.Point(887, 216);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(150, 34);
             this.label10.TabIndex = 4;
@@ -676,7 +630,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 39);
+            this.label2.Location = new System.Drawing.Point(25, 216);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(147, 34);
             this.label2.TabIndex = 4;
@@ -698,6 +652,53 @@
             this.lblTenNV.TabIndex = 14;
             this.lblTenNV.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTenNV.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // tensp
+            // 
+            this.tensp.DataPropertyName = "tensp";
+            this.tensp.HeaderText = "Tên sản phẩm";
+            this.tensp.MinimumWidth = 6;
+            this.tensp.Name = "tensp";
+            this.tensp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.tensp.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // tenncc
+            // 
+            this.tenncc.DataPropertyName = "tenncc";
+            this.tenncc.HeaderText = "Nhà cung cấp";
+            this.tenncc.MinimumWidth = 6;
+            this.tenncc.Name = "tenncc";
+            this.tenncc.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.tenncc.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "soluong";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 6;
+            this.soluong.Name = "soluong";
+            // 
+            // gianhap
+            // 
+            this.gianhap.DataPropertyName = "gianhap";
+            this.gianhap.HeaderText = "Giá nhập";
+            this.gianhap.MinimumWidth = 6;
+            this.gianhap.Name = "gianhap";
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.DataPropertyName = "thanhtien";
+            this.thanhtien.HeaderText = "Thành tiên";
+            this.thanhtien.MinimumWidth = 6;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.ReadOnly = true;
+            // 
+            // ghichu
+            // 
+            this.ghichu.DataPropertyName = "ghichu";
+            this.ghichu.HeaderText = "Ghi chú";
+            this.ghichu.MinimumWidth = 6;
+            this.ghichu.Name = "ghichu";
             // 
             // frmNhapHang
             // 
@@ -734,12 +735,12 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label2;
+        private Bunifu.UI.WinForms.BunifuLabel lblTenNV;
         private System.Windows.Forms.DataGridViewComboBoxColumn tensp;
         private System.Windows.Forms.DataGridViewComboBoxColumn tenncc;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn gianhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
         private System.Windows.Forms.DataGridViewTextBoxColumn ghichu;
-        private Bunifu.UI.WinForms.BunifuLabel lblTenNV;
     }
 }

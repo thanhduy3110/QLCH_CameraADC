@@ -133,17 +133,17 @@ namespace QLCH_CameraADC
                 int dem = bus.GetTong("").Rows.Count;
                 if (dem == 0)
                 {
-                    txtMaNV.Text = "NV01";
+                    txtMaNV.Text = "NV001";
                 }
-                else if (dem < 10)
+                else if (dem < 9)
                 {
                     dem = dem + 1;
-                    txtMaNV.Text = "NV0" + dem;
+                    txtMaNV.Text = "NV00" + dem;
                 }
                 else
                 {
                     dem = dem + 1;
-                    txtMaNV.Text = "NV" + dem;
+                    txtMaNV.Text = "NV0" + dem;
                 }
                 xulychucnangthem(true);
                 flag = 1;
@@ -202,7 +202,7 @@ namespace QLCH_CameraADC
                 }
                 for (int i = 0; i < dgvDSNhanVien.Rows.Count - 0; i++)
                 {
-                    if (txtSDT.Text == dgvDSNhanVien.Rows[i].Cells["DienThoai"].Value.ToString())
+                    if (txtSDT.Text == dgvDSNhanVien.Rows[i].Cells["sdt"].Value.ToString())
                     {
                         MessageBox.Show("Số điện thoại đã tồn tại");
                         return;
@@ -223,6 +223,7 @@ namespace QLCH_CameraADC
                 HienThiTextbox(true);
                 LoadData();
                 flag = 0;
+                txtMatKhau.Text="";
                 xulychucnang1(true);
             }
         }
@@ -255,7 +256,7 @@ namespace QLCH_CameraADC
                 cboLoaiNV.Text = row.Cells["tenloainv"].Value.ToString();
                 txtSDT.Text = row.Cells["sdt"].Value.ToString();
                 txtEmail.Text = row.Cells["email"].Value.ToString();
-                txtMatKhau.Text = row.Cells["matkhau"].Value.ToString();
+                
                 rtxtDiaChi.Text = row.Cells["diachi"].Value.ToString();
                 txtHoTen.Text = row.Cells["hoten"].Value.ToString();
                 dtpNgaySinh.Text = row.Cells["ngaysinh"].Value.ToString();
@@ -330,7 +331,15 @@ namespace QLCH_CameraADC
                 nv.CMND = int.Parse(txtCMND.Text);
                 nv.DiaChi = rtxtDiaChi.Text;
                 nv.NgaySinh = dtpNgaySinh.Value.Date;
-                nv.MatKhau = GetMD5(txtMatKhau.Text);
+                if (txtMatKhau.Text == "")
+                {
+                    nv.MatKhau = dgvDSNhanVien.Rows[vitri].Cells["matkhau"].Value.ToString();
+                }
+                else
+                {
+                    nv.SDT = txtSDT.Text;
+                }
+               
                 nv.MaLoaiNV = cboLoaiNV.SelectedValue.ToString();
 
                 if (radioNam.Checked == true)
@@ -368,11 +377,7 @@ namespace QLCH_CameraADC
                     MessageBox.Show("? Số điện thoại nhân viên không thể để trống");
                     return;
                 }
-                if (txtMatKhau.Text == "")
-                {
-                    MessageBox.Show("? Mật Khẩu nhân viên không thể để trống");
-                    return;
-                }
+              
                 nv.TrangThai = 1;
                 bus.EditData(nv);
                 MessageBox.Show("Sửa thành công");

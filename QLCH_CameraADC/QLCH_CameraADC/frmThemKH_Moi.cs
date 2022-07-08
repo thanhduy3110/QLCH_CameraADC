@@ -34,7 +34,8 @@ namespace QLCH_CameraADC
 
         private void frmThemKH_Moi_Load(object sender, EventArgs e)
         {
-            txtTenKH.ReadOnly = true;
+           txtTenKH.Enabled = false;
+            rtxtGhiChu.Enabled=false;
         }
 
         private void txtSDT_KeyDown(object sender, KeyEventArgs e)
@@ -61,6 +62,9 @@ namespace QLCH_CameraADC
                 {
                     txtTenKH.Clear();
                     txtSDT.Clear();
+                    rtxtGhiChu.Clear();
+                    txtTenKH.Enabled = true;
+                    rtxtGhiChu.Enabled=true;
                     if (MessageBox.Show("Không tìm thấy khách hàng, bạn có muốn thêm khách hàng mới", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
                         int dem = kh_bus.GetTong("").Rows.Count;
