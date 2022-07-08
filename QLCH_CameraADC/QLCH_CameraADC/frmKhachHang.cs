@@ -41,11 +41,22 @@ namespace QLCH_CameraADC
             btnThem.Enabled = b1;
             btnSua.Enabled = b1;
             btnXoa.Enabled = b1;
+            btnHuy.Enabled = b1;
+        }
+
+        public void xulychucnang1(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = !b1;
+
         }
 
         public void xulychucnangthem(Boolean b1)
         {
             btnThem.Enabled = b1;
+            btnHuy.Enabled = b1;
             btnSua.Enabled = !b1;
             btnXoa.Enabled = !b1;
         }
@@ -54,6 +65,7 @@ namespace QLCH_CameraADC
         {
             btnThem.Enabled = !b1;
             btnSua.Enabled = b1;
+            btnHuy.Enabled = b1;
             btnXoa.Enabled = !b1;
         }
         public void LoadData()
@@ -74,7 +86,7 @@ namespace QLCH_CameraADC
                 {
                     txtMaKH.Text = "KH001";
                 }
-                else if (dem < 10)
+                else if (dem < 9)
                 {
                     dem = dem + 1;
                     txtMaKH.Text = "KH00" + dem;
@@ -100,7 +112,7 @@ namespace QLCH_CameraADC
                 }
                 for (int i = 0; i < dgvDSKhachHang.Rows.Count - 0; i++)
                 {
-                    if (txtSDT.Text == dgvDSKhachHang.Rows[i].Cells["DienThoai"].Value.ToString())
+                    if (txtSDT.Text == dgvDSKhachHang.Rows[i].Cells["sdt"].Value.ToString())
                     {
                         MessageBox.Show("Số điện thoại đã tồn tại");
                         return;
@@ -115,7 +127,7 @@ namespace QLCH_CameraADC
                 bus.AddData(kh);
                 MessageBox.Show("Thêm thành công");
                 Hienthitextbox(true);
-                xulychucnang(false);
+                xulychucnang1(true);
                 LoadData();
                 flag = 0;
             }
@@ -157,7 +169,7 @@ namespace QLCH_CameraADC
                 bus.EditData(kh);
                 MessageBox.Show("Sửa thành công");
                 Hienthitextbox(true);
-                xulychucnang(false);
+                xulychucnang1(true);
                 LoadData();
                 flag = 0;
             }
@@ -167,7 +179,9 @@ namespace QLCH_CameraADC
         {
             try
             {
-                xulychucnang(true);
+                btnThem.Enabled = true;
+                btnSua.Enabled = true;
+                btnXoa.Enabled = true;
                 DataGridViewRow row = dgvDSKhachHang.Rows[e.RowIndex];
                 txtMaKH.Text = row.Cells["makh"].Value.ToString();
                 txtTenKH.Text = row.Cells["hoten"].Value.ToString();
@@ -199,6 +213,12 @@ namespace QLCH_CameraADC
                 clear();
             }
             LoadData();
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            clear();
+            xulychucnang1(true);
         }
     }
 }

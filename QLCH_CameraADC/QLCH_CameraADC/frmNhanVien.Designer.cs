@@ -166,7 +166,8 @@
             // cboLoaiNV
             // 
             this.cboLoaiNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiNV.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboLoaiNV.FormattingEnabled = true;
             this.cboLoaiNV.IntegralHeight = false;
             this.cboLoaiNV.Location = new System.Drawing.Point(807, 77);
@@ -177,7 +178,7 @@
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinh.Location = new System.Drawing.Point(472, 334);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
@@ -1473,6 +1474,7 @@
             this.matkhau.MinimumWidth = 6;
             this.matkhau.Name = "matkhau";
             this.matkhau.ReadOnly = true;
+            this.matkhau.Visible = false;
             // 
             // hinhanh
             // 
@@ -1550,6 +1552,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnThem;
         private System.Windows.Forms.GroupBox groupBox2;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvDSNhanVien;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
         private System.Windows.Forms.DataGridViewTextBoxColumn manv;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
         private System.Windows.Forms.DataGridViewTextBoxColumn tenloainv;
@@ -1562,6 +1565,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn matkhau;
         private System.Windows.Forms.DataGridViewTextBoxColumn hinhanh;
         private System.Windows.Forms.DataGridViewTextBoxColumn trangthai;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
     }
 }

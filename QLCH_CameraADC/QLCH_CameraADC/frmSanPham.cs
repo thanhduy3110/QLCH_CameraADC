@@ -131,20 +131,21 @@ namespace QLCH_CameraADC
                 clear();
                 xulychucnangthem(true);
                 HienThiTextbox(false);
+                HienThiLoaiSP();
                 int dem = bus.GetTong("").Rows.Count;
                 if (dem == 0)
                 {
-                    txtMaSP.Text = "SP01";
+                    txtMaSP.Text = "SP001";
                 }
-                else if (dem < 10)
+                else if (dem < 9)
                 {
                     dem = dem + 1;
-                    txtMaSP.Text = "SP0" + dem;
+                    txtMaSP.Text = "SP00" + dem;
                 }
                 else
                 {
                     dem = dem + 1;
-                    txtMaSP.Text = "SP" + dem;
+                    txtMaSP.Text = "SP0" + dem;
                 }
                 flag = 1;
             }
@@ -175,7 +176,7 @@ namespace QLCH_CameraADC
                 bus.AddData(sp);
                 MessageBox.Show("Thêm thành công");
                 LoadData();
-                xulychucnang1(false);
+                xulychucnang1(true);
                 HienThiTextbox(true);
                 flag = 0;
             }
@@ -194,6 +195,7 @@ namespace QLCH_CameraADC
             HienThiLoaiSP();
             btnThem.Enabled = true;
             btnSua.Enabled = true;
+            btnXoa.Enabled = true;
             try
             {
                 DataGridViewRow row = dgvDSSanPham.Rows[e.RowIndex];
@@ -281,7 +283,7 @@ namespace QLCH_CameraADC
                 sp.TrangThai = 1;
                 bus.EditData(sp);
                 LoadData();
-                xulychucnang1(false);
+                xulychucnang1(true);
                 HienThiTextbox(true);
                 flag = 0;
             }
@@ -304,7 +306,12 @@ namespace QLCH_CameraADC
         private void btnHuy_Click(object sender, EventArgs e)
         {
             clear();
-            xulychucnang1(false);
+            xulychucnang1(true);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
