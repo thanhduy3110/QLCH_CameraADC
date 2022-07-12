@@ -182,7 +182,7 @@ namespace QLCH_CameraADC
         private void dgvDSCTHD_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
             double TongTien = 0;
-            if (dgvDSCTHD.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["tenncc"].Value?.ToString() == null)
+            if (dgvDSCTHD.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["tenncc"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value?.ToString() == null)
             {
                 return;
             }

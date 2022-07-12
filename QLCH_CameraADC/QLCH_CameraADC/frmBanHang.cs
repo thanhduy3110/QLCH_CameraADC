@@ -219,10 +219,11 @@ namespace QLCH_CameraADC
                     sp.SL = slconlai;
                     bus.CapNhatSLTon(sp);
                     bus.AddCTHD(cthd);
-
+                   
                 }
                 flag = 0;
                 btnInHDBan.Enabled = true;
+                MessageBox.Show("Thanh toán thành công");
             }
 
 
@@ -238,7 +239,7 @@ namespace QLCH_CameraADC
         private void dgvDSSPChon_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
             double TongTien = 0;
-            if (dgvDSSPChon.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null)
+            if (dgvDSSPChon.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSSPChon.Rows[e.RowIndex].Cells["soluong"].Value?.ToString() == null)
             {
                 return;
             }

@@ -129,7 +129,7 @@
             this.btnThoat.IdleBorderRadius = 30;
             this.btnThoat.IdleBorderThickness = 1;
             this.btnThoat.IdleFillColor = System.Drawing.Color.LightSkyBlue;
-            this.btnThoat.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.closed1;
+            this.btnThoat.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
             this.btnThoat.IdleIconRightImage = null;
             this.btnThoat.IndicateFocus = false;
             this.btnThoat.Location = new System.Drawing.Point(551, 190);
@@ -156,7 +156,7 @@
             this.btnThoat.OnIdleState.BorderThickness = 1;
             this.btnThoat.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
             this.btnThoat.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.closed1;
+            this.btnThoat.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
             this.btnThoat.OnIdleState.IconRightImage = null;
             this.btnThoat.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnThoat.OnPressedState.BorderRadius = 30;

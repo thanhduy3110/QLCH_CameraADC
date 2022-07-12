@@ -337,7 +337,7 @@ namespace QLCH_CameraADC
                 }
                 else
                 {
-                    nv.SDT = txtSDT.Text;
+                    nv.MatKhau = txtMatKhau.Text;
                 }
                
                 nv.MaLoaiNV = cboLoaiNV.SelectedValue.ToString();
