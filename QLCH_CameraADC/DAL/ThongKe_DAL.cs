@@ -86,19 +86,19 @@ namespace DAL
         public DataTable DSNVBanTrongThang(string condition, string condition1)
         {
             return KetNoi.GetDataTable("SELECT  nv.HoTen as N'Họ tên nhân viên', format(sum([TongTien]),'N0') AS N'Tổng tiền'" +
-              " FROM HoaDonBan hd, NhanVien nv WHERE hd.MaNV=nv.MaNV and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " ");
+              " FROM HoaDonBan hd, NhanVien nv WHERE hd.MaNV=nv.MaNV and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " group by  nv.HoTen ");
         }
 
         public DataTable DSSPBanTrongThang(string condition, string condition1)
         {
             return KetNoi.GetDataTable("SELECT  sp.TenSP as N'Tên sản phẩm', SUM(cthd.SoLuong) as N'Số lượng'" +
-              " FROM HoaDonBan hd,CTHD_Ban cthd,SanPham sp WHERE hd.MaHDB=cthd.MaHDB and cthd.MaSP=sp.MaSP and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " ");
+              " FROM HoaDonBan hd,CTHD_Ban cthd,SanPham sp WHERE hd.MaHDB=cthd.MaHDB and cthd.MaSP=sp.MaSP and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " group by  sp.TenSP  ");
         }
 
         public DataTable DSSPNhapTrongThang(string condition, string condition1)
         {
             return KetNoi.GetDataTable("SELECT  sp.TenSP as N'Tên sản phẩm', SUM(cthd.SoLuong) as N'Số lượng'" +
-              " FROM HoaDonNhap hd,CTHD_Nhap cthd,SanPham sp WHERE hd.MaHDN=cthd.MaHDN and cthd.MaSP=sp.MaSP and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " ");
+              " FROM HoaDonNhap hd,CTHD_Nhap cthd,SanPham sp WHERE hd.MaHDN=cthd.MaHDN and cthd.MaSP=sp.MaSP and Month(hd.NgayLap)=" + condition + " and Year(hd.NgayLap)=" + condition1 + " group by  sp.TenSP  ");
         }
         public DataTable SanPhamTonKho(string condition)
         {
