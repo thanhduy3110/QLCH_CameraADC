@@ -22,6 +22,10 @@ namespace BUS
         {
             return nhanvien.GetTong(Conditon);
         }
+        public DataTable TimKiem(string Conditon)
+        {
+            return nhanvien.TimKiem(Conditon);
+        }
 
         public void AddData(NhanVien ex)
         {

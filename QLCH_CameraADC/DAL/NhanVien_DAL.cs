@@ -22,6 +22,10 @@ namespace DAL
             return KetNoi.GetDataTable("select * from NhanVien");
         }
 
+        public DataTable TimKiem(string Condition)
+        {
+            return KetNoi.GetDataTable("Select MaNV,TenLoaiNV,HoTen,NgaySinh,SDT,DiaChi,Email,CMND,(CASE WHEN GioiTinh='1' THEN 'Nam' ELSE N'Nữ' END) AS GioiTinh,HinhAnh,MatKhau,NhanVien.TrangThai from NhanVien,LoaiNV where NhanVien.MaLoaiNV=LoaiNV.MaLoaiNV and NhanVien.TrangThai=1 and ( HoTen like '%" + Condition+"%' or SDT like '%"+Condition+"%' or CMND like '%"+Condition+"%')");
+        }
 
         public void AddData(NhanVien ex)
         {

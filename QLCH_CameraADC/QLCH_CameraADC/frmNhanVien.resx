@@ -262,13 +262,13 @@
   </data>
   <data name="txtTimKiem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAkMAAAAzCAYAAACUhAxzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEdSURBVHhe7dZBDQQhAARB/KuCIONkrIDdkPA5DV2VzGcU
+        iVBORw0KGgoAAAANSUhEUgAAAkMAAAAsCAYAAABmBLw9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAD+SURBVHhe7dZBDQQhAARB/KuCIONkrIDdkPA5DV2VzGcU
         9AAAyNt7/+acr5mZmVllp39uCo1xDgCAktM/N4XEEADQI4YAgDQxBACkiSEAIE0MAQBpYggASBNDAECa
         GAIA0sQQAJAmhgCANDEEAKSJIQAgTQwBAGliCABIE0MAQJoYAgDSxBAAkCaGAIA0MQQApIkhACBNDAEA
         aWIIAEgTQwBAmhgCANLEEACQJoYAgDQxBACkiSEAIE0MAQBpYggASBNDAECaGAIA0sQQAJAmhgCANDEE
-        AKSJIQAgTQwBAGliCABIE0MAQJoYAgDSxBAAkCaGAIA0MQQApIkhACBNDAEAaWIIAEj7i6G11nMOMzMz
-        s8pO/9wUAgCoGuMDTJSKIfqE/BEAAAAASUVORK5CYII=
+        AKSJIQAgTQwBAGliCABIE0MAQNpfDK21nnOYmZmZVXb656YQAEDVGB/cwbPidkvxfwAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="btnHuy.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

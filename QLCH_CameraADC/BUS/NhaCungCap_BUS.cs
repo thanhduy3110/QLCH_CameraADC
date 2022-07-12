@@ -23,6 +23,11 @@ namespace BUS
             return ncc.PhatSinhMa(condition);
         }
 
+        public DataTable Timkiem(string Conditon)
+        {
+            return ncc.Timkiem(Conditon);
+        }
+
         public void AddData(NhaCungCap ex)
         {
             ncc.AddData(ex);

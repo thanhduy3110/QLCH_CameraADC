@@ -88,6 +88,7 @@ namespace QLCH_CameraADC
                 txtMaHD.Text = "HD0" + dem;
             }
             btnLuu.Enabled = true;
+            btnTaoPhieu.Enabled = false;
             flag = 1;
         }
 
@@ -171,8 +172,10 @@ namespace QLCH_CameraADC
                     sp.SL = slconlai;
                     bus.CapNhatSLTon(sp);
                     bus.AddCTHD(cthdn);
+                    
 
                 }
+                MessageBox.Show("Lưu thành công");
                 btnInHD.Enabled = true;
                 flag = 0;
 
@@ -182,30 +185,39 @@ namespace QLCH_CameraADC
         private void dgvDSCTHD_RowValidating(object sender, DataGridViewCellCancelEventArgs e)
         {
             double TongTien = 0;
-            if (dgvDSCTHD.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["tenncc"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value?.ToString() == null)
+            if (dgvDSCTHD.Rows[e.RowIndex].Cells["tensp"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["tenncc"].Value?.ToString() == null|| dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value?.ToString() == null || dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value?.ToString() == null)
             {
                 return;
             }
             else
             {
-                int soluong = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value.ToString());
-                int gianhap = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value.ToString());
-                dgvDSCTHD.Rows[e.RowIndex].Cells["thanhtien"].Value = soluong * gianhap;
-
-                if(dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value?.ToString() == null)
+                try
                 {
-                    dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value = "không có";
-                }    
+                    int soluong = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["soluong"].Value.ToString());
+                    int gianhap = int.Parse(dgvDSCTHD.Rows[e.RowIndex].Cells["gianhap"].Value.ToString());
+                    dgvDSCTHD.Rows[e.RowIndex].Cells["thanhtien"].Value = soluong * gianhap;
 
-                for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
-                {
-                    int sl = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
-                    int gia = int.Parse(dgvDSCTHD.Rows[i].Cells["gianhap"].Value.ToString());
-                    double thanhtien = sl * gia;
-                    TongTien = TongTien + thanhtien;
-                    txtTongTien.Text = TongTien.ToString();
+                    if (dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value?.ToString() == null)
+                    {
+                        dgvDSCTHD.Rows[e.RowIndex].Cells["ghichu"].Value = "không có";
+                    }
+
+                    for (int i = 0; i < dgvDSCTHD.Rows.Count - 1; i++)
+                    {
+                        int sl = int.Parse(dgvDSCTHD.Rows[i].Cells["soluong"].Value.ToString());
+                        int gia = int.Parse(dgvDSCTHD.Rows[i].Cells["gianhap"].Value.ToString());
+                        double thanhtien = sl * gia;
+                        TongTien = TongTien + thanhtien;
+                        txtTongTien.Text = TongTien.ToString();
+                        txtTongTien.Text = string.Format("{0:#,##0}", float.Parse(txtTongTien.Text));
+                    }
+
                 }
-               
+                catch 
+                {
+
+                }
+              
 
             }
             }

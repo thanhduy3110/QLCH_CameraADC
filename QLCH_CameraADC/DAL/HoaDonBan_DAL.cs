@@ -14,7 +14,7 @@ namespace DAL
 
         public DataTable GetData(string Condition)
         {
-            return KetNoi.GetDataTable("select MaHDB,NhanVien.HoTen as TenNV,KhachHang.HoTen as TenKH,HoaDonBan.MaKH as MaKH,HoaDonBan.MaNV as MaNV,NgayLap,TongTien,HoaDonBan.TrangThai from HoaDonBan, NhanVien, KhachHang where HoaDonBan.MaNV = NhanVien.MaNV and HoaDonBan.MaKH = KhachHang.MaKH");
+            return KetNoi.GetDataTable("select MaHDB,NhanVien.HoTen as TenNV,KhachHang.HoTen as TenKH,HoaDonBan.MaKH as MaKH,HoaDonBan.MaNV as MaNV,NgayLap,TongTien,HoaDonBan.TrangThai from HoaDonBan, NhanVien, KhachHang where HoaDonBan.MaNV = NhanVien.MaNV and HoaDonBan.MaKH = KhachHang.MaKH and HoaDonBan.TrangThai = 1");
 
         }
 
@@ -38,7 +38,7 @@ namespace DAL
             return KetNoi.GetDataTable("Select MaKH,HoTen from KhachHang Order By HoTen ASC" + Condition);
         }
 
-       
+
 
         public DataTable GetTimKiemSP(string Condition)
         {
@@ -91,5 +91,11 @@ namespace DAL
         {
             KetNoi.ExecuteReader(@"Update CTHD_Ban set SoLuong=" + cthd.SoLuong + ",GiaSP=" + cthd.GiaSP + ",ThanhTien=" + cthd.ThanhTien + ",KhuyenMai='" + cthd.KhuyenMai + "',TrangThai=" + cthd.TrangThai + " where MaSP='" + cthd.MaSP + "'");
         }
-    }
+
+        public void DeleteHD(HoaDonBan hdb)
+        {
+            KetNoi.ExecuteReader(@"update HoaDonBan set TrangThai =0 where MaHDB='" + hdb.MaHDB + "'");
+        } 
+
+        }
 }

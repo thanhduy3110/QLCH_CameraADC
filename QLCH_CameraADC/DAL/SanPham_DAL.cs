@@ -22,6 +22,11 @@ namespace DAL
             return KetNoi.GetDataTable("select * from SanPham");
         }
 
+
+        public DataTable TimKiem(string Condition)
+        {
+            return KetNoi.GetDataTable("select MaSP,TenSP,TenLoaiSP,TenNSX,Gia,SL,DVT,MoTa,KhuyenMai,Hinh,SanPham.TrangThai from SanPham,LoaiSP where SanPham.MaLoaiSP=LoaiSP.MaLoaiSP and  SanPham.TrangThai=1 and SanPham.TenSP like N'% " + Condition+"%'");
+        }
         public void AddData(SanPham ex)
         {
             KetNoi.ExecuteReader(@"Insert into SanPham Values('" + ex.MaSP + "','" + ex.MaLoaiSP + "',N'" + ex.TenNSX + "',N'" + ex.TenSP + "'," + ex.Gia + "," + ex.SL + ",N'" + ex.DVT + "',N'" + ex.MoTa + "','"+ex.KhuyenMai+"','" + ex.Hinh + "'," + ex.TrangThai + ")");

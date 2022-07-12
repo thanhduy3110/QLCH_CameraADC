@@ -37,5 +37,10 @@ namespace DAL
         {
             KetNoi.ExecuteReader(@"Update KhachHang Set TrangThai=0 Where MaKH=N'" + ex.MaKH + "'");
         }
+
+        public DataTable TimKiemTheoSDT(string Condition)
+        {
+            return KetNoi.GetDataTable("select MaKH,HoTen,SDT,(CASE WHEN GioiTinh='1' THEN 'Nam' ELSE N'Nữ' END) AS GioiTinh,TrangThai from KhachHang Where TrangThai='1' and SDT like '%" + Condition+"%'");
+        }
     }
 }

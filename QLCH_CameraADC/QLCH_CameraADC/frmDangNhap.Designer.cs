@@ -88,7 +88,6 @@
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(352, 36);
             this.txtMatKhau.TabIndex = 16;
-            this.txtMatKhau.Text = "123456";
             this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtTenDN
@@ -100,7 +99,6 @@
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(352, 36);
             this.txtTenDN.TabIndex = 15;
-            this.txtTenDN.Text = "NV001";
             this.txtTenDN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtTenDN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTenDN_KeyDown);
             // 

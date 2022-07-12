@@ -36,5 +36,10 @@ namespace BUS
         {
             khachHang.DeleteData(ex);
         }
+
+        public DataTable TimKiemTheoSDT(string Condition)
+        {
+            return khachHang.TimKiemTheoSDT(Condition);
+        }
     }
 }

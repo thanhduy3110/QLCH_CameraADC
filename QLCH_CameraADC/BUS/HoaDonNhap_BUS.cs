@@ -65,5 +65,10 @@ namespace BUS
             bus.UpdateHD(hdn);
         }
 
+        public void DeleteHD(HoaDonNhap hdn)
+        {
+            bus.DeleteHD(hdn);
+        }
+
     }
 }

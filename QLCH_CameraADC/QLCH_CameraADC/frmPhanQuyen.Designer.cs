@@ -37,12 +37,15 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtTenLoaiNV = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -93,6 +96,7 @@
             this.hoadonnhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.thongke = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phanquyen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1019,6 +1023,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnHuy);
             this.groupBox3.Controls.Add(this.btnXoa);
             this.groupBox3.Controls.Add(this.btnSua);
             this.groupBox3.Controls.Add(this.btnThem);
@@ -1048,11 +1053,11 @@
             this.btnXoa.ColorContrastOnClick = 45;
             this.btnXoa.ColorContrastOnHover = 45;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnXoa.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnXoa.CustomizableEdges = borderEdges2;
             this.btnXoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnXoa.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnXoa.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1076,7 +1081,7 @@
             this.btnXoa.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.trash1;
             this.btnXoa.IdleIconRightImage = null;
             this.btnXoa.IndicateFocus = false;
-            this.btnXoa.Location = new System.Drawing.Point(759, 41);
+            this.btnXoa.Location = new System.Drawing.Point(691, 41);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnXoa.OnDisabledState.BorderRadius = 1;
@@ -1117,6 +1122,7 @@
             this.btnXoa.TextMarginLeft = 0;
             this.btnXoa.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnXoa.UseDefaultRadiusAndThickness = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -1137,11 +1143,11 @@
             this.btnSua.ColorContrastOnClick = 45;
             this.btnSua.ColorContrastOnHover = 45;
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnSua.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnSua.CustomizableEdges = borderEdges3;
             this.btnSua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSua.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSua.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1165,7 +1171,7 @@
             this.btnSua.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.edit1;
             this.btnSua.IdleIconRightImage = null;
             this.btnSua.IndicateFocus = false;
-            this.btnSua.Location = new System.Drawing.Point(460, 41);
+            this.btnSua.Location = new System.Drawing.Point(429, 41);
             this.btnSua.Name = "btnSua";
             this.btnSua.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSua.OnDisabledState.BorderRadius = 1;
@@ -1227,11 +1233,11 @@
             this.btnThem.ColorContrastOnClick = 45;
             this.btnThem.ColorContrastOnHover = 45;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnThem.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnThem.CustomizableEdges = borderEdges4;
             this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -1322,7 +1328,7 @@
             this.dgvDSLoaiNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDSLoaiNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSLoaiNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -1365,7 +1371,7 @@
             this.dgvDSLoaiNhanVien.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvDSLoaiNhanVien.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvDSLoaiNhanVien.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
@@ -1382,8 +1388,18 @@
             this.dgvDSLoaiNhanVien.Location = new System.Drawing.Point(3, 26);
             this.dgvDSLoaiNhanVien.Name = "dgvDSLoaiNhanVien";
             this.dgvDSLoaiNhanVien.ReadOnly = true;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDSLoaiNhanVien.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDSLoaiNhanVien.RowHeadersVisible = false;
             this.dgvDSLoaiNhanVien.RowHeadersWidth = 51;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvDSLoaiNhanVien.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvDSLoaiNhanVien.RowTemplate.Height = 40;
             this.dgvDSLoaiNhanVien.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDSLoaiNhanVien.Size = new System.Drawing.Size(998, 449);
@@ -1526,6 +1542,96 @@
             this.phanquyen.ReadOnly = true;
             this.phanquyen.Visible = false;
             // 
+            // btnHuy
+            // 
+            this.btnHuy.AllowAnimations = true;
+            this.btnHuy.AllowMouseEffects = true;
+            this.btnHuy.AllowToggling = false;
+            this.btnHuy.AnimationSpeed = 200;
+            this.btnHuy.AutoGenerateColors = false;
+            this.btnHuy.AutoRoundBorders = false;
+            this.btnHuy.AutoSizeLeftIcon = true;
+            this.btnHuy.AutoSizeRightIcon = true;
+            this.btnHuy.BackColor = System.Drawing.Color.Transparent;
+            this.btnHuy.BackColor1 = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnHuy.BackgroundImage")));
+            this.btnHuy.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.ButtonText = "";
+            this.btnHuy.ButtonTextMarginLeft = 0;
+            this.btnHuy.ColorContrastOnClick = 45;
+            this.btnHuy.ColorContrastOnHover = 45;
+            this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnHuy.CustomizableEdges = borderEdges1;
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHuy.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHuy.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnHuy.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHuy.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuy.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnHuy.IconMarginLeft = 11;
+            this.btnHuy.IconPadding = 10;
+            this.btnHuy.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHuy.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnHuy.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnHuy.IconSize = 25;
+            this.btnHuy.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.IdleBorderRadius = 1;
+            this.btnHuy.IdleBorderThickness = 1;
+            this.btnHuy.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
+            this.btnHuy.IdleIconRightImage = null;
+            this.btnHuy.IndicateFocus = false;
+            this.btnHuy.Location = new System.Drawing.Point(973, 41);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnHuy.OnDisabledState.BorderRadius = 1;
+            this.btnHuy.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnDisabledState.BorderThickness = 1;
+            this.btnHuy.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnHuy.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnHuy.OnDisabledState.IconLeftImage = null;
+            this.btnHuy.OnDisabledState.IconRightImage = null;
+            this.btnHuy.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnHuy.onHoverState.BorderRadius = 1;
+            this.btnHuy.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.onHoverState.BorderThickness = 1;
+            this.btnHuy.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnHuy.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.onHoverState.IconLeftImage = null;
+            this.btnHuy.onHoverState.IconRightImage = null;
+            this.btnHuy.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.OnIdleState.BorderRadius = 1;
+            this.btnHuy.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnIdleState.BorderThickness = 1;
+            this.btnHuy.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnHuy.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
+            this.btnHuy.OnIdleState.IconRightImage = null;
+            this.btnHuy.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnHuy.OnPressedState.BorderRadius = 1;
+            this.btnHuy.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnHuy.OnPressedState.BorderThickness = 1;
+            this.btnHuy.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnHuy.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.OnPressedState.IconLeftImage = null;
+            this.btnHuy.OnPressedState.IconRightImage = null;
+            this.btnHuy.Size = new System.Drawing.Size(107, 77);
+            this.btnHuy.TabIndex = 0;
+            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnHuy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnHuy.TextMarginLeft = 0;
+            this.btnHuy.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnHuy.UseDefaultRadiusAndThickness = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+            // 
             // frmPhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1600,5 +1706,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn hoadonnhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn thongke;
         private System.Windows.Forms.DataGridViewTextBoxColumn phanquyen;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
     }
 }

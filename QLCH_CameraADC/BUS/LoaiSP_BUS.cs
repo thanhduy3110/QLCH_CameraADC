@@ -17,6 +17,11 @@ namespace BUS
         {
             return loaiSP.GetData(Condition);
         }
+
+        public DataTable Timkiem(string Condition)
+        {
+            return loaiSP.Timkiem(Condition);
+        }
         public void AddData(LoaiSP ex)
         {
             loaiSP.AddData(ex);

@@ -27,11 +27,51 @@ namespace QLCH_CameraADC
         {
             dgvDSLoaiNhanVien.DataSource = bus.GetData("");
         }
+
+        public void clear()
+        {
+            txtMaLoaiNV.Clear();
+            txtTenLoaiNV.Clear();
+        }
+     
+
+        public void xulychucnang(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = b1;
+        }
+
+        public void xulychucnang1(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnSua.Enabled = b1;
+            btnXoa.Enabled = b1;
+            btnHuy.Enabled = !b1;
+
+        }
+
+        public void xulychucnangthem(Boolean b1)
+        {
+            btnThem.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnSua.Enabled = !b1;
+            btnXoa.Enabled = !b1;
+        }
+
+        public void xulychucnangsua(Boolean b1)
+        {
+            btnThem.Enabled = !b1;
+            btnSua.Enabled = b1;
+            btnHuy.Enabled = b1;
+            btnXoa.Enabled = !b1;
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             if (flag == 0)
             {
-              
+                xulychucnangthem(true);
                 int dem = bus.GetTong().Rows.Count;
                 if (dem == 0)
                 {
@@ -48,6 +88,7 @@ namespace QLCH_CameraADC
                     txtMaLoaiNV.Text = "LoaiNV0" + dem;
                 }
                 flag = 1;
+              
             }else if(flag == 1)
             {
                 loainv.MaLoaiNV = txtMaLoaiNV.Text;
@@ -68,17 +109,22 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Thành Công");
                 HienThiDSLoaiNV();
                 flag = 0;
+               
+                xulychucnang1(true);
             }    
         }
 
         private void frmPhanQuyen_Load(object sender, EventArgs e)
         {
             HienThiDSLoaiNV();
-            txtMaLoaiNV.ReadOnly = true;
+            txtMaLoaiNV.Enabled = true;
+           
+            xulychucnang(false);
         }
 
         private void dgvDSLoaiNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            xulychucnang(true);
             try
             {
                 DataGridViewRow row = dgvDSLoaiNhanVien.Rows[e.RowIndex];
@@ -109,7 +155,10 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 flag = 1;
-            }else if(flag == 1)
+               
+                xulychucnangsua(true);
+            }
+            else if(flag == 1)
             {
                 loainv.MaLoaiNV = txtMaLoaiNV.Text;
                 loainv.TenLoaiNV = txtTenLoaiNV.Text;
@@ -129,12 +178,25 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Thành Công");
                 HienThiDSLoaiNV();
                 flag = 0;
+                
+                xulychucnang1(true);
             }    
         }
 
         private void dgvDSLoaiNhanVien_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             dgvDSLoaiNhanVien.Rows[e.RowIndex].Cells[0].Value = (e.RowIndex + 1).ToString();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            clear();
+            xulychucnang1(true);
         }
     }
 }
