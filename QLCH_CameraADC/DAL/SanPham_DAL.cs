@@ -12,31 +12,36 @@ namespace DAL
     {
         KetNoiDatabase KetNoi = new KetNoiDatabase();
 
+        //Lay danh sach
         public DataTable GetData(string Condition)
         {
             return KetNoi.GetDataTable("select MaSP,TenSP,TenLoaiSP,TenNSX,Gia,SL,DVT,MoTa,KhuyenMai,Hinh,SanPham.TrangThai from SanPham,LoaiSP where SanPham.MaLoaiSP=LoaiSP.MaLoaiSP and  SanPham.TrangThai=1 " + Condition);
         }
 
+        //Tăng mã tự động
         public DataTable GetTong(string Condition)
         {
             return KetNoi.GetDataTable("select * from SanPham");
         }
 
-
+        //Tìm kiếm
         public DataTable TimKiem(string Condition)
         {
             return KetNoi.GetDataTable("select MaSP,TenSP,TenLoaiSP,TenNSX,Gia,SL,DVT,MoTa,KhuyenMai,Hinh,SanPham.TrangThai from SanPham,LoaiSP where SanPham.MaLoaiSP=LoaiSP.MaLoaiSP and  SanPham.TrangThai=1 and SanPham.TenSP like N'% " + Condition+"%'");
         }
+
+        //Thêm
         public void AddData(SanPham ex)
         {
             KetNoi.ExecuteReader(@"Insert into SanPham Values('" + ex.MaSP + "','" + ex.MaLoaiSP + "',N'" + ex.TenNSX + "',N'" + ex.TenSP + "'," + ex.Gia + "," + ex.SL + ",N'" + ex.DVT + "',N'" + ex.MoTa + "','"+ex.KhuyenMai+"','" + ex.Hinh + "'," + ex.TrangThai + ")");
-        }
-
+        }       
+        //Sửa
         public void EditData(SanPham ex)
         {
             KetNoi.ExecuteReader(@"Update SanPham Set MaLoaiSP ='" + ex.MaLoaiSP + "',TenNSX=N'" + ex.TenNSX + "',TenSP=N'" + ex.TenSP + "',Gia=" + ex.Gia + ",SL=" + ex.SL + ",DVT='" + ex.DVT + "',MoTa=N'" + ex.MoTa +"',KhuyenMai='"+ex.KhuyenMai+ "',Hinh='" + ex.Hinh + "',TrangThai=" + ex.TrangThai + "where MaSP='" + ex.MaSP + "'");
         }
 
+        //Xóa
         public void DeleteData(SanPham ex)
         {
             KetNoi.ExecuteReader(@"Update SanPham Set TrangThai=0 Where MaSP='" + ex.MaSP + "'");

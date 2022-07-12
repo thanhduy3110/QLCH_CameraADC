@@ -12,21 +12,25 @@ namespace DAL
     {
         KetNoiDatabase KetNoi = new KetNoiDatabase();
 
+        //Lay danh sach
         public DataTable GetData(string Condition)
         {
             return KetNoi.GetDataTable("Select MaNCC,TenNCC,DiaChi,SDT,Email,GhiChu from NhaCungCap Where TrangThai=1" + Condition);
         }
 
+        //Tang ma tu dong
         public DataTable PhatSinhMa(string condition)
         {
             return KetNoi.GetDataTable("Select * From NhaCungCap" + condition);
         }
 
+        //Tim kiem
         public DataTable Timkiem(string Condition)
         {
             return KetNoi.GetDataTable("Select MaNCC,TenNCC,DiaChi,SDT,Email,GhiChu from NhaCungCap Where TrangThai=1 and (TenNCC like N'%" + Condition+"%' or SDT like '%"+Condition+"%' )");
         }
 
+        //Them
         public void AddData(NhaCungCap ex)
         {
             KetNoi.ExecuteReader(@"INSERT INTO NhaCungCap     
@@ -34,12 +38,14 @@ namespace DAL
                                    "','" + ex.SDT + "','" + ex.Email + "',N'"+ex.GhiChu+"'," + ex.TrangThai + ")");
         }
 
+        //Sửa
         public void EditData(NhaCungCap ex)
         {
             KetNoi.ExecuteReader(@"UPDATE NhaCungCap SET TenNCC =N'" + ex.TenNCC + "', DiaChi =N'" + ex.DiaChi +
                 "', SDT ='" + ex.SDT + "',Email ='" + ex.Email +"',GhiChu=N'"+ ex.GhiChu+"',TrangThai=" + ex.TrangThai + " Where MaNCC=N'" + ex.MaNCC + "'");
         }
 
+        //Xóa
         public void DeleteData(NhaCungCap ex)
         {
             KetNoi.ExecuteReader(@"Update NhaCungCap Set TrangThai=0 Where MaNCC='" + ex.MaNCC + "'");

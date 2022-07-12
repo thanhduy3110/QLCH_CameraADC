@@ -441,6 +441,7 @@ namespace QLCH_CameraADC
             xulychucnang(false);
         }
 
+        //Tìm kiếm nhân viên
         private void txtTimKiem_TextChange(object sender, EventArgs e)
         {
             string Condition = txtTimKiem.Text;
