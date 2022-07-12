@@ -151,7 +151,7 @@ namespace QLCH_CameraADC
             {
                 string condition = cboThang.Text;
                 string condition1 = cboNam.Text;
-                DSNVBanTrongThang(condition, condition1);
+                DSSPNhapTrongThang(condition, condition1);
             }
 
             if (radioSPTonKho.Checked == true)
