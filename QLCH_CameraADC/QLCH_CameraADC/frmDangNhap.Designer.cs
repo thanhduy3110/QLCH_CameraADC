@@ -102,6 +102,7 @@
             this.txtTenDN.TabIndex = 15;
             this.txtTenDN.Text = "NV001";
             this.txtTenDN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTenDN.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTenDN_KeyDown);
             // 
             // pictureBox1
             // 

@@ -634,12 +634,14 @@
                 <Value>Ngày lập: </Value>
                 <Style>
                   <FontSize>12pt</FontSize>
+                  <Format>MM/dd/yyyy</Format>
                 </Style>
               </TextRun>
               <TextRun>
                 <Value>=First(Fields!NgayLap.Value, "DataSetHD")</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
+                  <Format>MM/dd/yyyy</Format>
                 </Style>
               </TextRun>
             </TextRuns>

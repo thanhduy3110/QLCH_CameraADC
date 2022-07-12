@@ -28,7 +28,7 @@ namespace DAL
 
         public void EditChuCVu(LoaiNV ex)
         {
-            KetNoi.ExecuteReader(@"update ChucVu Set TenLoaiNV=N'" + ex.TenLoaiNV + "',NhanVien='" + ex.NhanVien + "',KhachHang='" + ex.KhachHang + "',SanPham='" + ex.SanPham + "',BanHang='" + ex.BanHang + "',NhaCungCap='" + ex.NhaCungCap + "',LoaiSP='" + ex.LoaiSP + "',NhapHang='" + ex.NhapHang + "',HoaDonNhap='" + ex.HoaDonNhap + "',PhanQuyen='" + ex.PhanQuyen + "',ThongKe='" + ex.ThongKe + "',HoaDonBan='" + ex.HoaDonBan +  "',TrangThai=" + ex.TrangThai + " Where MacV='" + ex.MaLoaiNV + "'");
+            KetNoi.ExecuteReader(@"update LoaiNV Set TenLoaiNV=N'" + ex.TenLoaiNV + "',NhanVien='" + ex.NhanVien + "',KhachHang='" + ex.KhachHang + "',SanPham='" + ex.SanPham + "',BanHang='" + ex.BanHang + "',NhaCungCap='" + ex.NhaCungCap + "',LoaiSP='" + ex.LoaiSP + "',NhapHang='" + ex.NhapHang + "',HoaDonNhap='" + ex.HoaDonNhap + "',PhanQuyen='" + ex.PhanQuyen + "',ThongKe='" + ex.ThongKe + "',HoaDonBan='" + ex.HoaDonBan +  "',TrangThai=" + ex.TrangThai + " Where MaLoaiNV='" + ex.MaLoaiNV + "'");
         }
     }
 }

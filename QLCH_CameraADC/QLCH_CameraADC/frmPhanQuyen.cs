@@ -111,6 +111,7 @@ namespace QLCH_CameraADC
                 flag = 1;
             }else if(flag == 1)
             {
+                loainv.MaLoaiNV = txtMaLoaiNV.Text;
                 loainv.TenLoaiNV = txtTenLoaiNV.Text;
                 loainv.NhanVien = checkNhanVien.Checked;
                 loainv.KhachHang = checkKhachHang.Checked;
