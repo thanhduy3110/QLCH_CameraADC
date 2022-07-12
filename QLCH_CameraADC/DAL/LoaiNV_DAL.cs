@@ -11,21 +11,26 @@ namespace DAL
     public class LoaiNV_DAL
     {
         KetNoiDatabase KetNoi = new KetNoiDatabase();
-
+        
+        //Lấy danh sách
         public DataTable GetData(string Condition)
         {
             return KetNoi.GetDataTable("select * from LoaiNV" + Condition);
         }
 
+        //Lấy số lượng để tăng mã tự động
         public DataTable GetTong()
         {
             return KetNoi.GetDataTable(" select * from LoaiNV");
         }
+        
+        //Thêm
         public void AddChucVu(LoaiNV ex)
         {
             KetNoi.ExecuteReader(@"Insert into LoaiNV Values('" + ex.MaLoaiNV + "',N'" + ex.TenLoaiNV + "','" + ex.NhanVien + "','" + ex.KhachHang + "','" + ex.SanPham + "','" + ex.BanHang + "','" + ex.NhaCungCap + "','" + ex.LoaiSP + "','" + ex.NhapHang + "','" + ex.HoaDonNhap + "','" + ex.PhanQuyen + "','" + ex.ThongKe + "','" + ex.HoaDonBan +  "', " + ex.TrangThai + ")");
         }
 
+        //Sửa
         public void EditChuCVu(LoaiNV ex)
         {
             KetNoi.ExecuteReader(@"update LoaiNV Set TenLoaiNV=N'" + ex.TenLoaiNV + "',NhanVien='" + ex.NhanVien + "',KhachHang='" + ex.KhachHang + "',SanPham='" + ex.SanPham + "',BanHang='" + ex.BanHang + "',NhaCungCap='" + ex.NhaCungCap + "',LoaiSP='" + ex.LoaiSP + "',NhapHang='" + ex.NhapHang + "',HoaDonNhap='" + ex.HoaDonNhap + "',PhanQuyen='" + ex.PhanQuyen + "',ThongKe='" + ex.ThongKe + "',HoaDonBan='" + ex.HoaDonBan +  "',TrangThai=" + ex.TrangThai + " Where MaLoaiNV='" + ex.MaLoaiNV + "'");

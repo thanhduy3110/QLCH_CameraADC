@@ -20,6 +20,8 @@ namespace QLCH_CameraADC
 
         Login_BUS bus = new Login_BUS();
         NhanVien nv = new NhanVien();
+
+        //mã hóa pass
         private String GetMD5(string txt)
         {
             String str = "";
@@ -32,20 +34,24 @@ namespace QLCH_CameraADC
             }
             return str;
         }
+
+
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             string username = txtTenDN.Text;
             string password = GetMD5(txtMatKhau.Text);
 
+            
             int count = bus.DangNhap(username, password).Rows.Count;
             
-
+            //kiem tra
             if (count == 0)
             {
                 MessageBox.Show("Tên Đăng Nhập Hoặc mật khẩu không đúng");
             }
             else if (count == 1)
             {
+                //Lấy tên đăng nhập
                 string TenNV = bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
                 frmMeNu frm = new frmMeNu(TenNV, username);
                 frm.ShowDialog();

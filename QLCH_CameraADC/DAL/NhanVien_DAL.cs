@@ -12,6 +12,7 @@ namespace DAL
     {
         KetNoiDatabase KetNoi = new KetNoiDatabase();
 
+        //Lấy danh sách
         public DataTable GetData(string Condition)
         {
             return KetNoi.GetDataTable("Select MaNV,TenLoaiNV,HoTen,NgaySinh,SDT,DiaChi,Email,CMND,(CASE WHEN GioiTinh='1' THEN 'Nam' ELSE N'Nữ' END) AS GioiTinh,HinhAnh,MatKhau,NhanVien.TrangThai from NhanVien,LoaiNV where NhanVien.MaLoaiNV=LoaiNV.MaLoaiNV and NhanVien.TrangThai=1" + Condition);
@@ -22,21 +23,24 @@ namespace DAL
             return KetNoi.GetDataTable("select * from NhanVien");
         }
 
+        //Tìm kiếm
         public DataTable TimKiem(string Condition)
         {
             return KetNoi.GetDataTable("Select MaNV,TenLoaiNV,HoTen,NgaySinh,SDT,DiaChi,Email,CMND,(CASE WHEN GioiTinh='1' THEN 'Nam' ELSE N'Nữ' END) AS GioiTinh,HinhAnh,MatKhau,NhanVien.TrangThai from NhanVien,LoaiNV where NhanVien.MaLoaiNV=LoaiNV.MaLoaiNV and NhanVien.TrangThai=1 and ( HoTen like '%" + Condition+"%' or SDT like '%"+Condition+"%' or CMND like '%"+Condition+"%')");
         }
-
+        //Thêm
         public void AddData(NhanVien ex)
         {
             KetNoi.ExecuteReader(@"Insert into NhanVien Values('" + ex.MaNV + "','" + ex.MaLoaiNV + "',N'" + ex.HoTen + "','" + ex.NgaySinh + "'," + ex.SDT + ",N'" + ex.DiaChi + "','" + ex.Email + "'," + ex.CMND + "," + ex.GioiTinh + ",'" + ex.HinhAnh + "','" + ex.MatKhau + "'," + ex.TrangThai + ")");
         }
 
+        //Sửa
         public void EditData(NhanVien ex)
         {
             KetNoi.ExecuteReader(@"Update NhanVien Set MaLoaiNV='" + ex.MaLoaiNV + "',HoTen=N'" + ex.HoTen + "',NgaySinh='" + ex.NgaySinh + "',SDT='" + ex.SDT + "',DiaChi=N'" + ex.DiaChi + "',Email='" + ex.Email + "',CMND=" + ex.CMND + ",GioiTinh=" + ex.GioiTinh + ",HinhAnh='" + ex.HinhAnh + "',MatKhau='" + ex.MatKhau + "',TrangThai=" + ex.TrangThai + " where MaNV='" + ex.MaNV + "'");
         }
 
+        //Xóa
         public void DeleteData(NhanVien ex)
         {
             KetNoi.ExecuteReader(@"update NhanVien Set TrangThai=0 Where MaNV='" + ex.MaNV + "'");
