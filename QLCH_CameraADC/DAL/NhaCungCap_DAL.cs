@@ -22,6 +22,11 @@ namespace DAL
             return KetNoi.GetDataTable("Select * From NhaCungCap" + condition);
         }
 
+        public DataTable Timkiem(string Condition)
+        {
+            return KetNoi.GetDataTable("Select MaNCC,TenNCC,DiaChi,SDT,Email,GhiChu from NhaCungCap Where TrangThai=1 and (TenNCC like N'%" + Condition+"%' or SDT like '%"+Condition+"%' )");
+        }
+
         public void AddData(NhaCungCap ex)
         {
             KetNoi.ExecuteReader(@"INSERT INTO NhaCungCap     

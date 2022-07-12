@@ -171,5 +171,11 @@ namespace QLCH_CameraADC
             clear();
             xulytextbox(false);
         }
+
+        private void txtTimKiem_TextChange(object sender, EventArgs e)
+        {
+            string condition = txtTimKiem.Text;
+            dgvDSLoaiSP.DataSource=bus.Timkiem(condition);
+        }
     }
 }

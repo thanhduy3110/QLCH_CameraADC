@@ -127,6 +127,7 @@ namespace QLCH_CameraADC
             btnThanhToan.Enabled = false;
             btnInHDBan.Enabled = false;
             txtMaHD.Enabled=false;
+            txtTienKhachDua.ReadOnly = true;
         }
 
         int flag = 0;
@@ -155,6 +156,8 @@ namespace QLCH_CameraADC
                 }
                
                 flag = 1;
+                btnTaoPhieu.Enabled = false;
+                txtTienKhachDua.ReadOnly = false;
             }
           
           
@@ -169,9 +172,10 @@ namespace QLCH_CameraADC
                 if(TienThua>=0)
                 {
                     btnThanhToan.Enabled = true;
+                    txtTienThoiLai.Text = TienThua.ToString();
+                    txtTienThoiLai.Text = string.Format("{0:#,##0}", float.Parse(txtTienThoiLai.Text));
                 }    
-                txtTienThoiLai.Text = TienThua.ToString();
-                txtTienThoiLai.Text = string.Format("{0:#,##0}", float.Parse(txtTienThoiLai.Text));
+             
 
             }
             catch
@@ -253,8 +257,10 @@ namespace QLCH_CameraADC
                 
                 dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value = DSSP.Rows[0]["Gia"];
                 dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value = DSSP.Rows[0]["KhuyenMai"];
+                int khuyenmai = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value.ToString());
                 int gia = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value.ToString());
-                dgvDSSPChon.Rows[e.RowIndex].Cells["thanhtien"].Value = sl * gia;
+
+                dgvDSSPChon.Rows[e.RowIndex].Cells["thanhtien"].Value = sl * gia - ((sl * gia * khuyenmai) / 100);
 
 
             }
@@ -282,9 +288,20 @@ namespace QLCH_CameraADC
             {
                 int sl = int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
                 int gia = int.Parse(dgvDSSPChon.Rows[i].Cells["dongia"].Value.ToString());
-                double thanhtien = sl * gia;
+                int khuyenmai = int.Parse(dgvDSSPChon.Rows[i].Cells["khuyenmai"].Value.ToString());
+
+                double thanhtien = sl * gia - ((sl * gia* khuyenmai) /100);
                 TongTien = TongTien + thanhtien;
                 txtTongTien.Text = TongTien.ToString();
+                txtTongTien.Text = string.Format("{0:#,##0}", float.Parse(txtTongTien.Text));
+            }
+        }
+
+        private void txtTienKhachDua_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
+            {
+                e.Handled = true;
             }
         }
 

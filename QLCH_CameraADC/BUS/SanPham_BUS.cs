@@ -23,6 +23,11 @@ namespace BUS
             return sanpham.GetTong(Conditon);
         }
 
+        public DataTable TimKiem(string Conditon)
+        {
+            return sanpham.TimKiem(Conditon);
+        }
+
         public void AddData(SanPham ex)
         {
             sanpham.AddData(ex);

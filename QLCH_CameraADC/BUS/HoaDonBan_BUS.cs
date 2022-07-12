@@ -88,5 +88,10 @@ namespace BUS
         {
             HDB.UpDateCTHD(cthd);
         }
+
+        public void DeleteHD(HoaDonBan hdb)
+        {
+            HDB.DeleteHD(hdb);
+        }
     }
 }

@@ -45,13 +45,13 @@ namespace DAL
         public void AddHoaDon(HoaDonNhap ex)
         {
             KetNoi.ExecuteReader(@"insert into HoaDonNhap(MaHDN,MaNV,NgayLap,TongTien,TrangThai)
-Values('" + ex.MaHDN  + "','" + ex.MaNV + "','" + ex.NgayLap + "'," + ex.TongTien + "," + ex.TrangThai + ")");
+Values('" + ex.MaHDN + "','" + ex.MaNV + "','" + ex.NgayLap + "'," + ex.TongTien + "," + ex.TrangThai + ")");
         }
 
         public void AddCTHD(CTHD_Nhap ex)
         {
             KetNoi.ExecuteReader(@"insert into CTHD_Nhap(MaHDN,MaSP,MaNCC,SoLuong,GiaNhap,ThanhTien,GhiChu,TrangThai)
-values('" + ex.MaHDN + "','" + ex.MaSP + "','" + ex.MaNCC + "'," + ex.SoLuong + "," + ex.GiaNhap + "," + ex.ThanhTien + ",N'"+ex.GhiChu+"'," + ex.TrangThai + ")");
+values('" + ex.MaHDN + "','" + ex.MaSP + "','" + ex.MaNCC + "'," + ex.SoLuong + "," + ex.GiaNhap + "," + ex.ThanhTien + ",N'" + ex.GhiChu + "'," + ex.TrangThai + ")");
         }
 
         public void UpdateHDN(HoaDonNhap ex)
@@ -61,7 +61,7 @@ values('" + ex.MaHDN + "','" + ex.MaSP + "','" + ex.MaNCC + "'," + ex.SoLuong + 
 
         public void UpdateCTHDN(CTHD_Nhap ex)
         {
-            KetNoi.ExecuteReader(@"update CTHD_Nhap Set MaSP='"+ex.MaSP+"',MaNCC='"+ex.MaNCC+"',SoLuong=" + ex.SoLuong + ",GiaNhap=" + ex.GiaNhap + ",ThanhTien=" + ex.ThanhTien + ",GhiChu=N'"+ex.GhiChu+"'  Where MaHDN=N'" + ex.MaHDN +"'");
+            KetNoi.ExecuteReader(@"update CTHD_Nhap Set MaSP='" + ex.MaSP + "',MaNCC='" + ex.MaNCC + "',SoLuong=" + ex.SoLuong + ",GiaNhap=" + ex.GiaNhap + ",ThanhTien=" + ex.ThanhTien + ",GhiChu=N'" + ex.GhiChu + "'  Where MaHDN=N'" + ex.MaHDN + "'");
         }
 
         public DataTable LayDSSP(string condition)
@@ -75,7 +75,11 @@ values('" + ex.MaHDN + "','" + ex.MaSP + "','" + ex.MaNCC + "'," + ex.SoLuong + 
         }
         public void UpdateHD(HoaDonNhap hdb)
         {
-            KetNoi.ExecuteReader(@"Update HoaDonNhap set MaNV='" + hdb.MaNV  + "',Ngaylap='" + hdb.NgayLap + "',TongTien=" + hdb.TongTien + ",TrangThai=" + hdb.TrangThai + " where MaHDN='" + hdb.MaHDN + "'");
+            KetNoi.ExecuteReader(@"Update HoaDonNhap set MaNV='" + hdb.MaNV + "',Ngaylap='" + hdb.NgayLap + "',TongTien=" + hdb.TongTien + ",TrangThai=" + hdb.TrangThai + " where MaHDN='" + hdb.MaHDN + "'");
+        }
+        public void DeleteHD(HoaDonNhap hdb)
+        {
+            KetNoi.ExecuteReader(@"Update HoaDonNhap set TrangThai = 0 where MaHDN='" + hdb.MaHDN + "'");
         }
 
     }

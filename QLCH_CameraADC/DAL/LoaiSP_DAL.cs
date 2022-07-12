@@ -16,6 +16,11 @@ namespace DAL
         {
             return KetNoi.GetDataTable("Select * from LoaiSP Where TrangThai=N'1' " + Condition);
         }
+
+        public DataTable Timkiem(string Condition)
+        {
+            return KetNoi.GetDataTable("Select * from LoaiSP Where TrangThai=N'1' and TenLoaiSP like N'%" + Condition+"%'");
+        }
         public void AddData(LoaiSP ex)
         {
             KetNoi.ExecuteReader(@"Insert into LoaiSP values('" + ex.MaLoaiSP + "',N'" + ex.TenLoaiSP + "'," + ex.TrangThai + ")");

@@ -186,7 +186,7 @@ namespace QLCH_CameraADC
         {
             LoadData();
             xulychucnang(false);
-           
+            txtMaSP.Enabled = false;
             HienThiTextbox(true);
         }
 
@@ -204,6 +204,7 @@ namespace QLCH_CameraADC
                 txtTenSP.Text = row.Cells["tensp"].Value.ToString();
                 txtTenNSX.Text = row.Cells["tennsx"].Value.ToString();
                 txtGia.Text = row.Cells["gia"].Value.ToString();
+                txtGia.Text = string.Format("{0:#,##0}", decimal.Parse(txtGia.Text));
                 rtxtMoTa.Text = row.Cells["mota"].Value.ToString();
                 txtKhuyenMai.Text = row.Cells["khuyenmai"].Value.ToString();
                 txtSoLuong.Text = row.Cells["sl"].Value.ToString();
@@ -312,6 +313,12 @@ namespace QLCH_CameraADC
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void txtTimKiem_TextChange(object sender, EventArgs e)
+        {
+            string Condition = txtTimKiem.Text;
+            dgvDSSanPham.DataSource=bus.TimKiem(Condition);
         }
     }
 }

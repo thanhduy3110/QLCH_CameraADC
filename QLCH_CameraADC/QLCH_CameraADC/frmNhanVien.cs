@@ -440,5 +440,11 @@ namespace QLCH_CameraADC
             HienThiTextbox(true);
             xulychucnang(false);
         }
+
+        private void txtTimKiem_TextChange(object sender, EventArgs e)
+        {
+            string Condition = txtTimKiem.Text;
+            dgvDSNhanVien.DataSource = bus.TimKiem(Condition);
+        }
     }
 }

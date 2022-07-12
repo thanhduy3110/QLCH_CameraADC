@@ -38,13 +38,39 @@ namespace QLCH_CameraADC
         {
             LoadData();
             btnSua.Enabled = false;
-            txtTongTien.Enabled=false;
-            dtpNgayLap.Enabled=false;
+            btnXoa.Enabled = false;
+            btnInHD.Enabled = false;
+            txtMaHD.Enabled = false;
+            txtTongTien.Enabled = false;
             txtThanhTien.Enabled = false;
-            txtSL.Enabled=false;    
-            txtDonGia.Enabled=false;
             txtKhuyenMai.Enabled = false;
+            Hienthitextbox(false);
            
+        }
+
+        public void clear()
+        {
+            txtMaHD.Clear();
+            cboTenKH.Text = "";
+            txtTongTien.Clear();
+            cboTenNV.Text = "";
+            dtpNgayLap.Text = "";
+            cboTenSP.Text = "";
+            txtSL.Clear();
+            txtDonGia.Clear();
+            txtThanhTien.Clear();
+            txtKhuyenMai.Clear();
+        }
+        public void Hienthitextbox(Boolean b)
+        {
+           
+            dtpNgayLap.Enabled = b;
+            txtSL.Enabled = b;
+            txtDonGia.Enabled = b;
+            
+            cboTenSP.Enabled = b;
+            cboTenNV.Enabled = b;
+            cboTenKH.Enabled = b;
         }
         public void LoadData()
         {
@@ -110,7 +136,17 @@ namespace QLCH_CameraADC
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            DialogResult KQ = MessageBox.Show("Bạn có muốn xóa hay không ?", "Thông Báo !!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (KQ == DialogResult.Yes)
+            {
+                hdb.MaHDB = txtMaHD.Text;
+                bus.DeleteHD(hdb);
+                MessageBox.Show("Xóa sản phẩm thành công");
+               
 
+            }
+            clear();
+            LoadData();
         }
 
         private void btnInHD_Click(object sender, EventArgs e)
@@ -124,10 +160,9 @@ namespace QLCH_CameraADC
         {
             if (flag == 0)
             {
-                dtpNgayLap.Enabled = true;
-                txtSL.Enabled = true;
-                txtDonGia.Enabled = true;
-                txtKhuyenMai.Enabled = true;
+                Hienthitextbox(true);
+                btnInHD.Enabled = false;
+                btnXoa.Enabled = false;
                 flag = 1;
             }
             else if (flag == 1)
@@ -153,6 +188,17 @@ namespace QLCH_CameraADC
                 bus.UpDateHD(hdb);
                 LoadData();
                 flag = 0;
+                Hienthitextbox(false);
+                btnInHD.Enabled = true;
+                btnXoa.Enabled = true;
+            }
+        }
+
+        private void txtSL_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
+            {
+                e.Handled = true;
             }
         }
 
@@ -162,6 +208,8 @@ namespace QLCH_CameraADC
             {
                 HienThiSP();
                 btnSua.Enabled = true;
+                btnInHD.Enabled = true;
+                btnXoa.Enabled = true;
                 DataGridViewRow row = dgvDSCTHD.Rows[e.RowIndex];
                 MaSP = row.Cells["maspp"].Value.ToString();
                 cboTenSP.Text = row.Cells["tensp"].Value.ToString();

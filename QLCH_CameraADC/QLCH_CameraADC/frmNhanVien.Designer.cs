@@ -166,23 +166,23 @@
             // cboLoaiNV
             // 
             this.cboLoaiNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboLoaiNV.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoaiNV.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.cboLoaiNV.FormattingEnabled = true;
             this.cboLoaiNV.IntegralHeight = false;
             this.cboLoaiNV.Location = new System.Drawing.Point(807, 77);
             this.cboLoaiNV.Name = "cboLoaiNV";
-            this.cboLoaiNV.Size = new System.Drawing.Size(242, 39);
+            this.cboLoaiNV.Size = new System.Drawing.Size(242, 36);
             this.cboLoaiNV.TabIndex = 7;
             // 
             // dtpNgaySinh
             // 
             this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
-            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNgaySinh.Location = new System.Drawing.Point(472, 334);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(242, 39);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(242, 34);
             this.dtpNgaySinh.TabIndex = 6;
             // 
             // radioNu
@@ -888,7 +888,7 @@
             this.txtTimKiem.BorderThickness = 1;
             this.txtTimKiem.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtTimKiem.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimKiem.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtTimKiem.DefaultFont = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimKiem.DefaultText = "";
             this.txtTimKiem.FillColor = System.Drawing.Color.White;
             this.txtTimKiem.HideSelection = true;
@@ -934,7 +934,7 @@
             this.txtTimKiem.SelectionLength = 0;
             this.txtTimKiem.SelectionStart = 0;
             this.txtTimKiem.ShortcutsEnabled = true;
-            this.txtTimKiem.Size = new System.Drawing.Size(579, 51);
+            this.txtTimKiem.Size = new System.Drawing.Size(579, 44);
             this.txtTimKiem.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.txtTimKiem.TabIndex = 2;
             this.txtTimKiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -944,6 +944,7 @@
             this.txtTimKiem.TextPlaceholder = "Tìm kiếm";
             this.txtTimKiem.UseSystemPasswordChar = false;
             this.txtTimKiem.WordWrap = true;
+            this.txtTimKiem.TextChange += new System.EventHandler(this.txtTimKiem_TextChange);
             // 
             // btnHuy
             // 
@@ -1329,7 +1330,7 @@
             this.dgvDSNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDSNhanVien.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSNhanVien.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -1369,7 +1370,7 @@
             this.dgvDSNhanVien.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvDSNhanVien.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvDSNhanVien.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
