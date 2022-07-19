@@ -89,6 +89,7 @@
             this.txtMatKhau.Size = new System.Drawing.Size(352, 36);
             this.txtMatKhau.TabIndex = 16;
             this.txtMatKhau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMatKhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMatKhau_KeyDown);
             // 
             // txtTenDN
             // 

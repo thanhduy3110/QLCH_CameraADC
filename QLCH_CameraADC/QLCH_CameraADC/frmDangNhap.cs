@@ -85,5 +85,28 @@ namespace QLCH_CameraADC
                 }
             }    
         }
+
+        private void txtMatKhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                string username = txtTenDN.Text;
+                string password = GetMD5(txtMatKhau.Text);
+
+                int count = bus.DangNhap(username, password).Rows.Count;
+
+
+                if (count == 0)
+                {
+                    MessageBox.Show("Tên Đăng Nhập Hoặc mật khẩu không đúng");
+                }
+                else if (count == 1)
+                {
+                    string TenNV = bus.DangNhap(username, password).Rows[0]["HoTen"].ToString();
+                    frmMeNu frm = new frmMeNu(TenNV, username);
+                    frm.ShowDialog();
+                }
+            }    
+        }
     }
 }

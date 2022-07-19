@@ -67,11 +67,6 @@
             this.txtMaHD = new Bunifu.UI.WinForms.BunifuTextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.dgvDSSPChon = new Bunifu.UI.WinForms.BunifuDataGridView();
-            this.tensp = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khuyenmai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtTienThoiLai = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtTienKhachDua = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -88,6 +83,12 @@
             this.txtTenKH = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtSDT = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lblTenNV = new Bunifu.UI.WinForms.BunifuLabel();
+            this.tensp = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khuyenmai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thanhtien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.km = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSPChon)).BeginInit();
@@ -245,7 +246,7 @@
             this.dgvDSSPChon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDSSPChon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDSSPChon.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -259,7 +260,8 @@
             this.soluong,
             this.dongia,
             this.khuyenmai,
-            this.thanhtien});
+            this.thanhtien,
+            this.km});
             this.dgvDSSPChon.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.dgvDSSPChon.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.dgvDSSPChon.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -278,7 +280,7 @@
             this.dgvDSSPChon.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvDSSPChon.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvDSSPChon.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
@@ -302,51 +304,6 @@
             this.dgvDSSPChon.TabIndex = 0;
             this.dgvDSSPChon.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.dgvDSSPChon.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dgvDSSPChon_RowValidating);
-            // 
-            // tensp
-            // 
-            this.tensp.DataPropertyName = "tensp";
-            this.tensp.FillWeight = 113.5829F;
-            this.tensp.HeaderText = "Tên sản phẩm";
-            this.tensp.MinimumWidth = 6;
-            this.tensp.Name = "tensp";
-            this.tensp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.tensp.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // soluong
-            // 
-            this.soluong.DataPropertyName = "soluong";
-            this.soluong.FillWeight = 113.5829F;
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 6;
-            this.soluong.Name = "soluong";
-            // 
-            // dongia
-            // 
-            this.dongia.DataPropertyName = "dongia";
-            this.dongia.FillWeight = 113.5829F;
-            this.dongia.HeaderText = "Đơn giá";
-            this.dongia.MinimumWidth = 6;
-            this.dongia.Name = "dongia";
-            this.dongia.ReadOnly = true;
-            // 
-            // khuyenmai
-            // 
-            this.khuyenmai.DataPropertyName = "khuyenmai";
-            this.khuyenmai.FillWeight = 113.5829F;
-            this.khuyenmai.HeaderText = "Khuyến mãi";
-            this.khuyenmai.MinimumWidth = 6;
-            this.khuyenmai.Name = "khuyenmai";
-            this.khuyenmai.ReadOnly = true;
-            // 
-            // thanhtien
-            // 
-            this.thanhtien.DataPropertyName = "thanhtien";
-            this.thanhtien.FillWeight = 113.5829F;
-            this.thanhtien.HeaderText = "Thành tiền";
-            this.thanhtien.MinimumWidth = 6;
-            this.thanhtien.Name = "thanhtien";
-            this.thanhtien.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -1079,6 +1036,59 @@
             this.lblTenNV.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblTenNV.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // tensp
+            // 
+            this.tensp.DataPropertyName = "tensp";
+            this.tensp.FillWeight = 113.5829F;
+            this.tensp.HeaderText = "Tên sản phẩm";
+            this.tensp.MinimumWidth = 6;
+            this.tensp.Name = "tensp";
+            this.tensp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.tensp.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // soluong
+            // 
+            this.soluong.DataPropertyName = "soluong";
+            this.soluong.FillWeight = 113.5829F;
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 6;
+            this.soluong.Name = "soluong";
+            // 
+            // dongia
+            // 
+            this.dongia.DataPropertyName = "dongia";
+            this.dongia.FillWeight = 113.5829F;
+            this.dongia.HeaderText = "Đơn giá";
+            this.dongia.MinimumWidth = 6;
+            this.dongia.Name = "dongia";
+            this.dongia.ReadOnly = true;
+            // 
+            // khuyenmai
+            // 
+            this.khuyenmai.DataPropertyName = "khuyenmai";
+            this.khuyenmai.FillWeight = 113.5829F;
+            this.khuyenmai.HeaderText = "Khuyến mãi";
+            this.khuyenmai.MinimumWidth = 6;
+            this.khuyenmai.Name = "khuyenmai";
+            this.khuyenmai.ReadOnly = true;
+            // 
+            // thanhtien
+            // 
+            this.thanhtien.DataPropertyName = "thanhtien";
+            this.thanhtien.FillWeight = 113.5829F;
+            this.thanhtien.HeaderText = "Thành tiền";
+            this.thanhtien.MinimumWidth = 6;
+            this.thanhtien.Name = "thanhtien";
+            this.thanhtien.ReadOnly = true;
+            // 
+            // km
+            // 
+            this.km.DataPropertyName = "km";
+            this.km.HeaderText = "KM";
+            this.km.MinimumWidth = 6;
+            this.km.Name = "km";
+            this.km.Visible = false;
+            // 
             // frmBanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1135,5 +1145,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dongia;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuyenmai;
         private System.Windows.Forms.DataGridViewTextBoxColumn thanhtien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn km;
     }
 }

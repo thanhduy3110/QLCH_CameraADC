@@ -20,19 +20,22 @@ namespace QLCH_CameraADC
         }
         ThongKe_BUS bus = new ThongKe_BUS();
 
-        //public void KhoanChiThangNay(string condition, string condition1)
+        //public void LoiNhuanTheoThang(string condition, string condition1)
         //{
-        //    comboBoxChi.DataSource = bus.KhoanChiTheoThang("" + condition);
-        //    comboBoxChi.DisplayMember = "TT";
+        //    ComboBox DT = new ComboBox();
+        //    ComboBox KC = new ComboBox();
 
-        //    cboDoanhThu.DataSource = bus.DoanhThuTheoThang("" + condition, condition1);
-        //    cboDoanhThu.DisplayMember = "TT";
+        //    DT.DataSource = bus.DoanhThuTheoThang(condition, condition1);
+        //    DT.DisplayMember = "TT";
+
+        //    KC.DataSource = bus.KhoanChiTheoThang(condition, condition1);
+        //    KC.DisplayMember = "TT";
         //    try
         //    {
         //        decimal LoiNhuan;
-        //        LoiNhuan = decimal.Parse(cboDoanhThu.Text) - decimal.Parse(comboBoxChi.Text);
-        //        comboloinhuan.Text = LoiNhuan.ToString();
-        //        comboloinhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboloinhuan.Text));
+        //        LoiNhuan = decimal.Parse(DT.Text) - decimal.Parse(KC.Text);
+        //        comboLoiNhuan.Text = LoiNhuan.ToString();
+        //        comboLoiNhuan.Text = string.Format("{0:#,##0}", decimal.Parse(comboLoiNhuan.Text));
         //    }
         //    catch
         //    {
