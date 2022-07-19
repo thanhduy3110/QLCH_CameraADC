@@ -38,6 +38,14 @@ namespace QLCH_CameraADC
             rtxtGhiChu.Enabled=false;
         }
 
+        private void txtSDT_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
+            {
+                e.Handled = true;
+            }
+        }
+
         private void txtSDT_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

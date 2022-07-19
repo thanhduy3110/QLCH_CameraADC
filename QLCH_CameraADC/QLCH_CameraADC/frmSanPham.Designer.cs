@@ -401,6 +401,7 @@
             this.txtSoLuong.TextPlaceholder = "";
             this.txtSoLuong.UseSystemPasswordChar = false;
             this.txtSoLuong.WordWrap = true;
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
             // txtKhuyenMai
             // 
@@ -549,6 +550,7 @@
             this.txtGia.TextPlaceholder = "";
             this.txtGia.UseSystemPasswordChar = false;
             this.txtGia.WordWrap = true;
+            this.txtGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGia_KeyPress);
             // 
             // txtTenSP
             // 

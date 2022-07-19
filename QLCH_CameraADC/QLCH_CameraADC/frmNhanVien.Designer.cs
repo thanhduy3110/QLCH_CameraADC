@@ -439,6 +439,7 @@
             this.txtCMND.TextPlaceholder = "";
             this.txtCMND.UseSystemPasswordChar = false;
             this.txtCMND.WordWrap = true;
+            this.txtCMND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCMND_KeyPress);
             // 
             // txtSDT
             // 
@@ -513,6 +514,7 @@
             this.txtSDT.TextPlaceholder = "";
             this.txtSDT.UseSystemPasswordChar = false;
             this.txtSDT.WordWrap = true;
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // txtHoTen
             // 

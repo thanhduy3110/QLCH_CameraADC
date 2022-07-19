@@ -54,7 +54,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvThongKe = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.radioLoiNhuan = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -105,7 +104,6 @@
             this.panel1.Controls.Add(this.radioDSSPNhap);
             this.panel1.Controls.Add(this.radioDSSPBan);
             this.panel1.Controls.Add(this.radioDSNVBan);
-            this.panel1.Controls.Add(this.radioLoiNhuan);
             this.panel1.Controls.Add(this.radioDoanhThu);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -208,7 +206,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(275, 379);
+            this.label5.Location = new System.Drawing.Point(276, 344);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 28);
@@ -219,7 +217,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 379);
+            this.label3.Location = new System.Drawing.Point(8, 344);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 28);
@@ -230,7 +228,7 @@
             // 
             this.cboNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNam.FormattingEnabled = true;
-            this.cboNam.Location = new System.Drawing.Point(336, 381);
+            this.cboNam.Location = new System.Drawing.Point(337, 346);
             this.cboNam.Name = "cboNam";
             this.cboNam.Size = new System.Drawing.Size(168, 31);
             this.cboNam.TabIndex = 26;
@@ -252,7 +250,7 @@
             "10",
             "11",
             "12"});
-            this.cboThang.Location = new System.Drawing.Point(80, 381);
+            this.cboThang.Location = new System.Drawing.Point(81, 346);
             this.cboThang.Name = "cboThang";
             this.cboThang.Size = new System.Drawing.Size(153, 31);
             this.cboThang.TabIndex = 26;
@@ -297,7 +295,7 @@
             // 
             this.radioDSSPNhap.AutoSize = true;
             this.radioDSSPNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSSPNhap.Location = new System.Drawing.Point(61, 316);
+            this.radioDSSPNhap.Location = new System.Drawing.Point(61, 266);
             this.radioDSSPNhap.Margin = new System.Windows.Forms.Padding(4);
             this.radioDSSPNhap.Name = "radioDSSPNhap";
             this.radioDSSPNhap.Size = new System.Drawing.Size(370, 32);
@@ -310,7 +308,7 @@
             // 
             this.radioDSSPBan.AutoSize = true;
             this.radioDSSPBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSSPBan.Location = new System.Drawing.Point(61, 253);
+            this.radioDSSPBan.Location = new System.Drawing.Point(61, 203);
             this.radioDSSPBan.Margin = new System.Windows.Forms.Padding(4);
             this.radioDSSPBan.Name = "radioDSSPBan";
             this.radioDSSPBan.Size = new System.Drawing.Size(359, 32);
@@ -323,7 +321,7 @@
             // 
             this.radioDSNVBan.AutoSize = true;
             this.radioDSNVBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSNVBan.Location = new System.Drawing.Point(61, 188);
+            this.radioDSNVBan.Location = new System.Drawing.Point(61, 138);
             this.radioDSNVBan.Margin = new System.Windows.Forms.Padding(4);
             this.radioDSNVBan.Name = "radioDSNVBan";
             this.radioDSNVBan.Size = new System.Drawing.Size(359, 32);
@@ -428,19 +426,6 @@
             this.Column1.MinimumWidth = 2;
             this.Column1.Name = "Column1";
             // 
-            // radioLoiNhuan
-            // 
-            this.radioLoiNhuan.AutoSize = true;
-            this.radioLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioLoiNhuan.Location = new System.Drawing.Point(61, 133);
-            this.radioLoiNhuan.Margin = new System.Windows.Forms.Padding(4);
-            this.radioLoiNhuan.Name = "radioLoiNhuan";
-            this.radioLoiNhuan.Size = new System.Drawing.Size(228, 32);
-            this.radioLoiNhuan.TabIndex = 16;
-            this.radioLoiNhuan.TabStop = true;
-            this.radioLoiNhuan.Text = "Lợi nhuận trong tháng";
-            this.radioLoiNhuan.UseVisualStyleBackColor = true;
-            // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -484,6 +469,5 @@
         private System.Windows.Forms.RadioButton radioDSNVBan;
         private System.Windows.Forms.RadioButton radioDSSPNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.RadioButton radioLoiNhuan;
     }
 }
