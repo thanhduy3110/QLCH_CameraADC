@@ -336,5 +336,10 @@ namespace QLCH_CameraADC
                 e.Handled = true;
             }
         }
+
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

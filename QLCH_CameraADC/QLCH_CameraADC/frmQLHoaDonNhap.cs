@@ -179,6 +179,11 @@ namespace QLCH_CameraADC
             dgvDSHD.DataSource = bus.HienThiHDN("");
         }
 
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (flag == 0)

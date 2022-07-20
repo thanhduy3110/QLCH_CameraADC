@@ -223,6 +223,11 @@ namespace QLCH_CameraADC
             }
         }
 
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void dgvDSCTHD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
