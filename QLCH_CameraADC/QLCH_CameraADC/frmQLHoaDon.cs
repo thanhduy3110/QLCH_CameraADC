@@ -31,6 +31,7 @@ namespace QLCH_CameraADC
         HoaDonBan_BUS bus = new HoaDonBan_BUS();
         HoaDonBan hdb = new HoaDonBan();
         CTHD_Ban cthdb = new CTHD_Ban();
+        SanPham sp = new SanPham();
         int flag = 0;
         string MaSP, MaNV, MaKH, MaHD;
 
@@ -43,6 +44,7 @@ namespace QLCH_CameraADC
             txtMaHD.Enabled = false;
             txtTongTien.Enabled = false;
             txtThanhTien.Enabled = false;
+            txtDonGia.Enabled = false;
             txtKhuyenMai.Enabled = false;
             Hienthitextbox(false);
            
@@ -66,7 +68,7 @@ namespace QLCH_CameraADC
            
             dtpNgayLap.Enabled = b;
             txtSL.Enabled = b;
-            txtDonGia.Enabled = b;
+          
             
             cboTenSP.Enabled = b;
             cboTenNV.Enabled = b;
@@ -167,9 +169,25 @@ namespace QLCH_CameraADC
             }
             else if (flag == 1)
             {
+                int sl, slconlai;
                 ThanhTienSP();
                 cthdb.MaHDB = txtMaHD.Text;
                 cthdb.MaSP = cboTenSP.SelectedValue.ToString();
+
+                DataTable DSCTHDB = bus.GetCTHD("select * from CTHD_Ban where MaSP = '" + cboTenSP.SelectedValue.ToString() + "' and MaHDB='" + txtMaHD.Text + "'");
+                DataTable DSSP = bus.LaySP("Select * From SanPham Where MaSP='" + cboTenSP.SelectedValue.ToString() + "'");
+
+
+                if (int.Parse(txtSL.Text) >= int.Parse(DSCTHDB.Rows[0]["SoLuong"].ToString()))
+                {
+                    sl = int.Parse(txtSL.Text) - int.Parse(DSCTHDB.Rows[0]["SoLuong"].ToString());
+                    slconlai = int.Parse(DSSP.Rows[0]["SL"].ToString()) + sl;
+                }
+                else
+                {
+                    sl = int.Parse(DSCTHDB.Rows[0]["SoLuong"].ToString()) - int.Parse(txtSL.Text);
+                    slconlai = int.Parse(DSSP.Rows[0]["SL"].ToString()) - sl;
+                }
                 cthdb.SoLuong = int.Parse(txtSL.Text);
                 cthdb.GiaSP = float.Parse(txtDonGia.Text);
                 cthdb.ThanhTien = float.Parse(txtThanhTien.Text);
@@ -186,6 +204,9 @@ namespace QLCH_CameraADC
                 hdb.TongTien = float.Parse(txtTongTien.Text);
                 hdb.TrangThai = 1;
                 bus.UpDateHD(hdb);
+                sp.MaSP = cboTenSP.SelectedValue.ToString();
+                sp.SL = slconlai;
+                bus.CapNhatSLTon(sp);
                 LoadData();
                 flag = 0;
                 Hienthitextbox(false);
@@ -200,6 +221,11 @@ namespace QLCH_CameraADC
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void dgvDSCTHD_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -234,8 +260,8 @@ namespace QLCH_CameraADC
         public void ThanhTienSP()
         {
             decimal ThanhTienSP;
-            decimal KM = decimal.Parse(txtSL.Text) * decimal.Parse(txtDonGia.Text) * decimal.Parse(txtKhuyenMai.Text) / 100;
-            ThanhTienSP = decimal.Parse(txtDonGia.Text) * decimal.Parse(txtSL.Text) - KM;
+          
+            ThanhTienSP = decimal.Parse(txtKhuyenMai.Text) * decimal.Parse(txtSL.Text) ;
             txtThanhTien.Text = ThanhTienSP.ToString();
         }
 

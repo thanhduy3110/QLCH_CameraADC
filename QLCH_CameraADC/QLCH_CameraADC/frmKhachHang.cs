@@ -226,5 +226,10 @@ namespace QLCH_CameraADC
             string conditon = txtTimKiem.Text;
             dgvDSKhachHang.DataSource = bus.TimKiemTheoSDT(conditon);
         }
+
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

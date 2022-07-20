@@ -61,7 +61,7 @@ values('" + ex.MaHDN + "','" + ex.MaSP + "','" + ex.MaNCC + "'," + ex.SoLuong + 
 
         public void UpdateCTHDN(CTHD_Nhap ex)
         {
-            KetNoi.ExecuteReader(@"update CTHD_Nhap Set MaSP='" + ex.MaSP + "',MaNCC='" + ex.MaNCC + "',SoLuong=" + ex.SoLuong + ",GiaNhap=" + ex.GiaNhap + ",ThanhTien=" + ex.ThanhTien + ",GhiChu=N'" + ex.GhiChu + "'  Where MaHDN=N'" + ex.MaHDN + "'");
+            KetNoi.ExecuteReader(@"update CTHD_Nhap Set MaNCC='" + ex.MaNCC + "',SoLuong=" + ex.SoLuong + ",GiaNhap=" + ex.GiaNhap + ",ThanhTien=" + ex.ThanhTien + ",GhiChu=N'" + ex.GhiChu + "'  Where MaSP=N'" + ex.MaSP + "'");
         }
 
         public DataTable LayDSSP(string condition)

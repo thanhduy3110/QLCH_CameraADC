@@ -256,10 +256,10 @@ namespace QLCH_CameraADC
                 DataTable DSSP = bus.GetTimKiemSP("Select * from SanPham where MaSP='" + masp + "'");
                 
                 dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value = DSSP.Rows[0]["Gia"];
-                dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value = DSSP.Rows[0]["KhuyenMai"];
-                int khuyenmai = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value.ToString());
+                dgvDSSPChon.Rows[e.RowIndex].Cells["km"].Value = DSSP.Rows[0]["KhuyenMai"];
+                int khuyenmai = int.Parse(DSSP.Rows[0]["KhuyenMai"].ToString());
                 int gia = int.Parse(dgvDSSPChon.Rows[e.RowIndex].Cells["dongia"].Value.ToString());
-
+                dgvDSSPChon.Rows[e.RowIndex].Cells["khuyenmai"].Value = gia - (( gia * khuyenmai) / 100);
                 dgvDSSPChon.Rows[e.RowIndex].Cells["thanhtien"].Value = sl * gia - ((sl * gia * khuyenmai) / 100);
 
 
@@ -288,7 +288,7 @@ namespace QLCH_CameraADC
             {
                 int sl = int.Parse(dgvDSSPChon.Rows[i].Cells["soluong"].Value.ToString());
                 int gia = int.Parse(dgvDSSPChon.Rows[i].Cells["dongia"].Value.ToString());
-                int khuyenmai = int.Parse(dgvDSSPChon.Rows[i].Cells["khuyenmai"].Value.ToString());
+                int khuyenmai = int.Parse(dgvDSSPChon.Rows[i].Cells["km"].Value.ToString());
 
                 double thanhtien = sl * gia - ((sl * gia* khuyenmai) /100);
                 TongTien = TongTien + thanhtien;

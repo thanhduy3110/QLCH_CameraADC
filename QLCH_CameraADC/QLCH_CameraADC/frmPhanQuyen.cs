@@ -72,6 +72,7 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 xulychucnangthem(true);
+                txtTenLoaiNV.Enabled = true;
                 int dem = bus.GetTong().Rows.Count;
                 if (dem == 0)
                 {
@@ -109,7 +110,7 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Thành Công");
                 HienThiDSLoaiNV();
                 flag = 0;
-               
+                txtTenLoaiNV.Enabled = false;
                 xulychucnang1(true);
             }    
         }
@@ -117,7 +118,8 @@ namespace QLCH_CameraADC
         private void frmPhanQuyen_Load(object sender, EventArgs e)
         {
             HienThiDSLoaiNV();
-            txtMaLoaiNV.Enabled = true;
+            txtMaLoaiNV.Enabled = false;
+            txtTenLoaiNV.Enabled = false;
            
             xulychucnang(false);
         }
@@ -155,7 +157,7 @@ namespace QLCH_CameraADC
             if (flag == 0)
             {
                 flag = 1;
-               
+                txtTenLoaiNV.Enabled = true;
                 xulychucnangsua(true);
             }
             else if(flag == 1)
@@ -178,7 +180,7 @@ namespace QLCH_CameraADC
                 MessageBox.Show("Thành Công");
                 HienThiDSLoaiNV();
                 flag = 0;
-                
+                txtTenLoaiNV.Enabled = false;
                 xulychucnang1(true);
             }    
         }

@@ -53,6 +53,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rtxtGhiChu = new System.Windows.Forms.RichTextBox();
@@ -75,6 +76,7 @@
             this.trangthai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTimKiem = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.btnXuatEXL = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnHuy = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnXoa = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnSua = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -544,6 +546,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.txtTimKiem);
+            this.panel1.Controls.Add(this.btnXuatEXL);
             this.panel1.Controls.Add(this.btnHuy);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnSua);
@@ -628,6 +631,96 @@
             this.txtTimKiem.WordWrap = true;
             this.txtTimKiem.TextChange += new System.EventHandler(this.txtTimKiem_TextChange);
             // 
+            // btnXuatEXL
+            // 
+            this.btnXuatEXL.AllowAnimations = true;
+            this.btnXuatEXL.AllowMouseEffects = true;
+            this.btnXuatEXL.AllowToggling = false;
+            this.btnXuatEXL.AnimationSpeed = 200;
+            this.btnXuatEXL.AutoGenerateColors = false;
+            this.btnXuatEXL.AutoRoundBorders = false;
+            this.btnXuatEXL.AutoSizeLeftIcon = true;
+            this.btnXuatEXL.AutoSizeRightIcon = true;
+            this.btnXuatEXL.BackColor = System.Drawing.Color.Transparent;
+            this.btnXuatEXL.BackColor1 = System.Drawing.Color.LightSkyBlue;
+            this.btnXuatEXL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnXuatEXL.BackgroundImage")));
+            this.btnXuatEXL.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXuatEXL.ButtonText = "";
+            this.btnXuatEXL.ButtonTextMarginLeft = 0;
+            this.btnXuatEXL.ColorContrastOnClick = 45;
+            this.btnXuatEXL.ColorContrastOnHover = 45;
+            this.btnXuatEXL.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnXuatEXL.CustomizableEdges = borderEdges1;
+            this.btnXuatEXL.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnXuatEXL.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnXuatEXL.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnXuatEXL.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnXuatEXL.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnXuatEXL.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatEXL.ForeColor = System.Drawing.Color.White;
+            this.btnXuatEXL.IconLeftAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXuatEXL.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnXuatEXL.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnXuatEXL.IconMarginLeft = 11;
+            this.btnXuatEXL.IconPadding = 10;
+            this.btnXuatEXL.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXuatEXL.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnXuatEXL.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnXuatEXL.IconSize = 25;
+            this.btnXuatEXL.IdleBorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnXuatEXL.IdleBorderRadius = 30;
+            this.btnXuatEXL.IdleBorderThickness = 1;
+            this.btnXuatEXL.IdleFillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnXuatEXL.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.excel1;
+            this.btnXuatEXL.IdleIconRightImage = null;
+            this.btnXuatEXL.IndicateFocus = false;
+            this.btnXuatEXL.Location = new System.Drawing.Point(905, 16);
+            this.btnXuatEXL.Name = "btnXuatEXL";
+            this.btnXuatEXL.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnXuatEXL.OnDisabledState.BorderRadius = 30;
+            this.btnXuatEXL.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXuatEXL.OnDisabledState.BorderThickness = 1;
+            this.btnXuatEXL.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnXuatEXL.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnXuatEXL.OnDisabledState.IconLeftImage = null;
+            this.btnXuatEXL.OnDisabledState.IconRightImage = null;
+            this.btnXuatEXL.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnXuatEXL.onHoverState.BorderRadius = 30;
+            this.btnXuatEXL.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXuatEXL.onHoverState.BorderThickness = 1;
+            this.btnXuatEXL.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnXuatEXL.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnXuatEXL.onHoverState.IconLeftImage = null;
+            this.btnXuatEXL.onHoverState.IconRightImage = null;
+            this.btnXuatEXL.OnIdleState.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.btnXuatEXL.OnIdleState.BorderRadius = 30;
+            this.btnXuatEXL.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXuatEXL.OnIdleState.BorderThickness = 1;
+            this.btnXuatEXL.OnIdleState.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.btnXuatEXL.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnXuatEXL.OnIdleState.IconLeftImage = global::QLCH_CameraADC.Properties.Resources.excel1;
+            this.btnXuatEXL.OnIdleState.IconRightImage = null;
+            this.btnXuatEXL.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnXuatEXL.OnPressedState.BorderRadius = 30;
+            this.btnXuatEXL.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnXuatEXL.OnPressedState.BorderThickness = 1;
+            this.btnXuatEXL.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnXuatEXL.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnXuatEXL.OnPressedState.IconLeftImage = null;
+            this.btnXuatEXL.OnPressedState.IconRightImage = null;
+            this.btnXuatEXL.Size = new System.Drawing.Size(107, 77);
+            this.btnXuatEXL.TabIndex = 1;
+            this.btnXuatEXL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnXuatEXL.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnXuatEXL.TextMarginLeft = 0;
+            this.btnXuatEXL.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnXuatEXL.UseDefaultRadiusAndThickness = true;
+            this.btnXuatEXL.Click += new System.EventHandler(this.btnXuatEXL_Click);
+            // 
             // btnHuy
             // 
             this.btnHuy.AllowAnimations = true;
@@ -647,11 +740,11 @@
             this.btnHuy.ColorContrastOnClick = 45;
             this.btnHuy.ColorContrastOnHover = 45;
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnHuy.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnHuy.CustomizableEdges = borderEdges2;
             this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnHuy.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHuy.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -675,7 +768,7 @@
             this.btnHuy.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.cancell;
             this.btnHuy.IdleIconRightImage = null;
             this.btnHuy.IndicateFocus = false;
-            this.btnHuy.Location = new System.Drawing.Point(894, 18);
+            this.btnHuy.Location = new System.Drawing.Point(707, 16);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnHuy.OnDisabledState.BorderRadius = 30;
@@ -737,11 +830,11 @@
             this.btnXoa.ColorContrastOnClick = 45;
             this.btnXoa.ColorContrastOnHover = 45;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnXoa.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnXoa.CustomizableEdges = borderEdges3;
             this.btnXoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnXoa.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnXoa.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -765,7 +858,7 @@
             this.btnXoa.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.trash1;
             this.btnXoa.IdleIconRightImage = null;
             this.btnXoa.IndicateFocus = false;
-            this.btnXoa.Location = new System.Drawing.Point(650, 18);
+            this.btnXoa.Location = new System.Drawing.Point(479, 16);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnXoa.OnDisabledState.BorderRadius = 30;
@@ -827,11 +920,11 @@
             this.btnSua.ColorContrastOnClick = 45;
             this.btnSua.ColorContrastOnHover = 45;
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnSua.CustomizableEdges = borderEdges3;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnSua.CustomizableEdges = borderEdges4;
             this.btnSua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSua.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSua.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -855,7 +948,7 @@
             this.btnSua.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.edit1;
             this.btnSua.IdleIconRightImage = null;
             this.btnSua.IndicateFocus = false;
-            this.btnSua.Location = new System.Drawing.Point(405, 18);
+            this.btnSua.Location = new System.Drawing.Point(267, 16);
             this.btnSua.Name = "btnSua";
             this.btnSua.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnSua.OnDisabledState.BorderRadius = 30;
@@ -917,11 +1010,11 @@
             this.btnThem.ColorContrastOnClick = 45;
             this.btnThem.ColorContrastOnHover = 45;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.btnThem.CustomizableEdges = borderEdges4;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnThem.CustomizableEdges = borderEdges5;
             this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -945,7 +1038,7 @@
             this.btnThem.IdleIconLeftImage = global::QLCH_CameraADC.Properties.Resources.add_file1;
             this.btnThem.IdleIconRightImage = null;
             this.btnThem.IndicateFocus = false;
-            this.btnThem.Location = new System.Drawing.Point(162, 18);
+            this.btnThem.Location = new System.Drawing.Point(49, 16);
             this.btnThem.Name = "btnThem";
             this.btnThem.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.OnDisabledState.BorderRadius = 30;
@@ -1039,5 +1132,6 @@
         private System.Windows.Forms.RichTextBox rtxtGhiChu;
         private System.Windows.Forms.Label label6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnHuy;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnXuatEXL;
     }
 }

@@ -354,7 +354,7 @@
             this.txtTenKH.ShortcutsEnabled = true;
             this.txtTenKH.Size = new System.Drawing.Size(332, 44);
             this.txtTenKH.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtTenKH.TabIndex = 1;
+            this.txtTenKH.TabIndex = 0;
             this.txtTenKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtTenKH.TextMarginBottom = 0;
             this.txtTenKH.TextMarginLeft = 3;
@@ -428,7 +428,7 @@
             this.txtSDT.ShortcutsEnabled = true;
             this.txtSDT.Size = new System.Drawing.Size(332, 44);
             this.txtSDT.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtSDT.TabIndex = 0;
+            this.txtSDT.TabIndex = 1;
             this.txtSDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSDT.TextMarginBottom = 0;
             this.txtSDT.TextMarginLeft = 3;
@@ -437,6 +437,7 @@
             this.txtSDT.UseSystemPasswordChar = false;
             this.txtSDT.WordWrap = true;
             this.txtSDT.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSDT_KeyDown);
+            this.txtSDT.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSDT_KeyPress);
             // 
             // label7
             // 

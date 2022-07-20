@@ -47,13 +47,13 @@
             this.radioSPTonKho = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.radioKhoanChi = new System.Windows.Forms.RadioButton();
+            this.radioDSSPNhap = new System.Windows.Forms.RadioButton();
+            this.radioDSSPBan = new System.Windows.Forms.RadioButton();
+            this.radioDSNVBan = new System.Windows.Forms.RadioButton();
             this.radioDoanhThu = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dgvThongKe = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.radioDSNVBan = new System.Windows.Forms.RadioButton();
-            this.radioDSSPBan = new System.Windows.Forms.RadioButton();
-            this.radioDSSPNhap = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -206,7 +206,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(275, 354);
+            this.label5.Location = new System.Drawing.Point(276, 344);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 28);
@@ -217,7 +217,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 354);
+            this.label3.Location = new System.Drawing.Point(8, 344);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 28);
@@ -228,7 +228,7 @@
             // 
             this.cboNam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboNam.FormattingEnabled = true;
-            this.cboNam.Location = new System.Drawing.Point(336, 356);
+            this.cboNam.Location = new System.Drawing.Point(337, 346);
             this.cboNam.Name = "cboNam";
             this.cboNam.Size = new System.Drawing.Size(168, 31);
             this.cboNam.TabIndex = 26;
@@ -250,7 +250,7 @@
             "10",
             "11",
             "12"});
-            this.cboThang.Location = new System.Drawing.Point(80, 356);
+            this.cboThang.Location = new System.Drawing.Point(81, 346);
             this.cboThang.Name = "cboThang";
             this.cboThang.Size = new System.Drawing.Size(153, 31);
             this.cboThang.TabIndex = 26;
@@ -275,7 +275,7 @@
             this.label2.Location = new System.Drawing.Point(569, 3);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(10, 393);
+            this.label2.Size = new System.Drawing.Size(10, 416);
             this.label2.TabIndex = 19;
             // 
             // radioKhoanChi
@@ -290,6 +290,45 @@
             this.radioKhoanChi.TabStop = true;
             this.radioKhoanChi.Text = "Tiền chi tiêu trong tháng";
             this.radioKhoanChi.UseVisualStyleBackColor = true;
+            // 
+            // radioDSSPNhap
+            // 
+            this.radioDSSPNhap.AutoSize = true;
+            this.radioDSSPNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDSSPNhap.Location = new System.Drawing.Point(61, 266);
+            this.radioDSSPNhap.Margin = new System.Windows.Forms.Padding(4);
+            this.radioDSSPNhap.Name = "radioDSSPNhap";
+            this.radioDSSPNhap.Size = new System.Drawing.Size(370, 32);
+            this.radioDSSPNhap.TabIndex = 16;
+            this.radioDSSPNhap.TabStop = true;
+            this.radioDSSPNhap.Text = "Danh sách sản phẩm nhập trong tháng";
+            this.radioDSSPNhap.UseVisualStyleBackColor = true;
+            // 
+            // radioDSSPBan
+            // 
+            this.radioDSSPBan.AutoSize = true;
+            this.radioDSSPBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDSSPBan.Location = new System.Drawing.Point(61, 203);
+            this.radioDSSPBan.Margin = new System.Windows.Forms.Padding(4);
+            this.radioDSSPBan.Name = "radioDSSPBan";
+            this.radioDSSPBan.Size = new System.Drawing.Size(359, 32);
+            this.radioDSSPBan.TabIndex = 16;
+            this.radioDSSPBan.TabStop = true;
+            this.radioDSSPBan.Text = "Danh sách sản phẩm bán trong tháng";
+            this.radioDSSPBan.UseVisualStyleBackColor = true;
+            // 
+            // radioDSNVBan
+            // 
+            this.radioDSNVBan.AutoSize = true;
+            this.radioDSNVBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioDSNVBan.Location = new System.Drawing.Point(61, 138);
+            this.radioDSNVBan.Margin = new System.Windows.Forms.Padding(4);
+            this.radioDSNVBan.Name = "radioDSNVBan";
+            this.radioDSNVBan.Size = new System.Drawing.Size(359, 32);
+            this.radioDSNVBan.TabIndex = 16;
+            this.radioDSNVBan.TabStop = true;
+            this.radioDSNVBan.Text = "Danh sách nhân viên bán trong tháng";
+            this.radioDSNVBan.UseVisualStyleBackColor = true;
             // 
             // radioDoanhThu
             // 
@@ -306,6 +345,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.dgvThongKe);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(1109, 50);
@@ -325,7 +365,7 @@
             this.dgvThongKe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvThongKe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvThongKe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
@@ -354,7 +394,7 @@
             this.dgvThongKe.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.dgvThongKe.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.dgvThongKe.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
@@ -383,47 +423,8 @@
             // 
             this.Column1.FillWeight = 35.31699F;
             this.Column1.HeaderText = "STT";
-            this.Column1.MinimumWidth = 6;
+            this.Column1.MinimumWidth = 2;
             this.Column1.Name = "Column1";
-            // 
-            // radioDSNVBan
-            // 
-            this.radioDSNVBan.AutoSize = true;
-            this.radioDSNVBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSNVBan.Location = new System.Drawing.Point(61, 142);
-            this.radioDSNVBan.Margin = new System.Windows.Forms.Padding(4);
-            this.radioDSNVBan.Name = "radioDSNVBan";
-            this.radioDSNVBan.Size = new System.Drawing.Size(359, 32);
-            this.radioDSNVBan.TabIndex = 16;
-            this.radioDSNVBan.TabStop = true;
-            this.radioDSNVBan.Text = "Danh sách nhân viên bán trong tháng";
-            this.radioDSNVBan.UseVisualStyleBackColor = true;
-            // 
-            // radioDSSPBan
-            // 
-            this.radioDSSPBan.AutoSize = true;
-            this.radioDSSPBan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSSPBan.Location = new System.Drawing.Point(61, 207);
-            this.radioDSSPBan.Margin = new System.Windows.Forms.Padding(4);
-            this.radioDSSPBan.Name = "radioDSSPBan";
-            this.radioDSSPBan.Size = new System.Drawing.Size(359, 32);
-            this.radioDSSPBan.TabIndex = 16;
-            this.radioDSSPBan.TabStop = true;
-            this.radioDSSPBan.Text = "Danh sách sản phẩm bán trong tháng";
-            this.radioDSSPBan.UseVisualStyleBackColor = true;
-            // 
-            // radioDSSPNhap
-            // 
-            this.radioDSSPNhap.AutoSize = true;
-            this.radioDSSPNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioDSSPNhap.Location = new System.Drawing.Point(61, 270);
-            this.radioDSSPNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.radioDSSPNhap.Name = "radioDSSPNhap";
-            this.radioDSSPNhap.Size = new System.Drawing.Size(370, 32);
-            this.radioDSSPNhap.TabIndex = 16;
-            this.radioDSSPNhap.TabStop = true;
-            this.radioDSSPNhap.Text = "Danh sách sản phẩm nhập trong tháng";
-            this.radioDSSPNhap.UseVisualStyleBackColor = true;
             // 
             // frmThongKe
             // 
@@ -464,9 +465,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RadioButton radioKhoanChi;
         private System.Windows.Forms.RadioButton radioDoanhThu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.RadioButton radioDSSPBan;
         private System.Windows.Forms.RadioButton radioDSNVBan;
         private System.Windows.Forms.RadioButton radioDSSPNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

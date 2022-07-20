@@ -214,5 +214,10 @@ namespace QLCH_CameraADC
             string condition =txtTimKiem.Text;
             dgvDSNCC.DataSource = bus.Timkiem(condition);
         }
+
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

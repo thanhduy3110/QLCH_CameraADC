@@ -33,6 +33,7 @@ namespace QLCH_CameraADC
         HoaDonBan_BUS busBan = new HoaDonBan_BUS();
         HoaDonNhap hdn = new HoaDonNhap();
         CTHD_Nhap cthdn = new CTHD_Nhap();
+        SanPham sp = new SanPham();
         int flag = 0;
         string MaSP, MaNV, MaNCC, MaHD;
 
@@ -178,6 +179,11 @@ namespace QLCH_CameraADC
             dgvDSHD.DataSource = bus.HienThiHDN("");
         }
 
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (flag == 0)
@@ -189,16 +195,34 @@ namespace QLCH_CameraADC
             }
             else if (flag == 1)
             {
+                int sl,slconlai;
                 ThanhTienSP();
                 cthdn.MaHDN = txtMaHD.Text;
                 cthdn.MaSP = cboTenSP.SelectedValue.ToString();
                 cthdn.MaNCC = cboTenNCC.SelectedValue.ToString();
+
+                DataTable DSCTHDN = bus.HienThiCTHDNH("select * from CTHD_Nhap where MaSP = '"+ cboTenSP.SelectedValue.ToString()+"' and MaHDN='"+txtMaHD.Text+"'");
+                DataTable DSSP = bus.LayDSSP("Select * From SanPham Where MaSP='" + cboTenSP.SelectedValue.ToString() + "'");
+
+               
+                if (int.Parse(txtSL.Text)>= int.Parse(DSCTHDN.Rows[0]["SoLuong"].ToString()))
+                {
+                    sl = int.Parse(txtSL.Text) - int.Parse(DSCTHDN.Rows[0]["SoLuong"].ToString());
+                    slconlai=int.Parse(DSSP.Rows[0]["SL"].ToString()) + sl;
+                }  
+                else
+                {
+                    sl=int.Parse(DSCTHDN.Rows[0]["SoLuong"].ToString()) - int.Parse(txtSL.Text);
+                    slconlai = int.Parse(DSSP.Rows[0]["SL"].ToString()) - sl;
+                }
+
+              
                 cthdn.SoLuong = int.Parse(txtSL.Text);
                 cthdn.GiaNhap = float.Parse(txtGiaNhap.Text);
                 cthdn.ThanhTien = float.Parse(txtThanhTien.Text);
                 cthdn.GhiChu=rtxtGhiChu.Text;
                 cthdn.TrangThai = 1;
-                bus.AddCTHD(cthdn);
+                bus.UpdateCTHDN(cthdn);
                 CTHD_TheoHD(MaHD);
                 TongThanhToan();
                 MessageBox.Show("Sửa thành cong");
@@ -208,6 +232,9 @@ namespace QLCH_CameraADC
                 hdn.TongTien = float.Parse(txtTongTien.Text);
                 hdn.TrangThai = 1;
                 bus.UpdateHD(hdn);
+                sp.MaSP= cboTenSP.SelectedValue.ToString();
+                sp.SL = slconlai;
+                bus.CapNhatSLTon(sp);
                 dgvDSHD.DataSource = bus.HienThiHDN("");
                 flag = 0;
                 HienThiTextbox(false);
@@ -222,6 +249,7 @@ namespace QLCH_CameraADC
            
             ThanhTienSP = decimal.Parse(txtGiaNhap.Text) * decimal.Parse(txtSL.Text) ;
             txtThanhTien.Text = ThanhTienSP.ToString();
+            txtThanhTien.Text = string.Format("{0:#,##0}", decimal.Parse(txtThanhTien.Text));
         }
 
         public void TongThanhToan()

@@ -320,5 +320,26 @@ namespace QLCH_CameraADC
             string Condition = txtTimKiem.Text;
             dgvDSSanPham.DataSource=bus.TimKiem(Condition);
         }
+
+        private void txtGia_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) == false && char.IsControl(e.KeyChar) == false)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnXuatEXL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
