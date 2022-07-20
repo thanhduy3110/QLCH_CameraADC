@@ -156,7 +156,7 @@ namespace QLCH_CameraADC
                 sp.TenSP = txtTenSP.Text;
                 sp.MaLoaiSP = cboMaLoaiSP.SelectedValue.ToString();
                 sp.TenNSX=txtTenNSX.Text;
-                sp.Gia = int.Parse(txtGia.Text);
+                sp.Gia = float.Parse(txtGia.Text);
                 sp.SL = int.Parse(txtSoLuong.Text);
                 sp.DVT = txtDVT.Text;
                 sp.MoTa = rtxtMoTa.Text;
@@ -266,7 +266,7 @@ namespace QLCH_CameraADC
                 sp.TenSP = txtTenSP.Text;
                 sp.MaLoaiSP = cboMaLoaiSP.SelectedValue.ToString();
                 sp.TenNSX = txtTenNSX.Text;
-                sp.Gia = int.Parse(txtGia.Text);
+                sp.Gia = float.Parse(txtGia.Text);
                 sp.SL = int.Parse(txtSoLuong.Text);
                 sp.DVT = txtDVT.Text;
                 sp.MoTa = rtxtMoTa.Text;

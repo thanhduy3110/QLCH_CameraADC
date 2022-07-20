@@ -166,6 +166,11 @@ namespace QLCH_CameraADC
             openChildForm(new frmThongKe());
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         private void frmMeNu_Load(object sender, EventArgs e)
         {
             if (PhanQuyen(15)) btnNhanVien.Enabled = true; else btnNhanVien.Visible = false;

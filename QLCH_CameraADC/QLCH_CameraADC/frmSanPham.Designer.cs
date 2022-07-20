@@ -727,7 +727,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 34);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Nhà sản xuất";
+            this.label5.Text = "Hãng sản xuất";
             // 
             // label9
             // 
